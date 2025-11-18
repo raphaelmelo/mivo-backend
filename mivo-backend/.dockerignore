@@ -1,0 +1,35 @@
+# Backend Dockerfile Ignore
+
+# Source files (apenas dist/ vai para produção)
+src/
+*.ts
+tsconfig.json
+
+# Dependencies (serão instaladas no container)
+node_modules/
+
+# Development
+*.test.ts
+*.spec.ts
+test/
+tests/
+coverage/
+
+# Logs
+*.log
+
+# Environment (serão setadas na plataforma)
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Documentation
+README.md
+DEPLOY.md
