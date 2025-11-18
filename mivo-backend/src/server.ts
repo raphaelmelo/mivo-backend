@@ -11,23 +11,36 @@ const PORT = process.env.PORT || 3002;
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Configuração de CORS para deployment separado
-const allowedOrigins = process.env.ALLOWED_ORIGINS 
+const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',').map(origin => origin.trim())
   : [
-      'http://localhost:3000',
-      'http://localhost:5173',
-      process.env.FRONTEND_URL || ''
-    ].filter(Boolean);
+    'http://localhost:3000',
+    'http://localhost:5173',
+    process.env.FRONTEND_URL || ''
+  ].filter(Boolean);
+
+// Função para verificar se origin é permitida (suporta wildcards)
+const isOriginAllowed = (origin: string): boolean => {
+  return allowedOrigins.some(allowed => {
+    if (allowed.includes('*')) {
+      // Converte wildcard para regex
+      const pattern = allowed.replace(/\*/g, '.*');
+      return new RegExp(`^${pattern}$`).test(origin);
+    }
+    return allowed === origin;
+  });
+};
 
 app.use(cors({
   origin: (origin, callback) => {
     // Permite requisições sem origin (Postman, apps mobile, etc)
     if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.includes(origin)) {
+
+    if (isOriginAllowed(origin)) {
       callback(null, true);
     } else {
-      callback(new Error(`Origin ${origin} not allowed by CORS`));
+      // Não retorna erro, apenas nega o acesso
+      callback(null, false);
     }
   },
   credentials: true,
@@ -54,7 +67,7 @@ app.get('/health', (_req: Request, res: Response) => {
 if (isProduction) {
   const frontendPath = path.join(__dirname, '../../build');
   app.use(express.static(frontendPath));
-  
+
   // Todas as rotas que não sejam /api ou /health servem o index.html (SPA routing)
   app.get('*', (req: Request, res: Response) => {
     if (!req.path.startsWith('/api') && req.path !== '/health') {
