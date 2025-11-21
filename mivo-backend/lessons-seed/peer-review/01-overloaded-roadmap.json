@@ -1,0 +1,58 @@
+{
+    "title": "Review: Roadmap Sobrecarregado",
+    "description": "Analise o roadmap de um PM Junior que prometeu 15 features em um trimestre. Identifique riscos e sugira cortes.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 20,
+    "estimatedMinutes": 10,
+    "isPremium": false,
+    "order": 16,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "context": "Você é PM Senior mentorando o Lucas, um PM Junior. Ele acabou de montar o roadmap do Q2 e está super orgulhoso.",
+            "artifact": {
+                "type": "Roadmap Q2",
+                "items": [
+                    "Abril: Refatoração completa do backend, Novo sistema de login, Integração Salesforce",
+                    "Maio: App Mobile (iOS + Android), Dashboard v2, 5 novos relatórios",
+                    "Junho: Chatbot IA, Programa de Fidelidade, Expansão Latam"
+                ],
+                "team": "3 devs backend, 2 frontend, 1 designer"
+            }
+        },
+        "analyze": {
+            "question": "Qual o principal problema deste roadmap?",
+            "options": [
+                {
+                    "id": "scope",
+                    "text": "Escopo irrealista para o tamanho do time (Feature Factory)",
+                    "isCorrect": true,
+                    "feedback": "Exato! 9 grandes projetos em 3 meses com 5 devs é impossível. Ele está focando em output, não outcome."
+                },
+                {
+                    "id": "tech",
+                    "text": "Falta de detalhes técnicos",
+                    "isCorrect": false,
+                    "feedback": "Detalhes técnicos faltam, mas o problema estrutural de capacidade é muito mais grave."
+                },
+                {
+                    "id": "order",
+                    "text": "A ordem dos meses está errada",
+                    "isCorrect": false,
+                    "feedback": "A ordem não importa se o volume total é inexecutável."
+                }
+            ]
+        },
+        "feedback": {
+            "prompt": "Escreva um feedback construtivo para o Lucas explicando por que ele deve reduzir o escopo e focar em valor.",
+            "placeholder": "Lucas, seu roadmap está ambicioso, mas...",
+            "minChars": 50
+        },
+        "expert": {
+            "name": "Teresa Torres",
+            "role": "Product Discovery Coach",
+            "feedback": "Lucas, adorei sua ambição! Mas cuidado: roadmap não é lista de desejos. Com 5 devs, você consegue entregar bem talvez 1 ou 2 desses grandes objetivos por mês. Sugiro focar em UM objetivo de negócio (ex: 'Aumentar retenção') e listar apenas as apostas mais fortes para atingi-lo, deixando espaço para discovery e imprevistos."
+        }
+    }
+}

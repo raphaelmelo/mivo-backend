@@ -1,0 +1,41 @@
+{
+    "title": "RICE: Framework de Priorização",
+    "description": "Aprenda a usar o framework RICE para priorizar features objetivamente e tomar decisões baseadas em dados",
+    "type": "concept_builder",
+    "difficulty": "beginner",
+    "xpReward": 12,
+    "estimatedMinutes": 6,
+    "isPremium": false,
+    "order": 2,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "📊",
+            "title": "O que é RICE?",
+            "explanation": "RICE é um framework de priorização criado pela Intercom que calcula um score baseado em 4 fatores: Reach (quantas pessoas impacta), Impact (quanto impacta cada pessoa), Confidence (quão confiante você está nas estimativas) e Effort (quanto esforço/tempo requer). Fórmula: Score = (Reach × Impact × Confidence) / Effort. Quanto maior o score, maior a prioridade.",
+            "example": "Feature A: Reach=1000 usuários/mês, Impact=3 (alto), Confidence=80%, Effort=2 person-months → Score = (1000 × 3 × 0.8) / 2 = 1200. Feature B: Reach=500, Impact=2, Confidence=100%, Effort=1 → Score = (500 × 2 × 1.0) / 1 = 1000. Priorize A! Mesmo com menor certeza, o impacto total é maior."
+        },
+        "questions": [
+            {
+                "question": "No framework RICE, qual componente vai no denominador (divisão)?",
+                "options": [
+                    "Reach (alcance)",
+                    "Impact (impacto)",
+                    "Effort (esforço)"
+                ],
+                "correct": 2,
+                "feedback": "Correto! Effort está no denominador porque queremos maximizar valor e minimizar esforço. É a única variável de 'custo' - quanto menor o esforço para um dado impacto, maior o ROI. Por isso scores maiores indicam melhor ROI: muito valor, pouco esforço."
+            },
+            {
+                "question": "Feature X: R=2000, I=2, C=50%, E=4. Feature Y: R=500, I=3, C=100%, E=1. Qual priorizar primeiro?",
+                "options": [
+                    "Feature X (score = 500)",
+                    "Feature Y (score = 1500)",
+                    "São equivalentes, priorize por intuição"
+                ],
+                "correct": 1,
+                "feedback": "Correto! Y tem score 1500 vs X com 500. Mesmo com menor alcance (500 vs 2000), Y vence porque: impacto maior por pessoa (3 vs 2), confiança total (100% vs 50%) e esforço muito menor (1 vs 4). Y é quick win de alto impacto. X pode vir depois, quando validar as suposições (aumentar Confidence)."
+            }
+        ]
+    }
+}

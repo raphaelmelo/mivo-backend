@@ -1,0 +1,52 @@
+{
+    "title": "Review: PRD sem Métricas",
+    "description": "Uma PRD (Product Requirements Document) bem escrita, mas sem métricas de sucesso. Ajude a definir como medir.",
+    "type": "peer_review",
+    "difficulty": "beginner",
+    "xpReward": 15,
+    "estimatedMinutes": 8,
+    "isPremium": false,
+    "order": 17,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "context": "Ana criou uma PRD para a feature 'Modo Escuro'. A especificação funcional está perfeita, mas falta algo crucial.",
+            "artifact": {
+                "type": "PRD: Dark Mode",
+                "sections": {
+                    "Problema": "Usuários reclamam de cansaço visual à noite.",
+                    "Solução": "Implementar tema escuro em todas as telas.",
+                    "Escopo": "Novas paletas de cores, toggle no perfil, persistência da preferência.",
+                    "Sucesso": "Entregar sem bugs em 2 semanas."
+                }
+            }
+        },
+        "analyze": {
+            "question": "O que está errado na definição de sucesso?",
+            "options": [
+                {
+                    "id": "output",
+                    "text": "Mede output (entregar no prazo), não outcome (valor gerado)",
+                    "isCorrect": true,
+                    "feedback": "Correto! Entregar no prazo é gestão de projeto. Sucesso de produto é: os usuários usaram? Gostaram? Resolveu o problema?"
+                },
+                {
+                    "id": "bugs",
+                    "text": "Não deveria mencionar bugs",
+                    "isCorrect": false,
+                    "feedback": "Qualidade é importante, mas não é a única medida de sucesso."
+                }
+            ]
+        },
+        "feedback": {
+            "prompt": "Sugira 2 métricas de sucesso reais para esta feature.",
+            "placeholder": "Sugiro medir: 1. Taxa de adoção (% usuários que ativam)...",
+            "minChars": 30
+        },
+        "expert": {
+            "name": "Marty Cagan",
+            "role": "Author, Inspired",
+            "feedback": "Ana, especificação técnica ótima! Mas lembre-se: nosso trabalho não é entregar features, é resolver problemas. Para sucesso, sugiro: (1) % de usuários ativos que ativam o modo escuro (Adoção), (2) Retenção dos usuários que ativam vs os que não ativam (Impacto). Se ninguém usar, entregar no prazo não valeu de nada."
+        }
+    }
+}

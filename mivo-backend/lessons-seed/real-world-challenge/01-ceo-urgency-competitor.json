@@ -1,0 +1,94 @@
+{
+    "title": "Urgência do CEO: Feature do Concorrente",
+    "description": "CEO viu concorrente lançar rastreamento em tempo real e quer copiar urgentemente. Você tem checkout 80% pronto. Como priorizar?",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 18,
+    "estimatedMinutes": 10,
+    "isPremium": false,
+    "order": 6,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "PM de app de delivery de comida",
+            "team": "3 devs backend, 2 devs mobile, 1 designer",
+            "sprint": "2 semanas (10 dias úteis)",
+            "currentWork": "Checkout em 1 clique está 80% implementado (faltam testes e ajustes finais)"
+        },
+        "trigger": {
+            "from": "CEO (mensagem no Slack às 22h)",
+            "message": "Pessoal, acabei de ver que o Rappi lançou rastreamento em tempo real MUITO BOM. Estou preocupado - nossos usuários vão migrar se não tivermos isso. PRECISAMOS lançar isso URGENTE! Podemos ter em 2 semanas?",
+            "urgency": "high",
+            "context": "CEO viu demo do concorrente em evento do setor"
+        },
+        "currentBacklog": [
+            "✅ Checkout em 1 clique - 80% pronto (falta QA + ajustes UX)",
+            "📅 Push notifications - planejado para próxima sprint",
+            "💡 Dark mode - top request de usuários (300+ votos)"
+        ],
+        "additionalData": {
+            "checkoutImpact": "Testes A/B mostram +12% conversão",
+            "currentNPS": "67 (bom, mas pode melhorar)",
+            "churnRate": "8%/mês (dentro da média do setor)",
+            "userRequests": "Rastreamento: 45 pedidos. Dark mode: 300+ pedidos"
+        },
+        "options": [
+            {
+                "id": "a",
+                "title": "Parar tudo e fazer rastreamento agora (all-in)",
+                "details": "Toda equipe foca em rastreamento. Checkout fica congelado a 80%.",
+                "risk": "Desperdiça 80% do trabalho já feito em checkout. Perder ganho de +12% conversão. Time desmotivado por não terminar o que começou.",
+                "benefit": "Atende CEO rapidamente. Pode reduzir ansiedade de usuários sobre entrega."
+            },
+            {
+                "id": "b",
+                "title": "Terminar checkout primeiro, depois rastreamento",
+                "details": "2 semanas para finalizar checkout com qualidade. Rastreamento entra depois.",
+                "risk": "CEO pode ficar frustrado com 'demora'. Possível perda de usuários para concorrente",
+                "benefit": "Entrega valor completo de checkout (+12% conversão). Time mantém momentum. Qualidade preservada."
+            },
+            {
+                "id": "c",
+                "title": "Discovery rápido de rastreamento + concluir checkout em paralelo",
+                "details": "1 dev + designer fazem discovery de rastreamento (entrevistas, protótipos). Resto do time finaliza checkout.",
+                "risk": "Time dividido em 2 frentes. Rastreamento ainda não sai em 2 semanas",
+                "benefit": "Valida necessidade real de rastreamento. Checkout entrega no prazo. Decisão informada."
+            },
+            {
+                "id": "d",
+                "title": "MVP de rastreamento híbrido (SMS/notificação simples)",
+                "details": "Implementa solução 'good enough': notificação quando pedido sai + link para rastrear no mapa do Google.",
+                "risk": "Não é tão elegante quanto concorrente. Pode não impressionar.",
+                "benefit": "Rápido (1 semana). Resolve 70% da ansiedade. Checkout também sai."
+            }
+        ],
+        "expertFeedback": {
+            "name": "Pedro Silva",
+            "title": "Head of Product, iFood",
+            "company": "iFood",
+            "photo": "expert-pedro",
+            "selectedOption": "c",
+            "feedback": {
+                "intro": "Ótima escolha! Discovery primeiro é sempre o caminho. Aqui está como eu lidaria:",
+                "steps": [
+                    "Conversa honesta com CEO: Explique o custo de parar checkout (perder +12% conversão já validado). Mostre dados: quantos usuários DE FATO pediram rastreamento vs dark mode (45 vs 300+)?",
+                    "Proponha discovery sprint de 1 semana: 20 entrevistas com usuários + análise de churn. Pergunte: rastreamento previne churn? Reduz contatos de suporte? Ou é 'nice to have'?",
+                    "Valide suposição: 'Usuários vão migrar' é medo ou fato? Cheque churn dos últimos 30 dias. Tema rastreamento veio nas entrevistas de saída?",
+                    "Se validar, entre no roadmap com priorização adequada. Se não validar, mostre dados ao CEO e sugira usar 300 votos de dark mode como norte."
+                ],
+                "warning": "Cuidado com HiPPO (Highest Paid Person's Opinion). CEO viu demo legal e ASSUMIU que é crítico. Seu papel é validar com dados e usuários reais. Talvez descubra que SMS simples resolve 80% da ansiedade!"
+            }
+        },
+        "communityDiscussion": {
+            "title": "E se o CEO insistir mesmo após o discovery?",
+            "responses": 23,
+            "topAnswer": "Negocie MVP rápido: notificação 'saiu para entrega' + 'chegou ao seu bairro'. 70% do valor, 20% do esforço. Itere baseado em dados de uso."
+        },
+        "stats": {
+            "a": 20,
+            "b": 30,
+            "c": 45,
+            "d": 5
+        }
+    }
+}

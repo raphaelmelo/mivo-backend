@@ -1,0 +1,41 @@
+{
+    "title": "OKRs: Objectives & Key Results",
+    "description": "Aprenda a criar OKRs efetivos para alinhar time e medir progresso de forma ambiciosa",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 15,
+    "estimatedMinutes": 8,
+    "isPremium": false,
+    "order": 4,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "🎯",
+            "title": "O que são OKRs?",
+            "explanation": "OKRs (Objectives and Key Results) são metas com resultados mensuráveis. Popularizados por Google, Intel e startups do Vale. Estrutura: OBJECTIVE é qualitativo, inspirador, desafiador (o QUE queremos). KEY RESULTS são quantitativos, específicos, time-bound (COMO sabemos que chegamos lá). OKRs são trimestrais, ambiciosos (70% de alcance já é sucesso) e públicos para toda empresa. Exemplo: O: Dominar mercado de PMEs. KR1: 10k empresas ativas. KR2: NPS > 50. KR3: Churn < 5%.",
+            "example": "OKR RUIM: ''Melhorar o produto'' - vago, sem inspiração, não mensurável. OKR BOM: ''Tornar onboarding irresistível para novos usuários'' com KRs: ''70% dos signups concluem setup completo'', ''Time-to-value médio < 5 minutos'', ''NPS de onboarding > 80''. Veja a diferença: objetivo inspira, KRs trazem clareza sobre sucesso."
+        },
+        "questions": [
+            {
+                "question": "Qual a principal diferença entre OKR e KPI?",
+                "options": [
+                    "OKR é trimestral e ambicioso, KPI é contínuo e operacional",
+                    "OKR é só para CEO e executivos, KPI é para todos",
+                    "São a mesma coisa com nomes diferentes"
+                ],
+                "correct": 0,
+                "feedback": "Correto! OKRs são metas temporárias (geralmente Q1, Q2, etc) e desafiadoras - você quer atingir 70-80%, não 100% (senão não foi ambicioso). KPIs são métricas operacionais que você monitora continuamente: conversão, churn, NPS, latência. KPIs sobem e descem, OKRs você conquista e define novos. Ambos se complementam!"
+            },
+            {
+                "question": "Um bom Objective (a parte O de OKR) deve ser:",
+                "options": [
+                    "Específico e numérico (ex: ''Aumentar conversão em 15%'')",
+                    "Inspirador e qualitativo (ex: ''Encantar novos usuários'')",
+                    "Fácil de atingir para motivar o time"
+                ],
+                "correct": 1,
+                "feedback": "Exato! Objective inspira e dá direção (''Encantar novos usuários'', ''Dominar atendimento ao cliente'', ''Ser mais rápido que concorrentes''). Key Results trazem os números (''80% completam setup em < 3min'', ''NPS > 9'', ''Time de resposta < 30s''). Objective emociona, KRs medem. E OKRs devem ser stretch goals - se você atinge 100% fácil, não foi ambicioso o suficiente!"
+            }
+        ]
+    }
+}

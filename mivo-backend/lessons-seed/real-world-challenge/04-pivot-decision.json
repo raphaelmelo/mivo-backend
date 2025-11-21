@@ -1,0 +1,115 @@
+{
+    "title": "Decisão Crítica: Pivotar ou Perseverar?",
+    "description": "Métricas ruins há 6 meses. Churn 30%, MRR estagnou, LTV < CAC. CEO sugere pivô completo para novo vertical. 9 meses de caixa. Decisão?",
+    "type": "real_world_challenge",
+    "difficulty": "advanced",
+    "xpReward": 20,
+    "estimatedMinutes": 12,
+    "isPremium": false,
+    "order": 9,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "PM e co-founder de startup SaaS",
+            "team": "Toda empresa - 8 pessoas (3 eng, 1 design, 1 vendas, 1 CS, 1 marketing, você)",
+            "product": "Ferramenta de automação de marketing para e-commerces pequenos",
+            "stage": "Pós-Seed, 18 meses de produto no mercado",
+            "runway": "9 meses de caixa restante"
+        },
+        "trigger": {
+            "from": "CEO (reunião de board)",
+            "message": "Time, precisamos encarar realidade: 6 meses de métricas decepcion antes. Talvez nosso ICP esteja errado. Vi grande oportunidade em educação: escolas querem automação, TAM 10x maior, zero concorrente direto. Minha proposta: pivotar completamente. O que acham?",
+            "urgency": "strategic",
+            "context": "Investidores estão pressionando por tração"
+        },
+        "currentMetrics": {
+            "mrr": "R$50k (estagnado há 4 meses)",
+            "customers": "120 clientes (era 140 há 2 meses)",
+            "churn": "30%/ano (altíssimo para B2B SaaS)",
+            "cac": "R$800",
+            "ltv": "R$600 (LTV/CAC = 0.75 - insustentável!)",
+            "nps": "25 (zona de perigo)",
+            "weeklyActiveUsers": "40% dos clientes (problema de adoção)",
+            "growthRate": "-2% MoM (decrescendo)"
+        },
+        "qualitativeFeedback": {
+            "recurring": "Produto OK, mas não é essencial. Dá para viver sem.",
+            "churnReasons": [
+                "Muito complicado para nosso tamanho",
+                "ROI não ficou claro",
+                "Integrações limitadas"
+            ],
+            "positives": "Quem usa bastante adora. Problema: poucos usam bastante"
+        },
+        "newOpportunity": {
+            "vertical": "Educação (escolas particulares K-12)",
+            "tam": "20k escolas no Brasil vs 2k e-commerces que targetamos",
+            "pain": "Comunicação com pais é caótica (WhatsApp, email, papel)",
+            "competition": "Nenhum player específico. Soluções genéricas não resolvem",
+            "validation": "5 conversas com diretores, todos animados",
+            "effort": "Rewrite de 40% do produto"
+        },
+        "options": [
+            {
+                "id": "a",
+                "title": "Pivô completo para educação",
+                "details": "Abandona e-commerce. Foco 100% em escolas. Rebuild UX e features para esse mercado.",
+                "risk": "Perder 120 clientes atuais (R$50k MRR → R$0). Recomeçar do zero. Aposta alto risco. Burn runway em rebuild.",
+                "benefit": "TAM 10x maior. Green field (sem concorrente). Learnings de automação aproveitáveis. Pode desbloquear crescimento."
+            },
+            {
+                "id": "b",
+                "title": "Perseverar no e-commerce, otimizar atual",
+                "details": "Dobra esforços: simplifica produto, melhora onboarding, foca retenção.",
+                "risk": "6 meses tentando sem tração. Pode continuar sangrando caixa. Métricas podem não melhorar. Game over em 9 meses.",
+                "benefit": "120 clientes são base. Conhecimento profundo do mercado. Evita risco de recomeçar."
+            },
+            {
+                "id": "c",
+                "title": "Pivô parcial: novo vertical, mesmo core",
+                "details": "Adapta produto para educação SEM abandonar e-commerce. Testa educação com MVP.",
+                "risk": "Falta de foco total. Recursos divididos. Produto medíocre em ambos. 'Jack of all trades, master of none'.",
+                "benefit": "Testa educação sem queimar pontes. Hedge de risco. Pode descobrir fit real antes de committar 100%."
+            },
+            {
+                "id": "d",
+                "title": "Deep customer development: 2 meses investigação intensiva",
+                "details": "Pausa novos features. 50+ entrevistas profundas com usuários, churned, prospects. Acha root cause.",
+                "risk": "Gasta 2 meses (22% do runway) sem garantia de achar solução. Pressão de investidores aumenta.",
+                "benefit": "Decisão baseada em dados, não emoção ou FOMO. Pode descobrir fix simples. Evita pivô desnecessário."
+            }
+        ],
+        "expertFeedback": {
+            "name": "Mariana Luz",
+            "title": "Partner",
+            "company": "Sequoia Capital Brasil",
+            "photo": "expert-mariana",
+            "selectedOption": "d",
+            "feedback": {
+                "intro": "Decisão sábia - dados antes de emoção. Pivô é último recurso. Meu framework:",
+                "beforePivot": [
+                    "Pivô mata 80% das startups que tentam. É admissão de que errou por 18 meses. Só faça se REALMENTE esgotou alternativas.",
+                    "Checklist antes de pivotar: (1) Fez 50+ entrevistas profundas? (2) Testou at least 3 IPCs diferentes? (3) Tentou simplificar produto 80%? (4) Mudou pricing/positioning 2+ vezes? Se não: PERSEVERE.",
+                    "FOMO de 'oportunidade em educação' é perigoso. 5 conversas animadas ≠ PMF. Até achar 10 pagantes em educação, é só teoria."
+                ],
+                "customerDevelopment": [
+                    "Próximas 8 semanas: CEO + você fazem 50 entrevistas. 20 churned, 20 ativos, 10 prospects que não fecharam.",
+                    "Perguntas: Por QUE churn? O produto QUASE resolve algo crítico? Se pudesse mudar 1 coisa, o que seria?",
+                    "Procure padrão: Se 70%+ fala mesma dor não resolvida → tem fix. Se feedback totalmente disperso → problema de fit.",
+                    "Em paralelo: experimentos rápidos. Novo onboarding? Nova pricing tier simples? Testar em 2 semanas cada."
+                ],
+                "decision": "Ao final de 8 semanas: (1) Se achar root cause claro + solução viável → persevere com plano novo. (2) Se feedback disperso + nenhum padrão → aí sim considere educação. Mas VALIDE com 3 meses de MVP em educação antes de abandonar e-commerce."
+            }
+        },
+        "realCase": {
+            "company": "Slack",
+            "pivot": "Começou como game (Glitch), pivotou para ferramenta que usavam internamente. MAS: só pivotou após 4 anos tentando game e vendo comunicação do time era o único sucesso claro."
+        },
+        "stats": {
+            "a": 20,
+            "b": 10,
+            "c": 25,
+            "d": 45
+        }
+    }
+}

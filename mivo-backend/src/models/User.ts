@@ -19,11 +19,12 @@ interface UserAttributes {
   dailyTimeCommitment: '5' | '10' | '20' | null;
   company: string | null;
   productArea: 'b2c' | 'b2b' | 'marketplace' | 'fintech' | 'saas' | null;
+  lessonsCompleted: number;
   createdAt?: Date;
   updatedAt?: Date;
 }
 
-interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea'> {}
+interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea' | 'lessonsCompleted'> { }
 
 class User extends Model<UserAttributes, UserCreationAttributes> implements UserAttributes {
   public id!: number;
@@ -42,6 +43,7 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
   public dailyTimeCommitment!: '5' | '10' | '20' | null;
   public company!: string | null;
   public productArea!: 'b2c' | 'b2b' | 'marketplace' | 'fintech' | 'saas' | null;
+  public lessonsCompleted!: number;
 
   public readonly createdAt!: Date;
   public readonly updatedAt!: Date;
@@ -126,6 +128,11 @@ User.init(
     productArea: {
       type: DataTypes.ENUM('b2c', 'b2b', 'marketplace', 'fintech', 'saas'),
       allowNull: true,
+    },
+    lessonsCompleted: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
+      allowNull: false,
     },
   },
   {
