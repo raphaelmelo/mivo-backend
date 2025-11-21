@@ -1,4 +1,5 @@
 import express, { Express, Request, Response } from 'express';
+import { syncDatabase } from './models';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -112,10 +113,21 @@ app.use((err: Error, _req: Request, res: Response, _next: any) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🚀 MIVO Backend running on port ${PORT}`);
-  console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(`🔗 Health check: http://localhost:${PORT}/health`);
-});
+const startServer = async () => {
+  try {
+    await syncDatabase();
+
+    app.listen(PORT, () => {
+      console.log(`🚀 MIVO Backend running on port ${PORT}`);
+      console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
+      console.log(`🔗 Health check: http://localhost:${PORT}/health`);
+    });
+  } catch (error) {
+    console.error('❌ Failed to start server:', error);
+    process.exit(1);
+  }
+};
+
+startServer();
 
 export default app;
