@@ -4,7 +4,6 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import authRoutes from './routes/auth';
-import aiRoutes from './routes/ai';
 
 dotenv.config();
 
@@ -55,7 +54,6 @@ import lessonRoutes from './routes/lessons';
 
 // API Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/ai', aiRoutes);
 app.use('/api/lessons', lessonRoutes);
 
 // Health check route
