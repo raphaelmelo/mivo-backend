@@ -17,7 +17,7 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
   : [
     'http://localhost:5173',
     'http://localhost:3000',
-    process.env.FRONTEND_URL || ''
+    process.env.FRONTEND_URL
   ].filter(Boolean);
 
 // Função para verificar se origin é permitida (suporta wildcards)

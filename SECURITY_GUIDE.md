@@ -75,9 +75,11 @@ Se acidentalmente commitou credenciais:
 ```bash
 # 1. IMEDIATAMENTE trocar as credenciais expostas
 # 2. Remover do histórico (cuidado!)
-git filter-branch --force --index-filter \
-  "git rm --cached --ignore-unmatch .env" \
-  --prune-empty --tag-name-filter cat -- --all
+# Usando git-filter-repo (recomendado, instale com: pip install git-filter-repo)
+git filter-repo --path .env --invert-paths
+
+# Alternativamente, usando BFG Repo-Cleaner (https://rtyley.github.io/bfg-repo-cleaner/)
+# bfg --delete-files .env
 
 # 3. Force push (só se necessário e coordenado com a equipe)
 git push origin --force --all
