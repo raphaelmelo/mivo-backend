@@ -12,13 +12,13 @@ const PORT = process.env.PORT || 3002;
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Configuração de CORS para deployment separado
-const allowedOrigins = process.env.ALLOWED_ORIGINS
+const allowedOrigins: string[] = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',').map(origin => origin.trim())
   : [
     'http://localhost:5173',
     'http://localhost:3000',
     process.env.FRONTEND_URL
-  ].filter(Boolean);
+  ].filter((origin): origin is string => Boolean(origin));
 
 // Função para verificar se origin é permitida (suporta wildcards)
 const isOriginAllowed = (origin: string): boolean => {
@@ -73,9 +73,11 @@ if (isProduction) {
   app.use(express.static(frontendPath));
 
   // Todas as rotas que não sejam /api ou /health servem o index.html (SPA routing)
-  app.get('*', (req: Request, res: Response) => {
-    if (!req.path.startsWith('/api') && req.path !== '/health') {
+  app.use((req: Request, res: Response, next) => {
+    if (!req.path.startsWith('/api') && req.path !== '/health' && !req.path.includes('.')) {
       res.sendFile(path.join(frontendPath, 'index.html'));
+    } else {
+      next();
     }
   });
 } else {
