@@ -1,26 +1,52 @@
 # Dependencies
 node_modules/
-dist/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# IDE
-.vscode/
-.idea/
-
-# Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Environment variables (CRÍTICO - NÃO COMMITAR)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Build outputs
+dist/
+build/
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Build files
-*.tsbuildinfo
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Backups
+*.bak
+*.backup
+*.old
+
+# Secrets e credenciais
+secrets/
+credentials/
+*.pem
+*.key
+*.cert
+
+# Database
+*.sqlite
+*.db
+
+# Outros repositórios
+Mivoapp/
+mivo-frontend/
