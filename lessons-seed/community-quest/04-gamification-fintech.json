@@ -1,0 +1,72 @@
+{
+    "title": "Quest: Gamificação Fintech",
+    "description": "Crie mecânicas para incentivar jovens a poupar dinheiro. Cuidado com gamificação predatória.",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 30,
+    "estimatedMinutes": 12,
+    "isPremium": false,
+    "order": 24,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "App de banco digital quer incentivar poupança entre Gen Z.",
+            "role": "PM de Engajamento",
+            "goal": "Criar feature que torne guardar dinheiro divertido."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Game Designer",
+                    "role": "UX"
+                },
+                {
+                    "name": "Legal",
+                    "role": "Compliance"
+                },
+                {
+                    "name": "Behavioral Scientist",
+                    "role": "Research"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Mecânica Principal",
+                "chat": [
+                    {
+                        "user": "Game Designer",
+                        "text": "Vamos fazer uma loteria! Quem guarda ganha chance de prêmio milionário."
+                    },
+                    {
+                        "user": "Behavioral Scientist",
+                        "text": "Loteria funciona, mas cria hábito de jogo, não de poupança consciente."
+                    },
+                    {
+                        "user": "Legal",
+                        "text": "Loteria exige regulação complexa. Prefiro algo garantido."
+                    }
+                ],
+                "question": "Qual caminho seguir?",
+                "options": [
+                    {
+                        "id": "lottery",
+                        "text": "Sorteio/Loteria (High risk/reward)"
+                    },
+                    {
+                        "id": "streak",
+                        "text": "Streaks/Ofensiva (Hábito diário)"
+                    },
+                    {
+                        "id": "visual",
+                        "text": "Visualização de Metas (Tamagotchi financeiro)"
+                    }
+                ]
+            }
+        },
+        "results": {
+            "outcome": "Streaks ou Visualização criam hábitos melhores. Loteria atrai caçadores de prêmio que saem depois.",
+            "communityStats": "Streaks escolhido por 55%."
+        }
+    }
+}

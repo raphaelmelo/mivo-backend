@@ -1,0 +1,109 @@
+{
+    "title": "Dilema: Corrigir Bugs ou Criar Features?",
+    "description": "CTO quer corrigir 8 bugs críticos. CEO quer integração Slack para fechar R$120k MRR. Apenas 1 sprint disponível.",
+    "type": "real_world_challenge",
+    "difficulty": "beginner",
+    "xpReward": 15,
+    "estimatedMinutes": 8,
+    "isPremium": false,
+    "order": 7,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "PM de SaaS B2B (ferramenta de gestão de projetos)",
+            "team": "4 devs fullstack, 1 QA",
+            "sprint": "2 semanas",
+            "currentWork": "Sprint zerado, planejando a próxima"
+        },
+        "trigger": {
+            "from": "CTO e CEO (reunião de planejamento)",
+            "message": "CTO: 'Temos 8 bugs críticos no backlog. 15% dos usuários reportaram pelo menos 1 problema este mês. Precisamos focar em estabilidade.' CEO: 'Entendo, mas temos opportunity de fechar 3 contas enterprise se entregarmos integração com Slack. São R$120k MRR. Preciso saber: conseguimos fazer?'",
+            "urgency": "high",
+            "context": "Ambos têm razão. Você precisa decidir."
+        },
+        "detailedData": {
+            "bugs": {
+                "total": 8,
+                "usersAffected": "~15% da base (300 de 2000 clientes)",
+                "severity": "4 bloqueadores (impedem uso), 4 críticos (workaround existe)",
+                "topComplaints": "Crash ao exportar relatório, lentidão em boards grandes, notificações duplicadas",
+                "supportTickets": "45 tickets/semana relacionados",
+                "effort": "1 sprint completa (10 dias) para resolver os 8"
+            },
+            "slackIntegration": {
+                "revenue": "R$120k MRR (3 contas × R$40k/ano cada ≈ R$10k/mês cada)",
+                "timeline": "Prospects querem decisão em 3 semanas. Depois vão para concorrente",
+                "effort": "1.5 sprints (15 dias) - 1 sprint se cortar alguns nice-to-haves",
+                "strategicValue": "Abre mercado enterprise. Prova tração B2B para investidores"
+            },
+            "context": {
+                "MRRatual": "R$180k",
+                "burnRate": "R$150k/mês",
+                "runway": "8 meses de caixa"
+            }
+        },
+        "options": [
+            {
+                "id": "a",
+                "title": "Focar 100% em bugs (2 semanas)",
+                "details": "Resolve os 8 bugs. Integração Slack fica para depois.",
+                "risk": "Perder R$120k MRR (3 contas enterprise). Perder momentum de vendas. Decepção do CEO e time comercial.",
+                "benefit": "Resolver reclamações de 15% da base. Reduzir tickets de suporte. Melhorar NPS. Dormir tranquilo."
+            },
+            {
+                "id": "b",
+                "title": "Focar 100% em Slack (3 semanas)",
+                "details": "Implementa integração completa. Bugs ficam para depois.",
+                "risk": "Bugs continuam afetando 15% dos usuários. Risco de churn aumenta. Possível explosão de insatisfação.",
+                "benefit": "Fechar R$120k MRR (+67% no MRR!). Provar tração enterprise. Comprar mais 8 meses de runway."
+            },
+            {
+                "id": "c",
+                "title": "Dividir time 50/50 - metade em cada (3 semanas)",
+                "details": "2 devs em bugs, 2 em Slack. Ambos progridem lentamente.",
+                "risk": "Bugs não resolvem completamente. Slack atrasa e pode perder deals. Pior dos dois mundos.",
+                "benefit": "Progride em ambas frentes. Mostra comprometimento com qualidade E crescimento."
+            },
+            {
+                "id": "d",
+                "title": "Sequencial: bugs críticos primeiro (1 semana) + Slack depois (2 semanas)",
+                "details": "Resolve só os 4 bugs bloqueadores (1 semana). Depois foca 100% em Slack.",
+                "risk": "4 bugs críticos (não-bloqueadores) ficam. Slack sai em 3 semanas totais (pode ser tarde).",
+                "benefit": "Resolve problemas mais graves primeiro. Slack sai com qualidade. Mostra priorização sensata."
+            }
+        ],
+        "expertFeedback": {
+            "name": "Ana Costa",
+            "title": "PM Senior, Nubank",
+            "company": "Nubank",
+            "photo": "expert-ana",
+            "selectedOption": "d",
+            "feedback": {
+                "intro": "Excelente escolha! Bugs antes de crescer é sabedoria. Minha abordagem:",
+                "steps": [
+                    "Qualifique os bugs: Dos 8, quais são REALMENTE críticos? Workaround razoável existe para alguns? Negocie com suporte implementar workaround temporário.",
+                    "Negocie timing das contas enterprise: Explique situação honestamente. 'Estamos resolvendo bugs críticos para garantir excelência para vocês também. Podemos ter em 3 semanas?' Muitos compreendem.",
+                    "Prioridade clara: Estabilidade primeiro. Crescer em cima de produto bugado = churn futuro. R$120k MRR é tentador, mas com 15% insatisfeitos, pode se tornar R$0 MRR rápido.",
+                    "Proposta específica: 1 semana para bugs bloqueadores + workarounds para críticos. 2 semanas para Slack com qualidade. Total 3 semanas. Se prospects não aceitam, não eram fit."
+                ],
+                "warning": "Evite pressão de 'cresce a qualquer custo'. Nubank cresceu devagar de propósito: estabilidade impecável primeiro. Resultado? NPS 90+. Bugs = câncer. Cresca saudável."
+            }
+        },
+        "learningPoints": {
+            "title": "Lições deste cenário",
+            "points": [
+                "Trade-off receita vs qualidade é comum. Não há resposta única.",
+                "Qualifique severidade: nem todo bug precisa ser resolvido JÁ.",
+                "Negocie timelines: prospects enterprise geralmente são flexíveis se você for transparente.",
+                "Workarounds temporários podem comprar tempo sem comprometer usuário.",
+                "Sequenciar (A depois B) geralmente melhor que paralelizar e entregar mal ambos."
+            ]
+        },
+        "stats": {
+            "a": 25,
+            "b": 15,
+            "c": 20,
+            "d": 40
+        }
+    }
+}

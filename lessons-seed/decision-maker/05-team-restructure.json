@@ -1,0 +1,90 @@
+{
+    "title": "Reestruturação de Time de Produto",
+    "description": "Time cresceu caótico (3→12 pessoas). Decisões de estrutura, processos e cultura em 3 rodadas.",
+    "type": "decision_maker",
+    "difficulty": "advanced",
+    "xpReward": 28,
+    "estimatedMinutes": 14,
+    "isPremium": false,
+    "order": 15,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "Head of Product (promovido recentemente)",
+            "team": "12 pessoas (era 3 há 6 meses)",
+            "problem": "Caos: sem processos, comunicação ruim, moral baixa",
+            "mandate": "CEO deu 2 meses para arrumar a casa"
+        },
+        "rounds": [
+            {
+                "number": 1,
+                "name": "Diagnosticar Problemas",
+                "scenario": "Time reclama de: decisões unclear, reuniões demais, falta de ownership, silos.",
+                "question": "Como investigar root causes?",
+                "options": [
+                    {
+                        "id": "survey",
+                        "text": "Survey anônimo"
+                    },
+                    {
+                        "id": "1on1",
+                        "text": "20 1-on-1s profundos"
+                    },
+                    {
+                        "id": "workshop",
+                        "text": "Workshop de retrospectiva"
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "name": "Propor Nova Estrutura",
+                "scenario": "Principal issue: falta de ownership. Produto monolítico, todos mexem em tudo.",
+                "question": "Como organizar?",
+                "options": [
+                    {
+                        "id": "squads",
+                        "text": "Squads por feature (signup, core, growth)"
+                    },
+                    {
+                        "id": "pods",
+                        "text": "Pods por jornada (acquisition, activation, retention)"
+                    },
+                    {
+                        "id": "functional",
+                        "text": "Manter funcional (eng, design, PM separados)"
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "name": "Implementar Mudança",
+                "scenario": "Escolheu squads. Time resistindo: 'Vai criar silos', 'Vai ser burocrático'.",
+                "question": "Como implementar?",
+                "options": [
+                    {
+                        "id": "bigbang",
+                        "text": "Reestruturar tudo na segunda-feira"
+                    },
+                    {
+                        "id": "gradual",
+                        "text": "Piloto com 1 squad, iterar"
+                    },
+                    {
+                        "id": "codesign",
+                        "text": "Co-criar estrutura com o time"
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "finalScore": 8.7,
+            "outcome": "Team velocity +40%, satisfaction +25 NPS points",
+            "learnings": [
+                "Listen first",
+                "Pilot > Big bang",
+                "Co-creation > Top-down"
+            ]
+        }
+    }
+}

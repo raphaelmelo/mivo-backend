@@ -1,0 +1,96 @@
+{
+    "title": "Quest: Sistema de Reviews",
+    "description": "Sua squad precisa desenhar um sistema de reviews para um marketplace. Colabore com decisões de design e regras de negócio.",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 30,
+    "estimatedMinutes": 15,
+    "isPremium": false,
+    "order": 21,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "Marketplace de serviços locais (encanador, eletricista) precisa de sistema de reviews confiável.",
+            "role": "PM liderando a squad",
+            "goal": "Definir regras para evitar fraudes e garantir utilidade."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Dev Back",
+                    "role": "Tech Lead"
+                },
+                {
+                    "name": "Designer",
+                    "role": "UX/UI"
+                },
+                {
+                    "name": "Data",
+                    "role": "Analyst"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Quem pode avaliar?",
+                "chat": [
+                    {
+                        "user": "Designer",
+                        "text": "Acho que qualquer um deveria poder avaliar, para ter volume rápido."
+                    },
+                    {
+                        "user": "Data",
+                        "text": "Isso vai gerar spam e reviews fakes de concorrentes."
+                    },
+                    {
+                        "user": "Dev Back",
+                        "text": "Podemos limitar só para quem contratou e pagou pela plataforma."
+                    }
+                ],
+                "question": "Qual sua decisão?",
+                "options": [
+                    {
+                        "id": "open",
+                        "text": "Aberto a todos (foco em volume)"
+                    },
+                    {
+                        "id": "verified",
+                        "text": "Apenas transações verificadas (foco em confiança)"
+                    }
+                ]
+            },
+            "day2": {
+                "topic": "Escala de avaliação",
+                "chat": [
+                    {
+                        "user": "Designer",
+                        "text": "5 estrelas é padrão, todo mundo entende."
+                    },
+                    {
+                        "user": "Data",
+                        "text": "Netflix trocou estrelas por Thumbs Up/Down porque simplifica decisão."
+                    },
+                    {
+                        "user": "Dev Back",
+                        "text": "Thumbs Up/Down é mais fácil de implementar também."
+                    }
+                ],
+                "question": "Qual escala usar?",
+                "options": [
+                    {
+                        "id": "stars",
+                        "text": "1-5 Estrelas (granularidade)"
+                    },
+                    {
+                        "id": "thumbs",
+                        "text": "Thumbs Up/Down (simplicidade)"
+                    }
+                ]
+            }
+        },
+        "results": {
+            "outcome": "Sistema Verificado + 5 Estrelas é o padrão da indústria para serviços (Uber, Airbnb). Confiança > Volume neste mercado.",
+            "communityStats": "78% dos squads escolheram Verificado."
+        }
+    }
+}

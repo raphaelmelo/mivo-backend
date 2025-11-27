@@ -1,0 +1,72 @@
+{
+    "title": "Quest: Onboarding SaaS",
+    "description": "Melhore a taxa de ativação de um SaaS B2B. Decida entre tour guiado, checklist ou vídeo.",
+    "type": "community_quest",
+    "difficulty": "beginner",
+    "xpReward": 25,
+    "estimatedMinutes": 12,
+    "isPremium": false,
+    "order": 22,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "SaaS de gestão financeira. Usuários cadastram mas não configuram conta. Ativação atual: 15%. Meta: 25%.",
+            "role": "Growth PM",
+            "goal": "Escolher a melhor intervenção de onboarding."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Growth Hacker",
+                    "role": "Marketing"
+                },
+                {
+                    "name": "UX Designer",
+                    "role": "Design"
+                },
+                {
+                    "name": "Eng Lead",
+                    "role": "Tech"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Formato do Onboarding",
+                "chat": [
+                    {
+                        "user": "Growth Hacker",
+                        "text": "Vídeo de 2min explicando valor seria ótimo."
+                    },
+                    {
+                        "user": "UX Designer",
+                        "text": "Ninguém vê vídeo. Prefiro um tour guiado (step-by-step) na interface."
+                    },
+                    {
+                        "user": "Eng Lead",
+                        "text": "Que tal um checklist 'Setup Guide' que fica visível até completar?"
+                    }
+                ],
+                "question": "Qual aposta você prioriza?",
+                "options": [
+                    {
+                        "id": "video",
+                        "text": "Vídeo explicativo"
+                    },
+                    {
+                        "id": "tour",
+                        "text": "Product Tour (tooltips)"
+                    },
+                    {
+                        "id": "checklist",
+                        "text": "Checklist de progresso"
+                    }
+                ]
+            }
+        },
+        "results": {
+            "outcome": "Checklist costuma performar melhor em B2B complexo pois dá autonomia e senso de progresso (Zeigarnik effect). Tours muitas vezes são fechados sem ler.",
+            "communityStats": "Checklist venceu em 60% das simulações."
+        }
+    }
+}

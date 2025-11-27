@@ -1,0 +1,52 @@
+{
+    "title": "Review: OKRs Mal Formulados",
+    "description": "Identifique erros comuns em OKRs: metas inatingíveis, falta de números ou foco apenas em tarefas.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 20,
+    "estimatedMinutes": 10,
+    "isPremium": false,
+    "order": 18,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "context": "O time de Marketing enviou seus OKRs para o trimestre. Eles parecem mais uma lista de tarefas.",
+            "artifact": {
+                "type": "OKRs Q3 - Marketing",
+                "objective": "Melhorar nossa presença digital",
+                "key_results": [
+                    "KR1: Lançar novo blog",
+                    "KR2: Contratar agência de SEO",
+                    "KR3: Fazer 3 webinars"
+                ]
+            }
+        },
+        "analyze": {
+            "question": "Qual o erro principal nestes Key Results?",
+            "options": [
+                {
+                    "id": "tasks",
+                    "text": "São tarefas (outputs), não resultados (outcomes)",
+                    "isCorrect": true,
+                    "feedback": "Exato! Lançar blog é fácil. Difícil é ter leitores. KRs devem medir o resultado da tarefa."
+                },
+                {
+                    "id": "low",
+                    "text": "As metas são muito baixas",
+                    "isCorrect": false,
+                    "feedback": "Não sabemos se são baixas, o problema é que não medem valor."
+                }
+            ]
+        },
+        "feedback": {
+            "prompt": "Reescreva o KR1 (Lançar novo blog) para ser um resultado mensurável.",
+            "placeholder": "Em vez de lançar blog, tente: Alcançar 5.000 visitas orgânicas mensais...",
+            "minChars": 40
+        },
+        "expert": {
+            "name": "Felipe Castro",
+            "role": "OKR Trainer",
+            "feedback": "Ótima tentativa, mas vamos transformar atividades em resultados. KR1: Em vez de 'Lançar blog', use 'Gerar 1.000 leads qualificados via blog'. KR2: Em vez de 'Contratar agência', use 'Aumentar tráfego orgânico em 30%'. KR3: Em vez de 'Fazer webinars', use 'Manter nota média de satisfação > 4.5 nos webinars'. Foque no impacto!"
+        }
+    }
+}
