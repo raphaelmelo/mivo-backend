@@ -57,11 +57,16 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
 
         // Simple level up logic (every 1000 XP)
         const newLevel = Math.floor(user.xp / 1000) + 1;
-        if (newLevel > user.level) {
+        const leveledUp = newLevel > user.level;
+        if (leveledUp) {
             user.level = newLevel;
         }
 
         await user.save();
+
+        // Check for new badges (dynamic import to avoid circular dependencies)
+        const { checkAndAwardBadges } = await import('./badgeController');
+        const newBadges = await checkAndAwardBadges(userId);
 
         res.json({
             message: 'Lesson completed successfully',
@@ -69,7 +74,15 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
                 xp: user.xp,
                 level: user.level,
                 lessonsCompleted: user.lessonsCompleted
-            }
+            },
+            leveledUp,
+            newBadges: newBadges.map(badge => ({
+                id: badge.id,
+                name: badge.name,
+                description: badge.description,
+                category: badge.category,
+                iconUrl: badge.iconUrl
+            }))
         });
     } catch (error) {
         console.error('Error completing lesson:', error);
