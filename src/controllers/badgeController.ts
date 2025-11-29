@@ -56,11 +56,20 @@ const isRequirementMet = (user: User, requirement: BadgeRequirement): boolean =>
   }
 };
 
+export interface UnlockedBadge {
+  id: number;
+  name: string;
+  description: string;
+  category: string;
+  iconUrl: string;
+  unlockedAt: Date;
+}
+
 /**
  * Check and unlock badges for a user
  * Returns array of newly unlocked badges
  */
-export const checkAndUnlockBadges = async (userId: number) => {
+export const checkAndUnlockBadges = async (userId: number): Promise<UnlockedBadge[]> => {
   const user = await User.findByPk(userId);
   if (!user) {
     throw new Error('User not found');
@@ -76,7 +85,7 @@ export const checkAndUnlockBadges = async (userId: number) => {
   });
   const existingBadgeIds = existingUserBadges.map(ub => ub.badgeId);
 
-  const newlyUnlockedBadges = [];
+  const newlyUnlockedBadges: UnlockedBadge[] = [];
 
   for (const badge of allBadges) {
     // Skip if user already has this badge
