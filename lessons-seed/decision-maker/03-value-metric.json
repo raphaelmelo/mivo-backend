@@ -1,0 +1,70 @@
+{
+    "title": "Escolha da Métrica de Valor (Value Metric) para Precificação",
+    "description": "Você está lançando um software de colaboração B2B. Você precisa decidir o que será a principal \"Métrica de Valor\" (Value Metric) que guiará a precificação do produto (aquilo pelo que o cliente pagará).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 25,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "PMM de ferramenta de colaboração B2B",
+            "team": "Produto, Finanças, Vendas",
+            "sprint": "Lançamento Q2 - Precificação",
+            "context": "Você está lançando um software de colaboração B2B. Você precisa decidir qual será a principal Métrica de Valor que guiará a precificação do produto."
+        },
+        "rounds": [
+            {
+                "name": "Round 1",
+                "number": 1,
+                "scenario": "O CFO quer definir a precificação. Vendas prefere preço fixo (mais fácil de vender). Produto quer crescer junto com o sucesso do cliente. Qual métrica você escolhe?",
+                "question": "Qual é a melhor decisão para uma Métrica de Valor em um software de colaboração B2B?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Cobrar por \"Usuário Ativo\" (Licença por Assento), pois o sucesso do cliente depende da colaboração e, quanto mais usuários usarem, mais valor será gerado e mais a empresa irá monetizar (Seats).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Cobrar por \"Número de Projetos Criados\", permitindo que o cliente comece pequeno e pague mais à medida que o uso cresce, mas limitando o uso por usuários.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Cobrar por \"Faturamento da Empresa Cliente\", pois o preço é desvinculado do uso do software.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Cobrar um \"Preço Fixo Mensal\" (Flat Fee), pois isso elimina a complexidade, mas impede o crescimento da receita (expansion revenue).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "perfect": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe.",
+            "good": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe.",
+            "bad": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe."
+        }
+    }
+}

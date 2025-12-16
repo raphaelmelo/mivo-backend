@@ -1,0 +1,48 @@
+{
+    "title": "Estrutura de Campanha de Lançamento",
+    "description": "Você precisa planejar o lançamento de uma feature pequena (uma melhoria de UX). O time de marketing quer fazer um evento presencial para isso.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 11,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Estrutura de Campanha de Lançamento",
+            "explanation": "Você precisa planejar o lançamento de uma feature pequena (uma melhoria de UX). O time de marketing quer fazer um evento presencial para isso.",
+            "example": "A Apple faz evento mundial para iPhone (Tier 1), mas lança nova cor de MacBook apenas com post no site (Tier 4)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual conceito de GTM ajuda a definir o tamanho do esforço de marketing para cada lançamento, evitando desperdício de recursos?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "A Matriz de Tiers de Lançamento (Tier 1 a Tier 4), que classifica o lançamento baseada no impacto para o negócio e na novidade para o cliente.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "A regra de que todo lançamento deve ter press release.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "O orçamento anual de marketing dividido por 12 meses.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "A opinião do CEO sobre o que é legal.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é a correta. Nem tudo merece um evento. Features pequenas (Tier 3 ou 4) merecem apenas um changelog ou in-app message. Grandes produtos (Tier 1) merecem eventos. O PMM é o guardião dessa priorização."
+            }
+        ]
+    }
+}

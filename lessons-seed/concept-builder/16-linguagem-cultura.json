@@ -1,0 +1,48 @@
+{
+    "title": "Implementação da Linguagem e Cultura de Marca",
+    "description": "O Case Alice no material reforça que Linguagem não é sobre teoria, é sobre prática e consistência. A linguagem é um ativo estratégico no GTM.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 37,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Implementação da Linguagem e Cultura de Marca",
+            "explanation": "O Case Alice no material reforça que Linguagem não é sobre teoria, é sobre prática e consistência. A linguagem é um ativo estratégico no GTM.",
+            "example": "A Alice (Saúde) usa linguagem simples e acolhedora em TODOS os pontos de contato: do anúncio ao contrato, do app ao atendimento. Isso cria confiança."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual o papel da Linguagem de Marca (Identidade Verbal) na execução do Go-to-Market, especialmente na fase de Adoção do cliente?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Garantir que o Tom de Voz e o Messaging sejam consistentes em todos os Pontos de Contato, desde o anúncio que atrai o lead até a mensagem in-app que guia a Adoção, reforçando o Posicionamento Único e criando uma experiência coesa e memorável.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Ser usada apenas em campanhas de Awareness em TV e rádio, para grandes audiências.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Servir apenas para o time de Suporte ao Cliente lidar com reclamações de forma mais educada.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Substituir a Proposta de Valor, pois uma marca bem falada não precisa de clareza sobre o valor entregue.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é a mais completa. A linguagem é o veículo do posicionamento. A consistência da linguagem em toda a jornada (AWARENESS -> ADOPTION) é o que constrói a Cultura de Branding e diferencia a marca na percepção do cliente."
+            }
+        ]
+    }
+}

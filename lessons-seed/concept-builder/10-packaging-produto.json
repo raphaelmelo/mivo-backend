@@ -1,0 +1,48 @@
+{
+    "title": "Empacotamento (Packaging) de Produto",
+    "description": "O time de Vendas está confuso com a forma como as features estão organizadas. Eles querem vender \"tudo para todos\" no mesmo preço. Você precisa explicar o conceito de Packaging e seu propósito.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 22,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Empacotamento (Packaging) de Produto",
+            "explanation": "O time de Vendas está confuso com a forma como as features estão organizadas. Eles querem vender \"tudo para todos\" no mesmo preço. Você precisa explicar o conceito de Packaging e seu propósito.",
+            "example": "O Spotify tem planos Individual, Duo e Família. Cada um reflete o valor para diferentes perfis de cliente, criando uma escada natural de expansão."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual o objetivo principal do Empacotamento (Packaging) de um produto SaaS (criar diferentes planos: Básico, Pro, Enterprise)?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Segmentar o mercado, permitindo que diferentes ICPs paguem por planos que refletem o valor que recebem (monetizar valor), e criar uma jornada de upsell clara para o cliente.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Garantir que todos os clientes usem 100% das features disponíveis.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Limitar a visibilidade do produto no mercado, focando apenas no plano mais caro.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Aumentar a complexidade da decisão de compra para que o cliente se sinta compelido a falar com um vendedor.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A resume o conceito de Packaging. Ele é uma ferramenta estratégica para monetizar valor de forma progressiva (do plano mais simples ao mais avançado) e criar uma clara diferenciação entre segmentos de clientes e seus respectivos níveis de necessidade e orçamento."
+            }
+        ]
+    }
+}

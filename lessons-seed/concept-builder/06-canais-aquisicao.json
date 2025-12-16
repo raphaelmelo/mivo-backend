@@ -1,0 +1,48 @@
+{
+    "title": "Canais de Aquisição e Distribuição",
+    "description": "Seu produto é um software B2B Enterprise de alto ticket (R$ 500k/ano). O time de marketing quer focar 100% da verba em TikTok Ads porque \"está na moda\".",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 12,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Canais de Aquisição e Distribuição",
+            "explanation": "Seu produto é um software B2B Enterprise de alto ticket (R$ 500k/ano). O time de marketing quer focar 100% da verba em TikTok Ads porque \"está na moda\".",
+            "example": "O LinkedIn é o canal ideal para B2B Enterprise, enquanto TikTok funciona para produtos B2C de massa como apps de beleza."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual é o princípio fundamental para a escolha de canais de GTM?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O canal deve ser onde o seu ICP (Ideal Customer Profile) está e onde ele busca informação para tomar decisão de compra (Product-Channel Fit).",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "O canal deve ser o mais barato possível.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "O canal deve ser o que tem mais usuários no mundo, independente do perfil.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "O canal deve ser o que o concorrente não está usando.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é a correta. Para B2B Enterprise, canais como Eventos, LinkedIn e Venda Direta (Outbound) costumam funcionar melhor. TikTok pode ser ótimo para B2C, mas o fit depende do cliente, não da moda."
+            }
+        ]
+    }
+}

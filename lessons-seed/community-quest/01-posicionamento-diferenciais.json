@@ -1,0 +1,102 @@
+{
+    "title": "Definição de Posicionamento e Diferenciais",
+    "description": "Você é o PMM de um novo banco digital que está entrando no mercado. O mercado já está saturado (Nubank, Inter, C6). Você precisa definir o Posicionamento Único da sua marca para não ser \"apenas mais um\".",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 15,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "Definição de Posicionamento e Diferenciais",
+            "goal": "Você é o PMM de um novo banco digital que está entrando no mercado. O mercado já está saturado (Nubank, Inter, C6). Você precisa definir o Posicionamento Único da sua marca para não ser \"apenas mais um\"."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Ana",
+                    "role": "Product Manager",
+                    "trait": "Focada em features"
+                },
+                {
+                    "name": "Carlos",
+                    "role": "Tech Lead",
+                    "trait": "Pragmático"
+                },
+                {
+                    "name": "Bia",
+                    "role": "Designer",
+                    "trait": "Criativa"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Definição de Posicionamento e Diferenciais",
+                "question": "Selecione os 3 (três) diferenciais que, juntos, formam um posicionamento forte e defensável para um novo banco digital focado em Gamers (Nicho). (Selecione 3 opções)",
+                "options": [
+                    {
+                        "id": "1",
+                        "text": "Cartão de crédito que brilha no escuro (Feature cosmética)."
+                    },
+                    {
+                        "id": "2",
+                        "text": "Cashback em compras de jogos e hardware (Benefício financeiro relevante ao nicho)."
+                    },
+                    {
+                        "id": "3",
+                        "text": "Atendimento ao cliente via Discord e com linguagem gamer (Canal e Experiência nativos do nicho)."
+                    },
+                    {
+                        "id": "4",
+                        "text": "Taxa zero de manutenção (Igual a todos os outros, não é diferencial)."
+                    },
+                    {
+                        "id": "5",
+                        "text": "Parcerias exclusivas com campeonatos de e-sports para acesso antecipado a ingressos (Acesso/Comunidade)."
+                    },
+                    {
+                        "id": "6",
+                        "text": "App com modo escuro (Dark Mode) (Padrão de mercado)."
+                    },
+                    {
+                        "id": "7",
+                        "text": "Investir todo o orçamento em SEM (Google Ads) em palavras-chave de alta concorrência e alto custo por clique."
+                    },
+                    {
+                        "id": "8",
+                        "text": "Fazer parcerias com grandes revendedores globais (Resellers) antes mesmo de ter o produto validado."
+                    },
+                    {
+                        "id": "9",
+                        "text": "Criar uma conferência física proprietária em Las Vegas para lançar a marca."
+                    },
+                    {
+                        "id": "10",
+                        "text": "Ignorar marketing e focar apenas em desenvolvimento de código (\"Build it and they will come\")."
+                    }
+                ],
+                "chat": [
+                    {
+                        "user": "Ana",
+                        "text": "Cartão que brilha é legal, mas não resolve nenhum problema real do gamer."
+                    },
+                    {
+                        "user": "Carlos",
+                        "text": "Cashback em jogos é diferencial real e mensurável. Faz sentido financeiro."
+                    },
+                    {
+                        "user": "Bia",
+                        "text": "Atendimento via Discord é onde os gamers já estão. Experiência nativa!"
+                    }
+                ]
+            }
+        },
+        "results": {
+            "success": "Excelente! Os diferenciais 2, 3 e 5 formam um posicionamento forte e defensável: benefício financeiro relevante (cashback), experiência nativa do nicho (Discord) e acesso exclusivo (e-sports). Juntos, criam uma proposta única que concorrentes genéricos não podem replicar.",
+            "feedback": "Posicionamento forte combina benefícios tangíveis com experiência única. Evite diferenciais cosméticos ou padrões de mercado que não geram valor real para o cliente."
+        }
+    }
+}

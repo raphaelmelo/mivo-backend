@@ -1,0 +1,102 @@
+{
+    "title": "Estratégias de Crescimento Product-Led Growth (PLG)",
+    "description": "Seu produto é um SaaS B2B de self-service (o usuário pode começar a usar sozinho, como um Miro ou Trello). Você precisa definir as 3 (três) ações essenciais para potencializar uma estratégia de Product-Led Growth (PLG).",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 20,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "Estratégias de Crescimento Product-Led Growth (PLG)",
+            "goal": "Seu produto é um SaaS B2B de self-service (o usuário pode começar a usar sozinho, como um Miro ou Trello). Você precisa definir as 3 (três) ações essenciais para potencializar uma estratégia de Product-Led Growth (PLG)."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Ana",
+                    "role": "Product Manager",
+                    "trait": "Focada em features"
+                },
+                {
+                    "name": "Carlos",
+                    "role": "Tech Lead",
+                    "trait": "Pragmático"
+                },
+                {
+                    "name": "Bia",
+                    "role": "Designer",
+                    "trait": "Criativa"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Estratégias de Crescimento Product-Led Growth (PLG)",
+                "question": "Selecione as 3 (três) táticas cruciais para o sucesso de um modelo PLG. (Selecione 3 opções)",
+                "options": [
+                    {
+                        "id": "1",
+                        "text": "Exigir que o usuário preencha um formulário complexo com 10 campos antes de sequer ver o produto (alta fricção)."
+                    },
+                    {
+                        "id": "2",
+                        "text": "Garantir que o valor principal (Aha! Moment) do produto seja atingido pelo usuário de forma rápida e intuitiva, idealmente em menos de 5 minutos."
+                    },
+                    {
+                        "id": "3",
+                        "text": "Investir a maior parte do orçamento na contratação de um grande time de SDRs (Sales Development Reps) para ligar para todos os usuários free."
+                    },
+                    {
+                        "id": "4",
+                        "text": "Remover barreiras de entrada (Ex: \"Credit Card Required\") e oferecer um plano Freemium ou Free Trial para permitir a adoção orgânica."
+                    },
+                    {
+                        "id": "5",
+                        "text": "Implementar gatilhos dentro do produto (in-app prompts) que convidem o usuário a fazer upgrade (mudar de plano) assim que atingir limites de uso ou descobrir uma feature paga valiosa."
+                    },
+                    {
+                        "id": "6",
+                        "text": "Focar exclusivamente em campanhas de brand awareness na televisão, ignorando as métricas de uso e conversão dentro do produto."
+                    },
+                    {
+                        "id": "7",
+                        "text": "Criar um processo de venda totalmente consultivo, com 5 reuniões antes da ativação da conta."
+                    },
+                    {
+                        "id": "8",
+                        "text": "Criar um manual de usuário em PDF com 300 páginas e pedir para o usuário estudá-lo antes de usar."
+                    },
+                    {
+                        "id": "9",
+                        "text": "Desenvolver o produto apenas para grandes corporações (Enterprise), pois PLG não funciona para SMB."
+                    },
+                    {
+                        "id": "10",
+                        "text": "Focar a experiência de onboarding em explicar a missão e visão da empresa, em vez de mostrar como resolver um problema."
+                    }
+                ],
+                "chat": [
+                    {
+                        "user": "Ana",
+                        "text": "Formulário complexo mata a conversão. O usuário desiste antes de ver valor."
+                    },
+                    {
+                        "user": "Carlos",
+                        "text": "Se o momento eureka demora mais de 5 minutos, perdemos o usuário para sempre."
+                    },
+                    {
+                        "user": "Bia",
+                        "text": "Gatilhos no produto são poderosos! O usuário vê o valor e quer mais naturalmente."
+                    }
+                ]
+            }
+        },
+        "results": {
+            "success": "Perfeito! As táticas 2, 4 e 5 são essenciais para Crescimento Liderado pelo Produto: momento de valor rápido (menos de 5 minutos), baixa fricção de entrada (sem exigir cartão) e gatilhos inteligentes para conversão no momento certo.",
+            "feedback": "Crescimento liderado pelo produto depende de experiência fluida. Elimine barreiras, entregue valor rapidamente e deixe o produto vender a si mesmo."
+        }
+    }
+}

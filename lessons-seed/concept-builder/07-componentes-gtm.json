@@ -1,0 +1,48 @@
+{
+    "title": "Componentes do Go-to-Market (GTM)",
+    "description": "Seu time de Produto argumenta que GTM é apenas \"lançar o produto\". Você precisa usar a estrutura conceitual correta para mostrar que é um plano abrangente.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 16,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Componentes do Go-to-Market (GTM)",
+            "explanation": "Seu time de Produto argumenta que GTM é apenas \"lançar o produto\". Você precisa usar a estrutura conceitual correta para mostrar que é um plano abrangente.",
+            "example": "O Dropbox definiu: Cliente Ideal = profissionais de tecnologia, Modelo de Crescimento = indicação entre usuários, Canais = produto viral + boca a boca."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual é a tríade de elementos fundamentais que compõem a estratégia de Go-to-Market (GTM) para um produto digital, conforme a disciplina de Product Marketing?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "ICP (Ideal Customer Profile), Growth Motion (Modelo de Crescimento) e Canais.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Roadmap, Sprint Planning e Bug Fixing.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Preço, Branding e Cultura Organizacional.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Vendas de Campo (Field Sales), Televendas e Marketing Digital.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A está correta. GTM é a ponte entre Posicionamento e Mercado e é definido pela combinação de Para quem (ICP), Como o cliente irá adotar/pagar (Growth Motion) e Onde você irá encontrá-lo (Canais)."
+            }
+        ]
+    }
+}

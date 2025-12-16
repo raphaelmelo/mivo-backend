@@ -1,0 +1,61 @@
+{
+    "title": "Mensuração e Comunicação de Resultados (PMM e Pipeline)",
+    "description": "Um colega PMM apresentou o resultado da última campanha de GTM, mostrando apenas o ROI (Retorno sobre Investimento). Você precisa dar um feedback sobre como ele pode comunicar um resultado mais completo e estratégico.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 34,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um colega PMM apresentou o resultado da última campanha de GTM, mostrando apenas o ROI (Retorno sobre Investimento). Você precisa dar um feedback sobre como ele pode comunicar um resultado mais completo e estratégico."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Mensuração e Comunicação de Resultados (PMM e Pipeline)",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Qual o conselho mais estratégico que você pode dar ao seu colega, baseado nas boas práticas de Análise e Comunicação de Resultados?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "Explicar que o ROI é apenas a linha de chegada e não indica o caminho. Ele deve associar o ROI com métricas operacionais (Ex: Taxa de Conversão de MQL para SQL, Duração do Ciclo de Vendas) para que o board entenda o que funcionou na estratégia de messaging/ enablement e quais áreas precisam de melhoria.",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "Sugerir que ele apenas use gráficos mais bonitos na apresentação.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "Pedir para que ele esconda o ROI se o resultado for negativo.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Dizer que PMM só precisa focar em métricas de produto (uso), ignorando as métricas financeiras.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Paula Oliveira",
+            "role": "Senior PMM",
+            "feedback": "A opção A é a correta. O ROI sozinho não conta a história completa.",
+            "tips": [
+                "O PMM deve usar a interação entre o ROI e as métricas de funil para oferecer orientação.",
+                "Isso garante que o board entenda a estratégia por trás do resultado."
+            ]
+        }
+    }
+}

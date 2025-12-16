@@ -1,0 +1,63 @@
+{
+    "title": "Posicionamento vs. Comunicação",
+    "description": "Você é PMM em uma startup. O CEO pede para você rodar uma campanha de anúncios no Instagram amanhã para um novo produto. Porém, você nota que ainda não foi definido claramente quem é o cliente ideal, nem qual é o diferencial competitivo real do produto em relação aos concorrentes.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 3,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Você é PMM em uma startup. O CEO pede para você rodar uma campanha de anúncios no Instagram amanhã para um novo produto. Porém, você nota que ainda não foi definido claramente quem é o cliente ideal, nem qual é o diferencial competitivo real do produto em relação aos concorrentes."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Como você deve proceder para garantir o sucesso do lançamento a longo prazo?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Explicar ao CEO que o posicionamento é um documento estratégico que deve vir antes da comunicação. Pausar a campanha para definir rapidamente a Matriz de Posicionamento (alternativas, atributos únicos, valor e segmento) antes de gastar verba de mídia.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Lançar uma campanha de teste pequena (MVP de marketing) para coletar dados iniciais, mas deixar claro que é uma fase de aprendizado para validar hipóteses de posicionamento, e não o lançamento oficial.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Rodar a campanha imediatamente focando apenas nas features mais legais do produto, pois o importante é gerar tráfego e \"alugar um triplex\" na cabeça do cliente de qualquer jeito.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Copiar a mensagem do principal concorrente e rodar a campanha, assumindo que, se funciona para eles, funcionará para o seu produto.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Fernanda Costa",
+            "title": "Diretora de Produto - RD Station",
+            "feedback": {
+                "intro": "A opção A é a ideal porque o posicionamento estratégico deve nutrir as ações de marketing.",
+                "steps": [
+                    "Sem posicionamento, a comunicação é ineficaz (\"posicionamento vem antes da comunicação\").",
+                    "A opção B é aceitável se encarada como validação de hipótese, mas arriscada se o objetivo for \"lançamento\".",
+                    "As outras ignoram a necessidade de estratégia."
+                ],
+                "warning": "Rodar campanhas sem posicionamento claro é queimar dinheiro."
+            }
+        }
+    }
+}

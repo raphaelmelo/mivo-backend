@@ -1,0 +1,48 @@
+{
+    "title": "Escala de Lançamento (Release Tiers)",
+    "description": "Sua equipe de Produto planejou o lançamento de uma nova integração crítica (Ex: Integração com o CRM principal do mercado) que desbloqueia a venda do plano Premium. Você precisa definir a escala de lançamento adequada.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 26,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Escala de Lançamento (Release Tiers)",
+            "explanation": "Sua equipe de Produto planejou o lançamento de uma nova integração crítica (Ex: Integração com o CRM principal do mercado) que desbloqueia a venda do plano Premium. Você precisa definir a escala de lançamento adequada.",
+            "example": "O lançamento do iPhone é Nível 5 (evento global, cobertura de mídia). Uma correção de bug é Nível 1 (apenas notas de versão no aplicativo)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual é a principal característica que diferencia um lançamento de Nível 5 (Major Launch) de todos os outros níveis de lançamento (Nível 1 a 4)?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O Nível 5 exige o envolvimento total de múltiplos stakeholders, com metas de negócio (receita/aquisição) definidas e a obrigatoriedade de Sales Enablement, Awareness e intensa Geração de Pipeline.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Apenas o volume de código alterado no back-end do produto.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "A obrigatoriedade de um press release em todas as mídias, independente do objetivo de negócio.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "O foco exclusivo na satisfação do cliente e correções de pequenos bugs (que seria Nível 1).",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A está correta. A distinção de Nível 5 (Major Launch) está no impacto no negócio e no envolvimento dos times. Ele é reservado para novos produtos, mercados ou ofertas que exigem pipeline generation e que afetam diretamente as metas de receita da empresa."
+            }
+        ]
+    }
+}

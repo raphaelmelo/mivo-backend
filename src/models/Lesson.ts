@@ -17,6 +17,7 @@ export enum DifficultyLevel {
 
 interface LessonAttributes {
   id: number;
+  journeyId: number | null;
   title: string;
   description: string;
   type: LessonType;
@@ -31,10 +32,11 @@ interface LessonAttributes {
   updatedAt?: Date;
 }
 
-interface LessonCreationAttributes extends Optional<LessonAttributes, 'id' | 'isPremium' | 'isPublished'> {}
+interface LessonCreationAttributes extends Optional<LessonAttributes, 'id' | 'journeyId' | 'isPremium' | 'isPublished'> { }
 
 class Lesson extends Model<LessonAttributes, LessonCreationAttributes> implements LessonAttributes {
   public id!: number;
+  public journeyId!: number | null;
   public title!: string;
   public description!: string;
   public type!: LessonType;
@@ -56,6 +58,14 @@ Lesson.init(
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
+    },
+    journeyId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'journeys',
+        key: 'id',
+      },
     },
     title: {
       type: DataTypes.STRING(255),
@@ -116,6 +126,9 @@ Lesson.init(
       },
       {
         fields: ['order'],
+      },
+      {
+        fields: ['journeyId'],
       },
     ],
   }

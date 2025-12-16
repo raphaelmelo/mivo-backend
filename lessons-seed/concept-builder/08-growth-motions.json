@@ -1,0 +1,48 @@
+{
+    "title": "Modelos de Crescimento (Growth Motions)",
+    "description": "Sua empresa está debatendo se deve focar em Vendas Consultivas ou deixar o usuário experimentar o produto antes. Você precisa definir o conceito de Growth Motion (Modelo de Crescimento) para o time.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 17,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Modelos de Crescimento (Growth Motions)",
+            "explanation": "Sua empresa está debatendo se deve focar em Vendas Consultivas ou deixar o usuário experimentar o produto antes. Você precisa definir o conceito de Growth Motion (Modelo de Crescimento) para o time.",
+            "example": "O Canva usa Crescimento Liderado pelo Produto (o usuário experimenta grátis e depois paga). Já a Salesforce usa Crescimento Liderado por Vendas (vendedor liga e demonstra)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual opção melhor descreve o conceito de Growth Motion (ou Modelo de Crescimento) no contexto de GTM para SaaS B2B?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O principal motor que define como o produto será introduzido ao mercado e como a receita será gerada: PLG (Product-Led Growth), SLG (Sales-Led Growth) ou MLG (Marketing-Led Growth).",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "A única métrica que o time de PMM é responsável, focando apenas no Customer Acquisition Cost (CAC).",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "A estratégia de marketing de conteúdo focada em SEO e Inbound Marketing.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "O processo de priorização de features na Sprint, definindo o que será entregue a cada ciclo de desenvolvimento.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é a definição central de Growth Motion. Ele dita a experiência de aquisição e a geração de receita, sendo a escolha estratégica mais importante após o ICP e Posicionamento. O material de GTM detalha as opções (SLG, PLG, Trial, Demo)."
+            }
+        ]
+    }
+}

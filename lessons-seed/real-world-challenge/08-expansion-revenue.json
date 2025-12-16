@@ -1,0 +1,62 @@
+{
+    "title": "Estratégia de Expansão (Expansion Revenue)",
+    "description": "Sua empresa adota um modelo Product-Led Growth (PLG) e possui uma alta taxa de retenção de clientes no plano Básico. No entanto, o ARPU (Receita Média por Usuário) está estagnado, pois poucos clientes fazem upgrade para o plano Pro.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 29,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Sua empresa adota um modelo Product-Led Growth (PLG) e possui uma alta taxa de retenção de clientes no plano Básico. No entanto, o ARPU (Receita Média por Usuário) está estagnado, pois poucos clientes fazem upgrade para o plano Pro."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual é a estratégia de Expansion Revenue mais eficaz para um produto com este perfil (PLG)?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Identificar o \"Ponto de Fricção\" natural no uso do plano Básico (Ex: Limite de projetos, limite de seats de usuário ou uso de dados) e criar in-app prompts e comunicação que desbloqueiem Valor Adicional (funcionalidades premium) exatamente neste ponto de necessidade do cliente.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Ligar para o cliente apenas no final do contrato (anual) para negociar um upsell (abordagem Sales-Led em um ambiente PLG).",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Baixar o preço do plano Básico para atrair mais usuários para a base (o que não resolve a estagnação do ARPU, apenas o volume).",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Criar um produto totalmente novo (cross-sell) e tentar vendê-lo para a base atual sem que haja uma conexão clara com a dor que eles já sentem no produto atual.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Juliana Moreira",
+            "title": "Head de Crescimento - Loft",
+            "feedback": {
+                "intro": "A opção A é a mais eficaz para crescimento liderado pelo produto. A receita de expansão deve ser orgânica.",
+                "steps": [
+                    "O PMM deve criar o empacotamento de modo que o aumento de preço seja percebido como o próximo passo lógico.",
+                    "O upgrade deve acontecer no momento da necessidade, não no final do contrato."
+                ],
+                "warning": "Forçar venda adicional sem contexto gera cancelamento."
+            }
+        }
+    }
+}

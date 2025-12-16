@@ -1,0 +1,48 @@
+{
+    "title": "O Papel do PMM na Geração de Pipeline",
+    "description": "O time de Marketing de Conteúdo está gerando muitos visitantes (Tráfego), mas as vendas estão baixas. Você precisa definir qual é a principal responsabilidade do PMM na Geração de Pipeline e na conversão.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 31,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "O Papel do PMM na Geração de Pipeline",
+            "explanation": "O time de Marketing de Conteúdo está gerando muitos visitantes (Tráfego), mas as vendas estão baixas. Você precisa definir qual é a principal responsabilidade do PMM na Geração de Pipeline e na conversão.",
+            "example": "Se a conversão de Lead Qualificado para Venda subiu de 10% para 20%, é sinal de que o posicionamento e a habilitação de vendas estão funcionando."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual das métricas do funil de vendas/marketing melhor demonstra o impacto direto do Product Marketing no crescimento do negócio (Geração de Pipeline) e reflete a eficácia do messaging?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Conversão de funil MQL/SQL/Venda (Taxas de Conversão e Duração do Ciclo de Vendas), pois reflete a eficácia da segmentação, messaging e Sales Enablement criados pelo PMM.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Alcance (Número de Impressões) e Engajamento (Cliques).",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Taxa de Churn (Evasão de Clientes).",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Custo por Aquisição (CAC), sem considerar o LTV.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A principal responsabilidade do PMM é garantir que a mensagem chegue ao cliente certo, na hora certa. As taxas de conversão entre as etapas do funil (MQL para SQL, Oportunidade para Venda) provam que o posicionamento e a proposta de valor estão sendo bem comunicados e que a equipe de vendas está habilitada (Sales Enabled) para fechar o negócio."
+            }
+        ]
+    }
+}

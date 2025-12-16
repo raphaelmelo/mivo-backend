@@ -1,0 +1,62 @@
+{
+    "title": "Estratégia de Preço para Concorrência com Solução Gratuita",
+    "description": "Sua empresa de software está enfrentando um competidor internacional que oferece uma solução Freemium muito robusta, capturando a maior parte do mercado de entrada (SMB). Você está perdendo market share rapidamente.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 23,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Sua empresa de software está enfrentando um competidor internacional que oferece uma solução Freemium muito robusta, capturando a maior parte do mercado de entrada (SMB). Você está perdendo market share rapidamente."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual a melhor abordagem para revisar sua estratégia de oferta e combater essa concorrência com soluções gratuitas?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Analisar a oferta gratuita e criar um tier de preço intermediário que foque em uma dor específica e não resolvida pelo Freemium concorrente (Ex: Suporte 24x7, Integração customizada), destacando seu diferencial no novo packaging.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Reduzir o preço do seu produto para zero (Freemium) imediatamente, sem qualquer análise, para tentar competir pelo volume, mesmo que isso prejudique a margem.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Ignorar a concorrência gratuita e aumentar o preço, argumentando que o seu produto é para clientes \"Premium\" que não olham para preço.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Entrar em uma guerra de preços baixando o plano mais caro em 50%, forçando o concorrente a reagir.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Amanda Ribeiro",
+            "title": "Head de Produto - Hotmart",
+            "feedback": {
+                "intro": "A opção A é a mais estratégica. Competir com 'grátis' exige diferenciação de valor, não apenas de preço.",
+                "steps": [
+                    "Quando concorrentes entram com ofertas gratuitas melhores, a resposta é atualizar posicionamento, empacotamento e precificação.",
+                    "Reforçar diferenciais não replicáveis, como o suporte local 24x7, é um ótimo recurso para monetizar."
+                ],
+                "warning": "Entrar em guerra de preços sem estratégia destrói a margem."
+            }
+        }
+    }
+}

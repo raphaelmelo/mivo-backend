@@ -1,0 +1,61 @@
+{
+    "title": "Storytelling de Vendas vs. Storytelling da Marca",
+    "description": "Um colega está criando um Pitch Deck de Vendas e focou a primeira metade da apresentação na História da Empresa, Missão e Visão. Você precisa orientá-lo a criar um pitch mais eficaz para a Geração de Pipeline.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 39,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um colega está criando um Pitch Deck de Vendas e focou a primeira metade da apresentação na História da Empresa, Missão e Visão. Você precisa orientá-lo a criar um pitch mais eficaz para a Geração de Pipeline."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Storytelling de Vendas vs. Storytelling da Marca",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Qual correção deve ser feita no storytelling de vendas para ser mais eficaz em gerar convicção e fechar negócios (Pipeline)?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "Reorientar o pitch do \"Nós\" (Empresa) para o \"Eles\" (Cliente). O storytelling de vendas deve focar na Jornada do Cliente (Cliente como Herói), usando a Proposta de Valor do produto como a ferramenta que resolve a dor e entrega o Sucesso Desejado (o happy ending).",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "Aumentar a quantidade de slides sobre a história para reforçar o Branding.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "Focar apenas em slides técnicos, ignorando completamente o storytelling.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Focar no preço, mostrando que a solução é mais barata que a do concorrente.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Felipe Santos",
+            "role": "Senior PMM",
+            "feedback": "A opção A é a correta. O storytelling de vendas deve ser um espelho do cliente.",
+            "tips": [
+                "A Proposta de Valor deve estar no centro, resolvendo o problema.",
+                "A História da Empresa deve ser secundária ou servir apenas para construir autoridade."
+            ]
+        }
+    }
+}

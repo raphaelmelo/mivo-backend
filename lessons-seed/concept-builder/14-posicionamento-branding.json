@@ -1,0 +1,48 @@
+{
+    "title": "Relação entre Posicionamento e Branding",
+    "description": "O time de Design acha que Branding é apenas o logo e as cores. Você precisa diferenciar Posicionamento (PMM) de Branding para mostrar a conexão entre a estratégia de produto e a percepção de mercado.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 32,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Relação entre Posicionamento e Branding",
+            "explanation": "O time de Design acha que Branding é apenas o logo e as cores. Você precisa diferenciar Posicionamento (PMM) de Branding para mostrar a conexão entre a estratégia de produto e a percepção de mercado.",
+            "example": "Nubank posiciona-se como 'banco sem burocracia' (estratégia). A cor roxa, o tom irreverente e a experiência do app constroem o Branding (percepção)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "De acordo com os fundamentos do Marketing, qual a diferença essencial entre Posicionamento do Produto e Branding?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Posicionamento é o que o PMM quer construir na mente do consumidor (o lugar do produto), sendo um documento vivo de hipóteses; Branding é o conjunto de expectativas, lembranças, histórias e relações que geram uma reação química (sentimento) no consumidor.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Posicionamento é apenas o preço, e Branding é apenas o logo.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Branding é o GTM, e Posicionamento é o roadmap de features.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Posicionamento é a Proposta de Valor, e Branding é a Narrativa de Marca.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Enquanto o Posicionamento é a estratégia intencional de onde o produto se encaixa no mercado competitivo (Responsabilidade do PMM), o Branding é a percepção real e o sentimento do cliente, construído através de todos os pontos de contato, incluindo a Narrativa de Marca e a Cultura de Branding."
+            }
+        ]
+    }
+}

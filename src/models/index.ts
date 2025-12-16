@@ -5,12 +5,17 @@ import UserProgress from './UserProgress';
 import Badge from './Badge';
 import UserBadge from './UserBadge';
 import League from './League';
+import Journey from './Journey';
 
 // Define relationships
 
 // User <-> League (Many-to-One)
 User.belongsTo(League, { foreignKey: 'leagueId', as: 'league' });
 League.hasMany(User, { foreignKey: 'leagueId', as: 'users' });
+
+// Journey <-> Lesson (One-to-Many)
+Journey.hasMany(Lesson, { foreignKey: 'journeyId', as: 'lessons' });
+Lesson.belongsTo(Journey, { foreignKey: 'journeyId', as: 'journey' });
 
 // User <-> UserProgress <-> Lesson (Many-to-Many through UserProgress)
 User.hasMany(UserProgress, { foreignKey: 'userId', as: 'progress' });
@@ -53,4 +58,6 @@ export {
   Badge,
   UserBadge,
   League,
+  Journey,
 };
+

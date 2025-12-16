@@ -1,0 +1,70 @@
+{
+    "title": "Messaging Canvas e Hierarquia de Mensagem",
+    "description": "Você está preenchendo o Messaging Canvas para um produto de automação de marketing. Você precisa definir os \"Proof Points\" (Pontos de Prova) para a promessa de \"Aumentar a conversão de leads\".",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 10,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "PMM de automação de marketing",
+            "team": "3 PMMs, 1 Diretor de Produto, 1 Designer",
+            "sprint": "Trimestre de lançamento Q1",
+            "context": "Você está preenchendo o Canvas de Mensagem para um produto de automação de marketing. Você precisa definir os Pontos de Prova para a promessa de 'Aumentar a conversão de leads'."
+        },
+        "rounds": [
+            {
+                "name": "Round 1",
+                "number": 1,
+                "scenario": "O time de vendas precisa de argumentos sólidos para vencer objeções. Sua promessa é 'Aumentar a conversão de leads'. Qual ponto de prova você apresenta?",
+                "question": "Qual das opções abaixo representa um Ponto de Prova forte e validado?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "\"Nossos clientes atuais, como a Empresa X, viram um aumento médio de 30% na conversão em 3 meses usando nossa feature de Lead Scoring.\" (Dado quantitativo + Testemunho real).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "\"Nós somos muito bons e nossa equipe é dedicada.\" (Subjetivo).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "\"Temos a tecnologia mais rápida do mercado.\" (Afirmação técnica sem prova).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "\"Confie em nós, somos líderes.\" (Apelo à autoridade vazio).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "perfect": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia.",
+            "good": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia.",
+            "bad": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia."
+        }
+    }
+}

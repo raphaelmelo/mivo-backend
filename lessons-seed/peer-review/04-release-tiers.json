@@ -1,0 +1,61 @@
+{
+    "title": "Decisão de Lançamento e Release Tiers para Nova Oferta",
+    "description": "Um PMM está planejando o lançamento de um novo plano Enterprise (alto ticket, B2B), com funcionalidades complexas e alto impacto. Ele sugere um lançamento Nível 2 (Sexy Feature), com e-mail marketing e um post no blog.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 24,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um PMM está planejando o lançamento de um novo plano Enterprise (alto ticket, B2B), com funcionalidades complexas e alto impacto. Ele sugere um lançamento Nível 2 (Sexy Feature), com e-mail marketing e um post no blog."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Decisão de Lançamento e Release Tiers para Nova Oferta",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Você precisa revisar a escala de lançamento para essa nova oferta. Qual é a correção ideal para garantir o sucesso do GTM?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "Classificar a nova oferta como Nível 4 (Major Feature/Tier) ou Nível 5 (Major Launch). Explicar que ofertas de alto valor e novos pacotes exigem Sales Enablement completo, campanhas de Awareness e envolvimento de Vendas (Sales-Led) para garantir que o cliente Enterprise entenda o valor e o ROI.",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "Subir o lançamento para Nível 3 (Novidade) e adicionar um webinar, mas manter a comunicação limitada aos clientes atuais.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "Concordar com o Nível 2. Ofertas caras não precisam de muita comunicação, pois o cliente Enterprise já procura ativamente.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Dizer que a nova oferta não precisa de lançamento, apenas de um update na página de preços.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Roberto Lima",
+            "role": "Senior PMM",
+            "feedback": "A opção A está correta. O nível de lançamento deve ser proporcional ao impacto no negócio.",
+            "tips": [
+                "Novas ofertas (e, especialmente, ofertas Enterprise) são classificadas como Nível 4 ou Nível 5 no Release Scale.",
+                "Elas exigem o máximo de esforço de Sales Enablement, Awareness e Pipeline Generation."
+            ]
+        }
+    }
+}

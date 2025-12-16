@@ -1,0 +1,62 @@
+{
+    "title": "Definição de ICP (Ideal Customer Profile)",
+    "description": "Sua equipe de vendas está reclamando que os leads gerados pelo marketing são \"ruins\" e não fecham negócio. Ao analisar, você percebe que o produto (uma ferramenta complexa de análise de dados) está sendo ofertado para pequenas empresas que não possuem time de dados para operá-lo.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 4,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Sua equipe de vendas está reclamando que os leads gerados pelo marketing são \"ruins\" e não fecham negócio. Ao analisar, você percebe que o produto (uma ferramenta complexa de análise de dados) está sendo ofertado para pequenas empresas que não possuem time de dados para operá-lo."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual a melhor ação para corrigir esse desalinhamento de Go-to-Market?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Revisar o ICP focando nas \"Tensões\" e \"Características da empresa\". Identificar que o cliente ideal precisa ter maturidade de dados e redefinir a segmentação para empresas maiores (Mid-market/Enterprise) que valorizem a profundidade da ferramenta.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Criar materiais de treinamento (Sales Enablement) básicos para tentar ensinar as pequenas empresas a usarem dados, tentando educar esse mercado imaturo.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Baixar o preço do produto para que as pequenas empresas aceitem comprar, mesmo que não usem todas as funcionalidades.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Aumentar o investimento em mídia paga para trazer ainda mais volume de leads pequenos, apostando que a conversão virá pela quantidade (força bruta).",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Ricardo Mendes",
+            "title": "Head de Produto - Conta Azul",
+            "feedback": {
+                "intro": "O ICP está errado. O entendimento profundo da audiência e suas tensões é fundamental para o resultado.",
+                "steps": [
+                    "A opção B é aceitável (educação de mercado), mas pode ser cara e demorada se o gap de produto for grande.",
+                    "As outras opções ignoram o fit de mercado."
+                ],
+                "warning": "Vender para o cliente errado gera cancelamento e frustração."
+            }
+        }
+    }
+}

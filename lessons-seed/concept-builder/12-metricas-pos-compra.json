@@ -1,0 +1,48 @@
+{
+    "title": "Métricas de Sucesso Pós-Compra",
+    "description": "Um PMM iniciante está monitorando o sucesso do produto olhando apenas para o número de cliques em anúncios (CPC). Você precisa orientá-lo sobre as métricas mais importantes para o PMM medir o sucesso pós-aquisição.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 27,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Métricas de Sucesso Pós-Compra",
+            "explanation": "Um PMM iniciante está monitorando o sucesso do produto olhando apenas para o número de cliques em anúncios (CPC). Você precisa orientá-lo sobre as métricas mais importantes para o PMM medir o sucesso pós-aquisição.",
+            "example": "A Netflix mede Adoção (quantos novos assinantes assistem na primeira semana) e Retenção (quantos cancelam após o primeiro mês)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual par de métricas abaixo é considerado essencial para o PMM medir o sucesso e a saúde do produto após o cliente efetuar a compra?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Adoption (Adoção/Ativação) e Retention (Retenção/Churn), pois medem se o cliente está, de fato, usando o produto e se está encontrando valor a longo prazo.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "TAM (Total Addressable Market) e SAM (Serviceable Available Market), pois são métricas de tamanho de mercado (Topo do Funil).",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "CAC (Customer Acquisition Cost) e MQL (Marketing Qualified Leads), pois são métricas de aquisição (Meio/Fundo do Funil de MKT).",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "CPC (Cost Per Click) e CTR (Click-Through Rate), pois são métricas de performance de mídia.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A foca nas métricas que indicam o Product-Market Fit na prática. O PMM faz a ponte entre a atração (Acquisition) e a experiência de uso (Adoption/Retention). Sem o valor entregue, não há retenção."
+            }
+        ]
+    }
+}

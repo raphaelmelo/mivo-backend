@@ -1,0 +1,48 @@
+{
+    "title": "Fundamento da Decisão de Precificação em PMM",
+    "description": "Sua equipe de Finanças insiste que o preço deve ser baseado unicamente no custo de desenvolvimento (cost-plus pricing). Você precisa argumentar que PMM usa uma abordagem diferente para definir o preço da oferta.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 21,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Fundamento da Decisão de Precificação em PMM",
+            "explanation": "Sua equipe de Finanças insiste que o preço deve ser baseado unicamente no custo de desenvolvimento (cost-plus pricing). Você precisa argumentar que PMM usa uma abordagem diferente para definir o preço da oferta.",
+            "example": "A Apple cobra mais que concorrentes porque o cliente percebe maior valor (status, ecossistema). O preço reflete o benefício, não o custo de fabricação."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "No contexto de Product Marketing e construção de oferta, qual é o principal fator que deve guiar a decisão de precificação?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Valor percebido pelo cliente (Value-Based Pricing), alinhado com o benefício único do produto, e a capacidade/disposição do cliente em pagar (Willingness-to-Pay).",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Apenas o preço do concorrente direto, visando sempre ser 10% mais barato.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "O custo de aquisição do cliente (CAC), garantindo que o LTV seja apenas um pouco maior que o CAC.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "A soma total do custo de todas as features do produto, mais a margem de lucro desejada pela empresa.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é o fundamento do Value-Based Pricing, a abordagem central do Product Marketing para precificação. O preço deve refletir o valor que o cliente extrai, não apenas o custo interno. O documento de GTM ressalta que embalagem e precificação são decisões tomadas olhando para o cliente - SEMPRE."
+            }
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "title": "Cultura de Aprendizado Contínuo (Fechamento da Trilha GTM)",
+    "description": "Em um mercado de software de alta velocidade, o board questiona o PMM sobre qual o principal mindset que a área deve cultivar para garantir que o GTM não se torne obsoleto rapidamente e continue a impulsionar o crescimento.",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 40,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "PMM apresentando ao Conselho",
+            "team": "Liderança Executiva",
+            "sprint": "Revisão Anual de Estratégia",
+            "context": "Em um mercado de software de alta velocidade, o conselho questiona o PMM sobre qual a principal mentalidade que a área deve cultivar para garantir que a estratégia não se torne obsoleta."
+        },
+        "rounds": [
+            {
+                "name": "Round 1",
+                "number": 1,
+                "scenario": "O conselho quer uma resposta definitiva: qual filosofia guiará o time de Produto e Marketing pelos próximos 3 anos para garantir crescimento sustentável?",
+                "question": "Qual a melhor resposta do PMM para o conselho sobre a mentalidade necessária para sucesso a longo prazo?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O mindset de Cultura de Aprendizado Contínuo, tratando o Posicionamento e GTM como um conjunto de Hipóteses a serem testadas (errar rápido, errar pequeno), garantindo que as decisões de produto e marketing sejam iteradas e evoluídas constantemente baseadas no feedback real do mercado e do cliente.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "O mindset de Cultura de Vendas, garantindo que as metas de receita sejam sempre o foco principal, independentemente do cliente.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "O mindset de Branding Massivo, investindo apenas em campanhas de topo de funil para gerar maior Awareness da marca.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "O mindset de Foco em Features, garantindo que o produto tenha sempre mais funcionalidades que o concorrente.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "perfect": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM.",
+            "good": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM.",
+            "bad": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM."
+        }
+    }
+}

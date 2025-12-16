@@ -1,0 +1,2410 @@
+[
+  {
+    "title": "Definição e Propósito do Product Marketing",
+    "description": "Você acabou de assumir uma posição de liderança em produto e precisa explicar ao time a diferença entre o papel de um PM (Product Manager) e um PMM (Product Marketing Manager) para justificar uma nova contratação.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 1,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Definição e Propósito do Product Marketing",
+        "explanation": "Você acabou de assumir uma posição de liderança em produto e precisa explicar ao time a diferença entre o papel de um PM (Product Manager) e um PMM (Product Marketing Manager) para justificar uma nova contratação.",
+        "example": "Na Apple, o PMM define como o iPhone é posicionado ('o celular mais seguro') enquanto o PM define quais recursos de segurança serão construídos."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Com base nos fundamentos da disciplina, qual das opções abaixo define corretamente a responsabilidade primária de Product Marketing em relação à estratégia do negócio?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Product Marketing conecta os insights de clientes e mercado com o produto e as vendas, definindo o posicionamento, o messaging e a estratégia de Go-to-Market para garantir que o produto alcance os objetivos de negócio.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Product Marketing é focado exclusivamente na priorização de features e na definição da arquitetura de sistemas junto com a engenharia, garantindo a entrega técnica.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Product Marketing é responsável apenas pela gestão de canais de mídia paga e branding institucional, sem conexão direta com as definições do produto.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Product Marketing substitui o time de Vendas, sendo o principal responsável pelo fechamento de contratos e negociação direta com todos os clientes.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A está correta pois PMM atua na interseção, conectando produto e vendas através de insights de mercado, posicionamento e estratégia de GTM. A opção B descreve funções de PM, a C limita a função a \"comunicação\" (o que é um erro comum ), e a D confunde o papel de enablement com a execução de vendas."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Matriz Ansoff e Estratégia de Crescimento",
+    "description": "Sua empresa possui um produto de software já consolidado no mercado de RH. A diretoria quer crescer rápido e decidiu lançar esse mesmo produto para um novo segmento de clientes (indústria farmacêutica), que nunca atenderam antes.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 2,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Matriz Ansoff e Estratégia de Crescimento",
+        "explanation": "Sua empresa possui um produto de software já consolidado no mercado de RH. A diretoria quer crescer rápido e decidiu lançar esse mesmo produto para um novo segmento de clientes (indústria farmacêutica), que nunca atenderam antes.",
+        "example": "O Nubank começou com cartão de crédito (Penetração), expandiu para conta corrente (Extensão), e entrou no México (Desenvolvimento de Mercado)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "De acordo com a Matriz Ansoff, qual é a estratégia de crescimento que a empresa está adotando?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Desenvolvimento de Mercado (Expandir).",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Penetração de Mercado (Ganhar).",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Desenvolvimento de Produto (Estender).",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Diversificação (Reinventar).",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é a correta. Quando levamos um produto existente para um mercado novo, estamos executando uma estratégia de Desenvolvimento de Mercado (Expandir). Penetração seria vender mais do mesmo para os mesmos; Desenvolvimento de Produto seria criar algo novo para clientes atuais; e Diversificação seria tudo novo."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Níveis de Competição",
+    "description": "Você está analisando o cenário competitivo para o seu produto de gestão de tarefas. O time de vendas diz que o único concorrente é o Trello. Você sabe que isso é uma visão míope.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 6,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Níveis de Competição",
+        "explanation": "Você está analisando o cenário competitivo para o seu produto de gestão de tarefas. O time de vendas diz que o único concorrente é o Trello. Você sabe que isso é uma visão míope.",
+        "example": "Para o Slack, o maior concorrente não foi o Teams - foi o email. A maioria das empresas preferia 'não mudar nada' a adotar uma nova ferramenta."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual das opções abaixo representa um exemplo de \"Concorrente Substituto\" (ou Alternativa) para um software de gestão de tarefas, que muitas vezes é o maior vilão do crescimento?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O uso de Post-its na parede, planilhas de Excel ou até mesmo a memória humana (o \"não fazer nada\").",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "O Asana ou Monday.com (outros softwares de gestão).",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Uma empresa que vende cadeiras de escritório.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "O Google Ads.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é correta. Concorrentes diretos (Opção B) são óbvios. O PMM estratégico olha para os substitutos (o status quo), pois muitas vezes o cliente deixa de comprar seu software não para ir para o concorrente, mas para continuar usando o Excel de graça."
+        }
+      ]
+    }
+  },
+  {
+    "title": "O PMM como Storyteller",
+    "description": "Seu CEO pediu para você criar o deck de vendas do novo produto. Ele quer começar a apresentação falando sobre o ano de fundação da empresa, o número de escritórios e os prêmios ganhos.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 7,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "O PMM como Storyteller",
+        "explanation": "Seu CEO pediu para você criar o deck de vendas do novo produto. Ele quer começar a apresentação falando sobre o ano de fundação da empresa, o número de escritórios e os prêmios ganhos.",
+        "example": "A Nike não vende tênis, vende a sensação de vitória. O slogan 'Apenas Faça' coloca o atleta como herói, não a marca."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual é o erro fundamental dessa abordagem de storytelling e qual a correção baseada na Jornada do Herói aplicada a vendas?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O erro é colocar a empresa como o Herói. A correção é colocar o Cliente como o Herói (Luke Skywalker), que tem um problema, e a Empresa/Produto como o Guia (Yoda) que fornece o plano e a ferramenta para o sucesso.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "O erro é não falar o suficiente sobre as features técnicas logo no primeiro slide.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "O erro é usar slides; deveria ser um vídeo institucional.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Não há erro. Clientes compram credibilidade institucional antes de qualquer coisa.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A resume a essência do Storytelling moderno de vendas. Ninguém se importa com a sua empresa até entenderem como você pode ajudá-los a vencer seus próprios desafios. O cliente é o protagonista."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Estrutura de Campanha de Lançamento",
+    "description": "Você precisa planejar o lançamento de uma feature pequena (uma melhoria de UX). O time de marketing quer fazer um evento presencial para isso.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 11,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Estrutura de Campanha de Lançamento",
+        "explanation": "Você precisa planejar o lançamento de uma feature pequena (uma melhoria de UX). O time de marketing quer fazer um evento presencial para isso.",
+        "example": "A Apple faz evento mundial para iPhone (Tier 1), mas lança nova cor de MacBook apenas com post no site (Tier 4)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual conceito de GTM ajuda a definir o tamanho do esforço de marketing para cada lançamento, evitando desperdício de recursos?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A Matriz de Tiers de Lançamento (Tier 1 a Tier 4), que classifica o lançamento baseada no impacto para o negócio e na novidade para o cliente.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "A regra de que todo lançamento deve ter press release.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "O orçamento anual de marketing dividido por 12 meses.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "A opinião do CEO sobre o que é legal.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é a correta. Nem tudo merece um evento. Features pequenas (Tier 3 ou 4) merecem apenas um changelog ou in-app message. Grandes produtos (Tier 1) merecem eventos. O PMM é o guardião dessa priorização."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Canais de Aquisição e Distribuição",
+    "description": "Seu produto é um software B2B Enterprise de alto ticket (R$ 500k/ano). O time de marketing quer focar 100% da verba em TikTok Ads porque \"está na moda\".",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 12,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Canais de Aquisição e Distribuição",
+        "explanation": "Seu produto é um software B2B Enterprise de alto ticket (R$ 500k/ano). O time de marketing quer focar 100% da verba em TikTok Ads porque \"está na moda\".",
+        "example": "O LinkedIn é o canal ideal para B2B Enterprise, enquanto TikTok funciona para produtos B2C de massa como apps de beleza."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual é o princípio fundamental para a escolha de canais de GTM?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O canal deve ser onde o seu ICP (Ideal Customer Profile) está e onde ele busca informação para tomar decisão de compra (Product-Channel Fit).",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "O canal deve ser o mais barato possível.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "O canal deve ser o que tem mais usuários no mundo, independente do perfil.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "O canal deve ser o que o concorrente não está usando.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é a correta. Para B2B Enterprise, canais como Eventos, LinkedIn e Venda Direta (Outbound) costumam funcionar melhor. TikTok pode ser ótimo para B2C, mas o fit depende do cliente, não da moda."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Componentes do Go-to-Market (GTM)",
+    "description": "Seu time de Produto argumenta que GTM é apenas \"lançar o produto\". Você precisa usar a estrutura conceitual correta para mostrar que é um plano abrangente.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 16,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Componentes do Go-to-Market (GTM)",
+        "explanation": "Seu time de Produto argumenta que GTM é apenas \"lançar o produto\". Você precisa usar a estrutura conceitual correta para mostrar que é um plano abrangente.",
+        "example": "O Dropbox definiu: Cliente Ideal = profissionais de tecnologia, Modelo de Crescimento = indicação entre usuários, Canais = produto viral + boca a boca."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual é a tríade de elementos fundamentais que compõem a estratégia de Go-to-Market (GTM) para um produto digital, conforme a disciplina de Product Marketing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "ICP (Ideal Customer Profile), Growth Motion (Modelo de Crescimento) e Canais.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Roadmap, Sprint Planning e Bug Fixing.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Preço, Branding e Cultura Organizacional.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Vendas de Campo (Field Sales), Televendas e Marketing Digital.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A está correta. GTM é a ponte entre Posicionamento e Mercado e é definido pela combinação de Para quem (ICP), Como o cliente irá adotar/pagar (Growth Motion) e Onde você irá encontrá-lo (Canais)."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Modelos de Crescimento (Growth Motions)",
+    "description": "Sua empresa está debatendo se deve focar em Vendas Consultivas ou deixar o usuário experimentar o produto antes. Você precisa definir o conceito de Growth Motion (Modelo de Crescimento) para o time.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 17,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Modelos de Crescimento (Growth Motions)",
+        "explanation": "Sua empresa está debatendo se deve focar em Vendas Consultivas ou deixar o usuário experimentar o produto antes. Você precisa definir o conceito de Growth Motion (Modelo de Crescimento) para o time.",
+        "example": "O Canva usa Crescimento Liderado pelo Produto (o usuário experimenta grátis e depois paga). Já a Salesforce usa Crescimento Liderado por Vendas (vendedor liga e demonstra)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual opção melhor descreve o conceito de Growth Motion (ou Modelo de Crescimento) no contexto de GTM para SaaS B2B?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O principal motor que define como o produto será introduzido ao mercado e como a receita será gerada: PLG (Product-Led Growth), SLG (Sales-Led Growth) ou MLG (Marketing-Led Growth).",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "A única métrica que o time de PMM é responsável, focando apenas no Customer Acquisition Cost (CAC).",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "A estratégia de marketing de conteúdo focada em SEO e Inbound Marketing.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "O processo de priorização de features na Sprint, definindo o que será entregue a cada ciclo de desenvolvimento.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é a definição central de Growth Motion. Ele dita a experiência de aquisição e a geração de receita, sendo a escolha estratégica mais importante após o ICP e Posicionamento. O material de GTM detalha as opções (SLG, PLG, Trial, Demo)."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Fundamento da Decisão de Precificação em PMM",
+    "description": "Sua equipe de Finanças insiste que o preço deve ser baseado unicamente no custo de desenvolvimento (cost-plus pricing). Você precisa argumentar que PMM usa uma abordagem diferente para definir o preço da oferta.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 21,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Fundamento da Decisão de Precificação em PMM",
+        "explanation": "Sua equipe de Finanças insiste que o preço deve ser baseado unicamente no custo de desenvolvimento (cost-plus pricing). Você precisa argumentar que PMM usa uma abordagem diferente para definir o preço da oferta.",
+        "example": "A Apple cobra mais que concorrentes porque o cliente percebe maior valor (status, ecossistema). O preço reflete o benefício, não o custo de fabricação."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "No contexto de Product Marketing e construção de oferta, qual é o principal fator que deve guiar a decisão de precificação?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Valor percebido pelo cliente (Value-Based Pricing), alinhado com o benefício único do produto, e a capacidade/disposição do cliente em pagar (Willingness-to-Pay).",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Apenas o preço do concorrente direto, visando sempre ser 10% mais barato.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "O custo de aquisição do cliente (CAC), garantindo que o LTV seja apenas um pouco maior que o CAC.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "A soma total do custo de todas as features do produto, mais a margem de lucro desejada pela empresa.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é o fundamento do Value-Based Pricing, a abordagem central do Product Marketing para precificação. O preço deve refletir o valor que o cliente extrai, não apenas o custo interno. O documento de GTM ressalta que embalagem e precificação são decisões tomadas olhando para o cliente - SEMPRE."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Empacotamento (Packaging) de Produto",
+    "description": "O time de Vendas está confuso com a forma como as features estão organizadas. Eles querem vender \"tudo para todos\" no mesmo preço. Você precisa explicar o conceito de Packaging e seu propósito.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 22,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Empacotamento (Packaging) de Produto",
+        "explanation": "O time de Vendas está confuso com a forma como as features estão organizadas. Eles querem vender \"tudo para todos\" no mesmo preço. Você precisa explicar o conceito de Packaging e seu propósito.",
+        "example": "O Spotify tem planos Individual, Duo e Família. Cada um reflete o valor para diferentes perfis de cliente, criando uma escada natural de expansão."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual o objetivo principal do Empacotamento (Packaging) de um produto SaaS (criar diferentes planos: Básico, Pro, Enterprise)?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Segmentar o mercado, permitindo que diferentes ICPs paguem por planos que refletem o valor que recebem (monetizar valor), e criar uma jornada de upsell clara para o cliente.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Garantir que todos os clientes usem 100% das features disponíveis.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Limitar a visibilidade do produto no mercado, focando apenas no plano mais caro.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Aumentar a complexidade da decisão de compra para que o cliente se sinta compelido a falar com um vendedor.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A resume o conceito de Packaging. Ele é uma ferramenta estratégica para monetizar valor de forma progressiva (do plano mais simples ao mais avançado) e criar uma clara diferenciação entre segmentos de clientes e seus respectivos níveis de necessidade e orçamento."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Escala de Lançamento (Release Tiers)",
+    "description": "Sua equipe de Produto planejou o lançamento de uma nova integração crítica (Ex: Integração com o CRM principal do mercado) que desbloqueia a venda do plano Premium. Você precisa definir a escala de lançamento adequada.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 26,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Escala de Lançamento (Release Tiers)",
+        "explanation": "Sua equipe de Produto planejou o lançamento de uma nova integração crítica (Ex: Integração com o CRM principal do mercado) que desbloqueia a venda do plano Premium. Você precisa definir a escala de lançamento adequada.",
+        "example": "O lançamento do iPhone é Nível 5 (evento global, cobertura de mídia). Uma correção de bug é Nível 1 (apenas notas de versão no aplicativo)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual é a principal característica que diferencia um lançamento de Nível 5 (Major Launch) de todos os outros níveis de lançamento (Nível 1 a 4)?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O Nível 5 exige o envolvimento total de múltiplos stakeholders, com metas de negócio (receita/aquisição) definidas e a obrigatoriedade de Sales Enablement, Awareness e intensa Geração de Pipeline.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Apenas o volume de código alterado no back-end do produto.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "A obrigatoriedade de um press release em todas as mídias, independente do objetivo de negócio.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "O foco exclusivo na satisfação do cliente e correções de pequenos bugs (que seria Nível 1).",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A está correta. A distinção de Nível 5 (Major Launch) está no impacto no negócio e no envolvimento dos times. Ele é reservado para novos produtos, mercados ou ofertas que exigem pipeline generation e que afetam diretamente as metas de receita da empresa."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Métricas de Sucesso Pós-Compra",
+    "description": "Um PMM iniciante está monitorando o sucesso do produto olhando apenas para o número de cliques em anúncios (CPC). Você precisa orientá-lo sobre as métricas mais importantes para o PMM medir o sucesso pós-aquisição.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 27,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Métricas de Sucesso Pós-Compra",
+        "explanation": "Um PMM iniciante está monitorando o sucesso do produto olhando apenas para o número de cliques em anúncios (CPC). Você precisa orientá-lo sobre as métricas mais importantes para o PMM medir o sucesso pós-aquisição.",
+        "example": "A Netflix mede Adoção (quantos novos assinantes assistem na primeira semana) e Retenção (quantos cancelam após o primeiro mês)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual par de métricas abaixo é considerado essencial para o PMM medir o sucesso e a saúde do produto após o cliente efetuar a compra?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Adoption (Adoção/Ativação) e Retention (Retenção/Churn), pois medem se o cliente está, de fato, usando o produto e se está encontrando valor a longo prazo.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "TAM (Total Addressable Market) e SAM (Serviceable Available Market), pois são métricas de tamanho de mercado (Topo do Funil).",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "CAC (Customer Acquisition Cost) e MQL (Marketing Qualified Leads), pois são métricas de aquisição (Meio/Fundo do Funil de MKT).",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "CPC (Cost Per Click) e CTR (Click-Through Rate), pois são métricas de performance de mídia.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A foca nas métricas que indicam o Product-Market Fit na prática. O PMM faz a ponte entre a atração (Acquisition) e a experiência de uso (Adoption/Retention). Sem o valor entregue, não há retenção."
+        }
+      ]
+    }
+  },
+  {
+    "title": "O Papel do PMM na Geração de Pipeline",
+    "description": "O time de Marketing de Conteúdo está gerando muitos visitantes (Tráfego), mas as vendas estão baixas. Você precisa definir qual é a principal responsabilidade do PMM na Geração de Pipeline e na conversão.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 31,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "O Papel do PMM na Geração de Pipeline",
+        "explanation": "O time de Marketing de Conteúdo está gerando muitos visitantes (Tráfego), mas as vendas estão baixas. Você precisa definir qual é a principal responsabilidade do PMM na Geração de Pipeline e na conversão.",
+        "example": "Se a conversão de Lead Qualificado para Venda subiu de 10% para 20%, é sinal de que o posicionamento e a habilitação de vendas estão funcionando."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual das métricas do funil de vendas/marketing melhor demonstra o impacto direto do Product Marketing no crescimento do negócio (Geração de Pipeline) e reflete a eficácia do messaging?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Conversão de funil MQL/SQL/Venda (Taxas de Conversão e Duração do Ciclo de Vendas), pois reflete a eficácia da segmentação, messaging e Sales Enablement criados pelo PMM.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Alcance (Número de Impressões) e Engajamento (Cliques).",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Taxa de Churn (Evasão de Clientes).",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Custo por Aquisição (CAC), sem considerar o LTV.",
+              "correct": false
+            }
+          ],
+          "explanation": "A principal responsabilidade do PMM é garantir que a mensagem chegue ao cliente certo, na hora certa. As taxas de conversão entre as etapas do funil (MQL para SQL, Oportunidade para Venda) provam que o posicionamento e a proposta de valor estão sendo bem comunicados e que a equipe de vendas está habilitada (Sales Enabled) para fechar o negócio."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Relação entre Posicionamento e Branding",
+    "description": "O time de Design acha que Branding é apenas o logo e as cores. Você precisa diferenciar Posicionamento (PMM) de Branding para mostrar a conexão entre a estratégia de produto e a percepção de mercado.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 32,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Relação entre Posicionamento e Branding",
+        "explanation": "O time de Design acha que Branding é apenas o logo e as cores. Você precisa diferenciar Posicionamento (PMM) de Branding para mostrar a conexão entre a estratégia de produto e a percepção de mercado.",
+        "example": "Nubank posiciona-se como 'banco sem burocracia' (estratégia). A cor roxa, o tom irreverente e a experiência do app constroem o Branding (percepção)."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "De acordo com os fundamentos do Marketing, qual a diferença essencial entre Posicionamento do Produto e Branding?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Posicionamento é o que o PMM quer construir na mente do consumidor (o lugar do produto), sendo um documento vivo de hipóteses; Branding é o conjunto de expectativas, lembranças, histórias e relações que geram uma reação química (sentimento) no consumidor.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Posicionamento é apenas o preço, e Branding é apenas o logo.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Branding é o GTM, e Posicionamento é o roadmap de features.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Posicionamento é a Proposta de Valor, e Branding é a Narrativa de Marca.",
+              "correct": false
+            }
+          ],
+          "explanation": "Enquanto o Posicionamento é a estratégia intencional de onde o produto se encaixa no mercado competitivo (Responsabilidade do PMM), o Branding é a percepção real e o sentimento do cliente, construído através de todos os pontos de contato, incluindo a Narrativa de Marca e a Cultura de Branding."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Inteligência de Mercado Pós-Compra (Análise Competitiva Estratégica)",
+    "description": "O PMM deve usar ferramentas públicas para buscar insights de mercado que vão além das features dos concorrentes. O documento de Análise de Mercado menciona ferramentas como Google Play e Reclame AQUI.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 36,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Inteligência de Mercado Pós-Compra (Análise Competitiva Estratégica)",
+        "explanation": "O PMM deve usar ferramentas públicas para buscar insights de mercado que vão além das features dos concorrentes. O documento de Análise de Mercado menciona ferramentas como Google Play e Reclame AQUI.",
+        "example": "Ao analisar o Reclame Aqui de concorrentes, você descobre que 70% das reclamações são sobre atendimento lento. Isso pode virar seu diferencial: 'Suporte em até 2 horas'."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Além de listar features e preço, qual o principal insight não óbvio que o PMM deve buscar em plataformas de avaliação e reclamação (Ex: Reclame AQUI) para refinar o Posicionamento e a Proposta de Valor?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A Qualidade da Experiência Pós-Venda (CS) e os Pontos de Fricção/Insatisfação não atendidos dos concorrentes, que podem ser transformados em Atributos Únicos e Diferenciais Inegociáveis do seu produto no Posicionamento.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "O volume total de reclamações, focando apenas em ter menos que a concorrência.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "A linguagem de marca mais usada pelos clientes satisfeitos.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "A nota média do aplicativo na loja, que é uma métrica muito superficial.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A demonstra um uso estratégico da inteligência competitiva. O PMM não apenas mapeia o que o concorrente tem, mas principalmente onde ele falha na entrega de valor e experiência (o gap de mercado). Transformar essas falhas em Atributos Únicos no seu GTM é uma estratégia de posicionamento de alto impacto."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Implementação da Linguagem e Cultura de Marca",
+    "description": "O Case Alice no material reforça que Linguagem não é sobre teoria, é sobre prática e consistência. A linguagem é um ativo estratégico no GTM.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 37,
+    "isPublished": true,
+    "content": {
+      "concept": {
+        "emoji": "💡",
+        "title": "Implementação da Linguagem e Cultura de Marca",
+        "explanation": "O Case Alice no material reforça que Linguagem não é sobre teoria, é sobre prática e consistência. A linguagem é um ativo estratégico no GTM.",
+        "example": "A Alice (Saúde) usa linguagem simples e acolhedora em TODOS os pontos de contato: do anúncio ao contrato, do app ao atendimento. Isso cria confiança."
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Qual o papel da Linguagem de Marca (Identidade Verbal) na execução do Go-to-Market, especialmente na fase de Adoção do cliente?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Garantir que o Tom de Voz e o Messaging sejam consistentes em todos os Pontos de Contato, desde o anúncio que atrai o lead até a mensagem in-app que guia a Adoção, reforçando o Posicionamento Único e criando uma experiência coesa e memorável.",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Ser usada apenas em campanhas de Awareness em TV e rádio, para grandes audiências.",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Servir apenas para o time de Suporte ao Cliente lidar com reclamações de forma mais educada.",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Substituir a Proposta de Valor, pois uma marca bem falada não precisa de clareza sobre o valor entregue.",
+              "correct": false
+            }
+          ],
+          "explanation": "A opção A é a mais completa. A linguagem é o veículo do posicionamento. A consistência da linguagem em toda a jornada (AWARENESS -> ADOPTION) é o que constrói a Cultura de Branding e diferencia a marca na percepção do cliente."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Posicionamento vs. Comunicação",
+    "description": "Você é PMM em uma startup. O CEO pede para você rodar uma campanha de anúncios no Instagram amanhã para um novo produto. Porém, você nota que ainda não foi definido claramente quem é o cliente ideal, nem qual é o diferencial competitivo real do produto em relação aos concorrentes.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 3,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Você é PMM em uma startup. O CEO pede para você rodar uma campanha de anúncios no Instagram amanhã para um novo produto. Porém, você nota que ainda não foi definido claramente quem é o cliente ideal, nem qual é o diferencial competitivo real do produto em relação aos concorrentes."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Como você deve proceder para garantir o sucesso do lançamento a longo prazo?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Explicar ao CEO que o posicionamento é um documento estratégico que deve vir antes da comunicação. Pausar a campanha para definir rapidamente a Matriz de Posicionamento (alternativas, atributos únicos, valor e segmento) antes de gastar verba de mídia.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Lançar uma campanha de teste pequena (MVP de marketing) para coletar dados iniciais, mas deixar claro que é uma fase de aprendizado para validar hipóteses de posicionamento, e não o lançamento oficial.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Rodar a campanha imediatamente focando apenas nas features mais legais do produto, pois o importante é gerar tráfego e \"alugar um triplex\" na cabeça do cliente de qualquer jeito.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Copiar a mensagem do principal concorrente e rodar a campanha, assumindo que, se funciona para eles, funcionará para o seu produto.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Fernanda Costa",
+        "title": "Diretora de Produto - RD Station",
+        "feedback": {
+          "intro": "A opção A é a ideal porque o posicionamento estratégico deve nutrir as ações de marketing.",
+          "steps": [
+            "Sem posicionamento, a comunicação é ineficaz (\"posicionamento vem antes da comunicação\").",
+            "A opção B é aceitável se encarada como validação de hipótese, mas arriscada se o objetivo for \"lançamento\".",
+            "As outras ignoram a necessidade de estratégia."
+          ],
+          "warning": "Rodar campanhas sem posicionamento claro é queimar dinheiro."
+        }
+      }
+    }
+  },
+  {
+    "title": "Definição de ICP (Ideal Customer Profile)",
+    "description": "Sua equipe de vendas está reclamando que os leads gerados pelo marketing são \"ruins\" e não fecham negócio. Ao analisar, você percebe que o produto (uma ferramenta complexa de análise de dados) está sendo ofertado para pequenas empresas que não possuem time de dados para operá-lo.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 4,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Sua equipe de vendas está reclamando que os leads gerados pelo marketing são \"ruins\" e não fecham negócio. Ao analisar, você percebe que o produto (uma ferramenta complexa de análise de dados) está sendo ofertado para pequenas empresas que não possuem time de dados para operá-lo."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual a melhor ação para corrigir esse desalinhamento de Go-to-Market?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Revisar o ICP focando nas \"Tensões\" e \"Características da empresa\". Identificar que o cliente ideal precisa ter maturidade de dados e redefinir a segmentação para empresas maiores (Mid-market/Enterprise) que valorizem a profundidade da ferramenta.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Criar materiais de treinamento (Sales Enablement) básicos para tentar ensinar as pequenas empresas a usarem dados, tentando educar esse mercado imaturo.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Baixar o preço do produto para que as pequenas empresas aceitem comprar, mesmo que não usem todas as funcionalidades.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Aumentar o investimento em mídia paga para trazer ainda mais volume de leads pequenos, apostando que a conversão virá pela quantidade (força bruta).",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Ricardo Mendes",
+        "title": "Head de Produto - Conta Azul",
+        "feedback": {
+          "intro": "O ICP está errado. O entendimento profundo da audiência e suas tensões é fundamental para o resultado.",
+          "steps": [
+            "A opção B é aceitável (educação de mercado), mas pode ser cara e demorada se o gap de produto for grande.",
+            "As outras opções ignoram o fit de mercado."
+          ],
+          "warning": "Vender para o cliente errado gera cancelamento e frustração."
+        }
+      }
+    }
+  },
+  {
+    "title": "Contrato Alice vs. Concorrente Tradicional",
+    "description": "Você é PMM da Alice (Healthtech). O mercado de planos de saúde é conhecido por contratos cheios de \"letras miúdas\" e burocracia. Você precisa definir como comunicar o contrato da Alice para reforçar o posicionamento de transparência e foco no membro.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 8,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Você é PMM da Alice (Healthtech). O mercado de planos de saúde é conhecido por contratos cheios de \"letras miúdas\" e burocracia. Você precisa definir como comunicar o contrato da Alice para reforçar o posicionamento de transparência e foco no membro."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual a melhor estratégia de comunicação para transformar um documento legal (contrato) em um ativo de marketing?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reescrever a comunicação do contrato eliminando o \"juridiquês\", usando linguagem humana, direta e transparente, e destacar isso na campanha de lançamento como uma prova do valor \"Sem Pegadinhas\".",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Manter o contrato padrão de mercado para garantir segurança jurídica total, e focar o marketing apenas nas fotos bonitas do app.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Esconder o contrato até o último momento da assinatura para não assustar o cliente.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Criar um contrato fictício de marketing que não tem validade legal.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Guilherme Lopes",
+        "title": "VP de Produto - Alice Saúde",
+        "feedback": {
+          "intro": "A opção A é a correta e reflete o caso real da Alice.",
+          "steps": [
+            "O posicionamento não é apenas o que se diz, mas onde se toca o cliente.",
+            "Transformar pontos de fricção (contrato chato) em pontos de encantamento (transparência) é a essência de um PMM que entende a experiência completa."
+          ],
+          "warning": "Ignorar a experiência legal pode minar a confiança da marca."
+        }
+      }
+    }
+  },
+  {
+    "title": "Lançamento sem Sales Enablement",
+    "description": "O time de Produto lançou uma feature incrível ontem. Hoje, um cliente ligou para o suporte perguntando como usar, e o atendente respondeu: \"Não sei do que você está falando, não fui avisado\". O time de Vendas também não sabe vender a novidade.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 13,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "O time de Produto lançou uma feature incrível ontem. Hoje, um cliente ligou para o suporte perguntando como usar, e o atendente respondeu: \"Não sei do que você está falando, não fui avisado\". O time de Vendas também não sabe vender a novidade."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "O que falhou no processo de GTM e qual a correção imediata?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Falha de Enablement Interno. A correção é criar um processo de \"Internal Launch\" (Lançamento Interno) que aconteça ANTES do lançamento externo, treinando Suporte, Vendas e CS com FAQs, Scripts e Demos.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "A culpa é do suporte que não lê os e-mails da empresa.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Desligar a feature até que todos aprendam sozinhos.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Enviar um PDF de 50 páginas para todos lerem hoje à noite.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Carla Santos",
+        "title": "Gerente de Produto - TOTVS",
+        "feedback": {
+          "intro": "A opção A é a correta. O lançamento começa dentro de casa.",
+          "steps": [
+            "Se seu time não comprou e não entendeu o produto, o mercado também não vai.",
+            "Habilitação interna é garantir que todos na empresa saibam contar a mesma história."
+          ],
+          "warning": "Lançar para fora sem lançar para dentro é receita para o caos no atendimento."
+        }
+      }
+    }
+  },
+  {
+    "title": "Seleção de Canais e Adaptação de Mensagem",
+    "description": "Você é PMM de um software de gestão jurídica (B2B, alta complexidade e ticket). O time de Marketing copiou a mensagem do Instagram para rodar no LinkedIn, focando em fotos do escritório e memes. Os resultados de MQL estão baixos.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 18,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Você é PMM de um software de gestão jurídica (B2B, alta complexidade e ticket). O time de Marketing copiou a mensagem do Instagram para rodar no LinkedIn, focando em fotos do escritório e memes. Os resultados de MQL estão baixos."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "O que deve ser corrigido na estratégia de canais para este perfil de produto?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Adaptar a mensagem para o contexto do canal e público. Mudar o foco do LinkedIn para conteúdo profissional, relevante para decisores jurídicos (artigos sobre compliance/produtividade) e reduzir drasticamente a exposição em canais focados em entretenimento, como Instagram.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Apenas trocar o copy dos anúncios do LinkedIn para um tom mais sério, mantendo a mesma estratégia visual e de canal.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Continuar investindo pesado no Instagram com memes, pois o público-alvo (advogados) também está lá e precisa se divertir.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Abandonar o LinkedIn, pois ele é caro, e focar apenas em SEO (Busca Orgânica), já que a decisão de compra é complexa e precisa ser estudada.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Lucas Oliveira",
+        "title": "Diretor de Marketing - Pipefy",
+        "feedback": {
+          "intro": "A opção A é a ideal. O contexto do canal importa tanto quanto a mensagem.",
+          "steps": [
+            "O material de Estratégia de Campanha ressalta a importância de adaptar-se aos diferentes públicos e setores.",
+            "Um produto de alta complexidade (jurídico) exige canais e mensagens profissionais no LinkedIn e conteúdo educativo/sério."
+          ],
+          "warning": "Usar a mensagem errada no canal certo é desperdício de oportunidade."
+        }
+      }
+    }
+  },
+  {
+    "title": "Estratégia de Preço para Concorrência com Solução Gratuita",
+    "description": "Sua empresa de software está enfrentando um competidor internacional que oferece uma solução Freemium muito robusta, capturando a maior parte do mercado de entrada (SMB). Você está perdendo market share rapidamente.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 23,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Sua empresa de software está enfrentando um competidor internacional que oferece uma solução Freemium muito robusta, capturando a maior parte do mercado de entrada (SMB). Você está perdendo market share rapidamente."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual a melhor abordagem para revisar sua estratégia de oferta e combater essa concorrência com soluções gratuitas?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Analisar a oferta gratuita e criar um tier de preço intermediário que foque em uma dor específica e não resolvida pelo Freemium concorrente (Ex: Suporte 24x7, Integração customizada), destacando seu diferencial no novo packaging.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Reduzir o preço do seu produto para zero (Freemium) imediatamente, sem qualquer análise, para tentar competir pelo volume, mesmo que isso prejudique a margem.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar a concorrência gratuita e aumentar o preço, argumentando que o seu produto é para clientes \"Premium\" que não olham para preço.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Entrar em uma guerra de preços baixando o plano mais caro em 50%, forçando o concorrente a reagir.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Amanda Ribeiro",
+        "title": "Head de Produto - Hotmart",
+        "feedback": {
+          "intro": "A opção A é a mais estratégica. Competir com 'grátis' exige diferenciação de valor, não apenas de preço.",
+          "steps": [
+            "Quando concorrentes entram com ofertas gratuitas melhores, a resposta é atualizar posicionamento, empacotamento e precificação.",
+            "Reforçar diferenciais não replicáveis, como o suporte local 24x7, é um ótimo recurso para monetizar."
+          ],
+          "warning": "Entrar em guerra de preços sem estratégia destrói a margem."
+        }
+      }
+    }
+  },
+  {
+    "title": "Desafio de Engajamento e Aha! Moment",
+    "description": "Você acabou de lançar um novo plano Trial (teste grátis) e 60% dos usuários não retornam ao produto após o primeiro dia. O time de Produto acredita que a solução é construir mais features.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 28,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Você acabou de lançar um novo plano Trial (teste grátis) e 60% dos usuários não retornam ao produto após o primeiro dia. O time de Produto acredita que a solução é construir mais features."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual é a ação mais estratégica do PMM para diagnosticar e resolver esse problema de abandono inicial na experiência Product-Led?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mapear a Jornada de Uso do cliente para identificar o \"Aha! Moment\" (o momento de valor principal) e redesenhar o onboarding (com o time de Produto) para garantir que o usuário atinja esse momento nos primeiros minutos de uso, reduzindo o tempo para a percepção de valor.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Enviar pop-ups com notificações genéricas e agressivas no desktop para forçar o retorno do usuário.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Reduzir o preço do produto imediatamente para incentivar o cliente a ficar.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Construir uma feature não relacionada ao onboarding e Aha! Moment, apenas para mostrar que o produto está evoluindo.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Bruno Ferreira",
+        "title": "VP de Produto - Resultados Digitais",
+        "feedback": {
+          "intro": "A opção A é a correta. O Momento Eureka é a chave da retenção.",
+          "steps": [
+            "O PMM deve trabalhar com o Produto para mapear a jornada.",
+            "Garantir que o valor prometido pelo marketing seja entregue o mais rápido possível na integração inicial."
+          ],
+          "warning": "Construir funcionalidades sem resolver a integração inicial é como encher um balde furado."
+        }
+      }
+    }
+  },
+  {
+    "title": "Estratégia de Expansão (Expansion Revenue)",
+    "description": "Sua empresa adota um modelo Product-Led Growth (PLG) e possui uma alta taxa de retenção de clientes no plano Básico. No entanto, o ARPU (Receita Média por Usuário) está estagnado, pois poucos clientes fazem upgrade para o plano Pro.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 29,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Sua empresa adota um modelo Product-Led Growth (PLG) e possui uma alta taxa de retenção de clientes no plano Básico. No entanto, o ARPU (Receita Média por Usuário) está estagnado, pois poucos clientes fazem upgrade para o plano Pro."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual é a estratégia de Expansion Revenue mais eficaz para um produto com este perfil (PLG)?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Identificar o \"Ponto de Fricção\" natural no uso do plano Básico (Ex: Limite de projetos, limite de seats de usuário ou uso de dados) e criar in-app prompts e comunicação que desbloqueiem Valor Adicional (funcionalidades premium) exatamente neste ponto de necessidade do cliente.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Ligar para o cliente apenas no final do contrato (anual) para negociar um upsell (abordagem Sales-Led em um ambiente PLG).",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Baixar o preço do plano Básico para atrair mais usuários para a base (o que não resolve a estagnação do ARPU, apenas o volume).",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Criar um produto totalmente novo (cross-sell) e tentar vendê-lo para a base atual sem que haja uma conexão clara com a dor que eles já sentem no produto atual.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Juliana Moreira",
+        "title": "Head de Crescimento - Loft",
+        "feedback": {
+          "intro": "A opção A é a mais eficaz para crescimento liderado pelo produto. A receita de expansão deve ser orgânica.",
+          "steps": [
+            "O PMM deve criar o empacotamento de modo que o aumento de preço seja percebido como o próximo passo lógico.",
+            "O upgrade deve acontecer no momento da necessidade, não no final do contrato."
+          ],
+          "warning": "Forçar venda adicional sem contexto gera cancelamento."
+        }
+      }
+    }
+  },
+  {
+    "title": "Geração de Pipeline através de Habilitação de Vendas (Sales Enablement)",
+    "description": "O time de Vendas reclama que os leads (MQLs) gerados pelo Marketing de Conteúdo não estão qualificados (não se tornam SQLs) porque não têm o conhecimento necessário para a próxima etapa da jornada.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 33,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "O time de Vendas reclama que os leads (MQLs) gerados pelo Marketing de Conteúdo não estão qualificados (não se tornam SQLs) porque não têm o conhecimento necessário para a próxima etapa da jornada."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Qual recurso de Sales Enablement, de responsabilidade primária do PMM, deve ser priorizado para resolver esse problema de baixa qualificação e impulsionar o pipeline?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A criação de Battlecards focados nos Pontos de Dor e Objeções dos MQLs, ensinando o vendedor a qualificar o lead convertendo o valor da Proposta em ROI (Retorno sobre Investimento) para a dor específica do ICP.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Uma planilha mensal de metas, focando apenas no número de ligações que o vendedor deve fazer.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Um webinar focado apenas nas features técnicas do produto.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "A contratação de um novo time de Marketing de Conteúdo.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Marcos Almeida",
+        "title": "Diretor Comercial - Movile",
+        "feedback": {
+          "intro": "A opção A é a correta. Habilitação de Vendas é capacitação.",
+          "steps": [
+            "Entregar Fichas Comparativas foca em Objeções e Retorno sobre Investimento.",
+            "Isso dá ao vendedor ferramentas práticas para direcionar a conversa e qualificar o cliente potencial."
+          ],
+          "warning": "Leads sem qualificação são apenas números de vaidade."
+        }
+      }
+    }
+  },
+  {
+    "title": "Estruturando o Feedback Loop para o Produto (Pós-Lançamento)",
+    "description": "Após o lançamento de uma nova feature (Nível 3), os dados de Retenção e Expansion Revenue (Receita de Expansão) não se moveram conforme o esperado, indicando que a Hipótese de Valor não se validou.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 38,
+    "isPublished": true,
+    "content": {
+      "context": {
+        "role": "Product Marketing Manager",
+        "team": "Marketing Team",
+        "sprint": "Go-to-Market",
+        "currentWork": "Após o lançamento de uma nova feature (Nível 3), os dados de Retenção e Expansion Revenue (Receita de Expansão) não se moveram conforme o esperado, indicando que a Hipótese de Valor não se validou."
+      },
+      "trigger": {
+        "from": "Stakeholder",
+        "message": "Na reunião de Retrospective (pós-lançamento), qual a atitude mais estratégica do PMM ao interagir com os times de Produto e Engenharia?",
+        "urgency": "high"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Apresentar o fracasso como uma Hipótese de Posicionamento Não Validada, compartilhando dados quantitativos de Adoção/Engajamento e qualitativos (ex: feedback de Vendas/CS) para propor uma Iteração no Posicionamento ou no Aha! Moment da feature no próximo ciclo de desenvolvimento.",
+          "risk": "Low risk",
+          "benefit": "High benefit"
+        },
+        {
+          "id": "b",
+          "text": "Culpabilizar o time de Vendas por não ter feito Sales Enablement adequado.",
+          "risk": "Low risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "c",
+          "text": "Sugerir que a solução é fazer uma campanha de marketing maior e com mais investimento.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        },
+        {
+          "id": "d",
+          "text": "Pedir para que a feature seja removida imediatamente do produto.",
+          "risk": "High risk",
+          "benefit": "Low benefit"
+        }
+      ],
+      "expertFeedback": {
+        "name": "Patrícia Lima",
+        "title": "CPO - Gympass",
+        "feedback": {
+          "intro": "A opção A é a correta. O PMM é a ponte.",
+          "steps": [
+            "O Posicionamento é um conjunto de hipóteses a ser testadas.",
+            "O papel do PMM é trazer a voz e os dados do mercado para o time de Produto, transformando o 'fracasso' em uma descoberta acionável."
+          ],
+          "warning": "Ignorar o retorno do mercado é repetir o erro."
+        }
+      }
+    }
+  },
+  {
+    "title": "Estratégia de Pricing e Modelo de Entrada",
+    "description": "Você é Head de Produto de uma ferramenta B2B Enterprise de alta complexidade e segurança (ex: gestão de riscos bancários). O time de Growth sugere adotar um modelo \"Freemium\" para viralizar, igual ao Slack ou Notion. Você precisa decidir a estratégia de entrada (pricing model).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 5,
+    "isPublished": true,
+    "content": {
+      "setup": {
+        "role": "PMM",
+        "context": "Você é Head de Produto de uma ferramenta B2B Enterprise de alta complexidade e segurança (ex: gestão de riscos bancários). O time de Growth sugere adotar um modelo \"Freemium\" para viralizar, igual ao Slack ou Notion. Você precisa decidir a estratégia de entrada (pricing model)."
+      },
+      "rounds": [
+        {
+          "name": "Round 1",
+          "number": 1,
+          "question": "Considerando a complexidade do produto e o perfil do cliente, qual é a decisão estratégica mais adequada?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rejeitar o Freemium e adotar um modelo de \"Demo\" (Sales-led). Produtos complexos e Enterprise exigem controle da narrativa, onboarding assistido e justificativa de valor através de vendas consultivas, o que o Freemium não entrega.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "b",
+              "text": "Implementar um \"Free Trial\" limitado (ex: 14 dias), mas com forte qualificação na entrada, permitindo que o cliente veja a ferramenta, mas forçando o contato com vendas para implementação real.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "c",
+              "text": "Adotar o Freemium total. Se funcionou para o Slack (produto de colaboração viral), funcionará para gestão de riscos bancários, pois reduz a barreira de entrada.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "d",
+              "text": "Cobrar uma taxa de setup altíssima sem oferecer nem Demo nem Trial, confiando apenas na reputação da marca (brand awareness) para fechar vendas no escuro.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "perfect": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos.",
+        "good": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos.",
+        "bad": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos."
+      }
+    }
+  },
+  {
+    "title": "Messaging Canvas e Hierarquia de Mensagem",
+    "description": "Você está preenchendo o Messaging Canvas para um produto de automação de marketing. Você precisa definir os \"Proof Points\" (Pontos de Prova) para a promessa de \"Aumentar a conversão de leads\".",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 10,
+    "isPublished": true,
+    "content": {
+      "setup": {
+        "role": "PMM de automação de marketing",
+        "team": "3 PMMs, 1 Diretor de Produto, 1 Designer",
+        "sprint": "Trimestre de lançamento Q1",
+        "context": "Você está preenchendo o Canvas de Mensagem para um produto de automação de marketing. Você precisa definir os Pontos de Prova para a promessa de 'Aumentar a conversão de leads'."
+      },
+      "rounds": [
+        {
+          "name": "Round 1",
+          "number": 1,
+          "scenario": "O time de vendas precisa de argumentos sólidos para vencer objeções. Sua promessa é 'Aumentar a conversão de leads'. Qual ponto de prova você apresenta?",
+          "question": "Qual das opções abaixo representa um Ponto de Prova forte e validado?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Nossos clientes atuais, como a Empresa X, viram um aumento médio de 30% na conversão em 3 meses usando nossa feature de Lead Scoring.\" (Dado quantitativo + Testemunho real).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "b",
+              "text": "\"Nós somos muito bons e nossa equipe é dedicada.\" (Subjetivo).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "c",
+              "text": "\"Temos a tecnologia mais rápida do mercado.\" (Afirmação técnica sem prova).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "d",
+              "text": "\"Confie em nós, somos líderes.\" (Apelo à autoridade vazio).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "perfect": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia.",
+        "good": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia.",
+        "bad": "A opção A é um Proof Point. Ele sustenta a promessa de valor com evidências irrefutáveis. Sem proof points, seu messaging é apenas uma promessa vazia."
+      }
+    }
+  },
+  {
+    "title": "Escolha da Métrica de Valor (Value Metric) para Precificação",
+    "description": "Você está lançando um software de colaboração B2B. Você precisa decidir o que será a principal \"Métrica de Valor\" (Value Metric) que guiará a precificação do produto (aquilo pelo que o cliente pagará).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 25,
+    "isPublished": true,
+    "content": {
+      "setup": {
+        "role": "PMM de ferramenta de colaboração B2B",
+        "team": "Produto, Finanças, Vendas",
+        "sprint": "Lançamento Q2 - Precificação",
+        "context": "Você está lançando um software de colaboração B2B. Você precisa decidir qual será a principal Métrica de Valor que guiará a precificação do produto."
+      },
+      "rounds": [
+        {
+          "name": "Round 1",
+          "number": 1,
+          "scenario": "O CFO quer definir a precificação. Vendas prefere preço fixo (mais fácil de vender). Produto quer crescer junto com o sucesso do cliente. Qual métrica você escolhe?",
+          "question": "Qual é a melhor decisão para uma Métrica de Valor em um software de colaboração B2B?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cobrar por \"Usuário Ativo\" (Licença por Assento), pois o sucesso do cliente depende da colaboração e, quanto mais usuários usarem, mais valor será gerado e mais a empresa irá monetizar (Seats).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "b",
+              "text": "Cobrar por \"Número de Projetos Criados\", permitindo que o cliente comece pequeno e pague mais à medida que o uso cresce, mas limitando o uso por usuários.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "c",
+              "text": "Cobrar por \"Faturamento da Empresa Cliente\", pois o preço é desvinculado do uso do software.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "d",
+              "text": "Cobrar um \"Preço Fixo Mensal\" (Flat Fee), pois isso elimina a complexidade, mas impede o crescimento da receita (expansion revenue).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "perfect": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe.",
+        "good": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe.",
+        "bad": "A opção A é a melhor. Para ferramentas de colaboração (Slack, Trello, Jira), o valor é gerado pela rede de usuários. Cobrar por Usuário/Assento Ativo (ou Seats) garante que a monetização cresça junto com a adoção e o valor que o cliente percebe."
+      }
+    }
+  },
+  {
+    "title": "Conexão Branding e Conteúdo/Pipeline",
+    "description": "Você está liderando a estratégia de Content Marketing e precisa que o conteúdo gere leads qualificados (MQLs) e reforce a marca. Você decidiu que o conteúdo será tratado como um Produto em si (Content as a Product).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 35,
+    "isPublished": true,
+    "content": {
+      "setup": {
+        "role": "PMM liderando Marketing de Conteúdo",
+        "team": "2 Redatores, 1 Designer, 1 Especialista SEO",
+        "sprint": "Estratégia Trimestral de Conteúdo",
+        "context": "Você está liderando a estratégia de Marketing de Conteúdo e precisa que o conteúdo gere leads qualificados e reforce a marca. Você decidiu tratar o conteúdo como um Produto em si."
+      },
+      "rounds": [
+        {
+          "name": "Round 1",
+          "number": 1,
+          "scenario": "O time de Vendas quer mais leads (quantidade). O time de Marca quer fortalecer posicionamento (qualidade). O CEO quer resultados rápidos. Como você equilibra?",
+          "question": "Qual a decisão mais alinhada com a mentalidade de 'Conteúdo como Produto'?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Priorizar a qualidade e recorrência do conteúdo (como newsletters, podcasts ou cases) para construir confiança e autoridade (Branding), e usar o PMM para garantir que o messaging esteja focado no Valor e na Proposta do produto, e não apenas em features genéricas.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "b",
+              "text": "Criar 50 artigos de blog genéricos por mês, focando apenas em SEO e volume de tráfego.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "c",
+              "text": "Usar o conteúdo apenas para falar sobre a visão e missão da empresa.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "d",
+              "text": "Focar 100% em mídias pagas (Ads).",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "perfect": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados.",
+        "good": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados.",
+        "bad": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados."
+      }
+    }
+  },
+  {
+    "title": "Cultura de Aprendizado Contínuo (Fechamento da Trilha GTM)",
+    "description": "Em um mercado de software de alta velocidade, o board questiona o PMM sobre qual o principal mindset que a área deve cultivar para garantir que o GTM não se torne obsoleto rapidamente e continue a impulsionar o crescimento.",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 40,
+    "isPublished": true,
+    "content": {
+      "setup": {
+        "role": "PMM apresentando ao Conselho",
+        "team": "Liderança Executiva",
+        "sprint": "Revisão Anual de Estratégia",
+        "context": "Em um mercado de software de alta velocidade, o conselho questiona o PMM sobre qual a principal mentalidade que a área deve cultivar para garantir que a estratégia não se torne obsoleta."
+      },
+      "rounds": [
+        {
+          "name": "Round 1",
+          "number": 1,
+          "scenario": "O conselho quer uma resposta definitiva: qual filosofia guiará o time de Produto e Marketing pelos próximos 3 anos para garantir crescimento sustentável?",
+          "question": "Qual a melhor resposta do PMM para o conselho sobre a mentalidade necessária para sucesso a longo prazo?",
+          "options": [
+            {
+              "id": "a",
+              "text": "O mindset de Cultura de Aprendizado Contínuo, tratando o Posicionamento e GTM como um conjunto de Hipóteses a serem testadas (errar rápido, errar pequeno), garantindo que as decisões de produto e marketing sejam iteradas e evoluídas constantemente baseadas no feedback real do mercado e do cliente.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "b",
+              "text": "O mindset de Cultura de Vendas, garantindo que as metas de receita sejam sempre o foco principal, independentemente do cliente.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "c",
+              "text": "O mindset de Branding Massivo, investindo apenas em campanhas de topo de funil para gerar maior Awareness da marca.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            },
+            {
+              "id": "d",
+              "text": "O mindset de Foco em Features, garantindo que o produto tenha sempre mais funcionalidades que o concorrente.",
+              "impact": {
+                "stakeholders": 0,
+                "users": 0,
+                "revenue": 0
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "perfect": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM.",
+        "good": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM.",
+        "bad": "Adaptabilidade, centralidade no cliente e iteração baseada em dados são vitais. Esta é a chave de ouro que encerra a Trilha GTM."
+      }
+    }
+  },
+  {
+    "title": "Análise de Messaging (Landing Page)",
+    "description": "Um colega PMM criou a copy da Landing Page do novo produto. O título (H1) diz: \"A melhor plataforma de gestão com IA e Machine Learning do mercado\".",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 9,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um colega PMM criou a copy da Landing Page do novo produto. O título (H1) diz: \"A melhor plataforma de gestão com IA e Machine Learning do mercado\"."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Análise de Messaging (Landing Page)",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Você precisa dar um feedback para melhorar a conversão. Qual é o principal problema dessa mensagem?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "A mensagem foca na Feature (IA/Machine Learning) e não no Benefício/Valor para o cliente. O cliente não quer IA, ele quer \"ganhar tempo\" ou \"reduzir erros\". O feedback deve ser: \"Vamos reescrever focando no resultado que o cliente alcança, não na tecnologia que usamos.\"",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "A mensagem está ótima, pois IA é a buzzword do momento e vende sozinha.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "O problema é que falta dizer que é \"em nuvem\".",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Deveria ser mais agressivo e dizer \"A ÚNICA plataforma...\" mesmo que não seja verdade.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Ana Clara Moreira",
+        "role": "Senior PMM",
+        "feedback": "A opção A é a correta. Messaging eficaz traduz features em benefícios claros.",
+        "tips": [
+          "A regra de ouro é o \"So What?\" (E daí?).",
+          "Se sua headline não responde como a vida do cliente melhora, ela é apenas ruído técnico."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Plano de GTM (Canais)",
+    "description": "Um PMM júnior montou o plano de canais para lançar um app de delivery de comida em uma nova cidade. Ele sugeriu gastar 100% do budget em anúncios de rádio local.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 14,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um PMM júnior montou o plano de canais para lançar um app de delivery de comida em uma nova cidade. Ele sugeriu gastar 100% do budget em anúncios de rádio local."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Plano de GTM (Canais)",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Você precisa corrigir a estratégia de canais. Qual é o feedback mais construtivo?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "Sugerir diversificação e foco no digital (onde o usuário baixa o app). Rádio pode ser branding, mas para conversão de app, canais digitais (Social Ads, Search, Influenciadores locais) permitem mensuração direta e download imediato (menor fricção).",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Aprovar o plano, pois rádio atinge muita gente.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sugerir mudar para TV, que é mais caro ainda.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sugerir panfletagem na rua como única estratégia.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Bruno Tavares",
+        "role": "Senior PMM",
+        "feedback": "A opção A é a correta. O canal deve facilitar a ação desejada (download).",
+        "tips": [
+          "Fazer o usuário ouvir no rádio, pegar o celular, digitar o nome e baixar é muita fricção.",
+          "No digital, é um clique."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Alinhamento de Vendas (Sales Enablement)",
+    "description": "Um colega PMM criou um Sales Enablement Kit para o novo produto, que consiste apenas em um PDF de 50 páginas com todas as features técnicas. O time de Vendas reclama que o material é inoperável.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 19,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um colega PMM criou um Sales Enablement Kit para o novo produto, que consiste apenas em um PDF de 50 páginas com todas as features técnicas. O time de Vendas reclama que o material é inoperável."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Alinhamento de Vendas (Sales Enablement)",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Qual é a crítica mais construtiva que você pode dar ao seu colega, segundo as melhores práticas de Product Marketing?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "Explicar que Sales Enablement deve ser prático e focado em cenários de vendas e objeções do cliente, não em features. Sugerir transformar o material em battlecards (comparativos), scripts de demonstração focados em Valor e ROI, e respostas a objeções comuns.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sugerir que ele apenas reduza o PDF para 5 páginas para que os vendedores leiam mais rápido.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Dizer que Sales Enablement é responsabilidade do RH/Treinamento, e não do Product Marketing.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Aconselhar o colega a forçar os vendedores a lerem, pois o material técnico é fundamental e eles precisam se dedicar.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Mariana Costa",
+        "role": "Senior PMM",
+        "feedback": "A opção A é a correção ideal. O PMM é o arquiteto do Sales Enablement.",
+        "tips": [
+          "O objetivo é garantir que a equipe de vendas tenha o que precisa saber e o que precisa dizer para fechar negócios.",
+          "Foque em como posicionar o produto contra a concorrência e responder a objeções, e não apenas em listar features."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Decisão de Lançamento e Release Tiers para Nova Oferta",
+    "description": "Um PMM está planejando o lançamento de um novo plano Enterprise (alto ticket, B2B), com funcionalidades complexas e alto impacto. Ele sugere um lançamento Nível 2 (Sexy Feature), com e-mail marketing e um post no blog.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 24,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um PMM está planejando o lançamento de um novo plano Enterprise (alto ticket, B2B), com funcionalidades complexas e alto impacto. Ele sugere um lançamento Nível 2 (Sexy Feature), com e-mail marketing e um post no blog."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Decisão de Lançamento e Release Tiers para Nova Oferta",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Você precisa revisar a escala de lançamento para essa nova oferta. Qual é a correção ideal para garantir o sucesso do GTM?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "Classificar a nova oferta como Nível 4 (Major Feature/Tier) ou Nível 5 (Major Launch). Explicar que ofertas de alto valor e novos pacotes exigem Sales Enablement completo, campanhas de Awareness e envolvimento de Vendas (Sales-Led) para garantir que o cliente Enterprise entenda o valor e o ROI.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Subir o lançamento para Nível 3 (Novidade) e adicionar um webinar, mas manter a comunicação limitada aos clientes atuais.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Concordar com o Nível 2. Ofertas caras não precisam de muita comunicação, pois o cliente Enterprise já procura ativamente.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Dizer que a nova oferta não precisa de lançamento, apenas de um update na página de preços.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Roberto Lima",
+        "role": "Senior PMM",
+        "feedback": "A opção A está correta. O nível de lançamento deve ser proporcional ao impacto no negócio.",
+        "tips": [
+          "Novas ofertas (e, especialmente, ofertas Enterprise) são classificadas como Nível 4 ou Nível 5 no Release Scale.",
+          "Elas exigem o máximo de esforço de Sales Enablement, Awareness e Pipeline Generation."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Mensuração e Comunicação de Resultados (PMM e Pipeline)",
+    "description": "Um colega PMM apresentou o resultado da última campanha de GTM, mostrando apenas o ROI (Retorno sobre Investimento). Você precisa dar um feedback sobre como ele pode comunicar um resultado mais completo e estratégico.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 34,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um colega PMM apresentou o resultado da última campanha de GTM, mostrando apenas o ROI (Retorno sobre Investimento). Você precisa dar um feedback sobre como ele pode comunicar um resultado mais completo e estratégico."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Mensuração e Comunicação de Resultados (PMM e Pipeline)",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Qual o conselho mais estratégico que você pode dar ao seu colega, baseado nas boas práticas de Análise e Comunicação de Resultados?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "Explicar que o ROI é apenas a linha de chegada e não indica o caminho. Ele deve associar o ROI com métricas operacionais (Ex: Taxa de Conversão de MQL para SQL, Duração do Ciclo de Vendas) para que o board entenda o que funcionou na estratégia de messaging/ enablement e quais áreas precisam de melhoria.",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sugerir que ele apenas use gráficos mais bonitos na apresentação.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Pedir para que ele esconda o ROI se o resultado for negativo.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Dizer que PMM só precisa focar em métricas de produto (uso), ignorando as métricas financeiras.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Paula Oliveira",
+        "role": "Senior PMM",
+        "feedback": "A opção A é a correta. O ROI sozinho não conta a história completa.",
+        "tips": [
+          "O PMM deve usar a interação entre o ROI e as métricas de funil para oferecer orientação.",
+          "Isso garante que o board entenda a estratégia por trás do resultado."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Storytelling de Vendas vs. Storytelling da Marca",
+    "description": "Um colega está criando um Pitch Deck de Vendas e focou a primeira metade da apresentação na História da Empresa, Missão e Visão. Você precisa orientá-lo a criar um pitch mais eficaz para a Geração de Pipeline.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 39,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "persona": "Colleague",
+        "role": "PMM",
+        "scenario": "Um colega está criando um Pitch Deck de Vendas e focou a primeira metade da apresentação na História da Empresa, Missão e Visão. Você precisa orientá-lo a criar um pitch mais eficaz para a Geração de Pipeline."
+      },
+      "analyze": {
+        "artifact": {
+          "type": "document",
+          "title": "Storytelling de Vendas vs. Storytelling da Marca",
+          "sections": [
+            {
+              "title": "Content",
+              "content": "Qual correção deve ser feita no storytelling de vendas para ser mais eficaz em gerar convicção e fechar negócios (Pipeline)?"
+            }
+          ]
+        }
+      },
+      "problems": [
+        {
+          "id": "a",
+          "text": "Reorientar o pitch do \"Nós\" (Empresa) para o \"Eles\" (Cliente). O storytelling de vendas deve focar na Jornada do Cliente (Cliente como Herói), usando a Proposta de Valor do produto como a ferramenta que resolve a dor e entrega o Sucesso Desejado (o happy ending).",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Aumentar a quantidade de slides sobre a história para reforçar o Branding.",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Focar apenas em slides técnicos, ignorando completamente o storytelling.",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Focar no preço, mostrando que a solução é mais barata que a do concorrente.",
+          "correct": false
+        }
+      ],
+      "expertFeedback": {
+        "name": "Felipe Santos",
+        "role": "Senior PMM",
+        "feedback": "A opção A é a correta. O storytelling de vendas deve ser um espelho do cliente.",
+        "tips": [
+          "A Proposta de Valor deve estar no centro, resolvendo o problema.",
+          "A História da Empresa deve ser secundária ou servir apenas para construir autoridade."
+        ]
+      }
+    }
+  },
+  {
+    "title": "Definição de Posicionamento e Diferenciais",
+    "description": "Você é o PMM de um novo banco digital que está entrando no mercado. O mercado já está saturado (Nubank, Inter, C6). Você precisa definir o Posicionamento Único da sua marca para não ser \"apenas mais um\".",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 15,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "mission": "Definição de Posicionamento e Diferenciais",
+        "goal": "Você é o PMM de um novo banco digital que está entrando no mercado. O mercado já está saturado (Nubank, Inter, C6). Você precisa definir o Posicionamento Único da sua marca para não ser \"apenas mais um\"."
+      },
+      "squad": {
+        "members": [
+          {
+            "name": "Ana",
+            "role": "Product Manager",
+            "trait": "Focada em features"
+          },
+          {
+            "name": "Carlos",
+            "role": "Tech Lead",
+            "trait": "Pragmático"
+          },
+          {
+            "name": "Bia",
+            "role": "Designer",
+            "trait": "Criativa"
+          }
+        ]
+      },
+      "challenge": {
+        "day1": {
+          "topic": "Definição de Posicionamento e Diferenciais",
+          "question": "Selecione os 3 (três) diferenciais que, juntos, formam um posicionamento forte e defensável para um novo banco digital focado em Gamers (Nicho). (Selecione 3 opções)",
+          "options": [
+            {
+              "id": "1",
+              "text": "Cartão de crédito que brilha no escuro (Feature cosmética)."
+            },
+            {
+              "id": "2",
+              "text": "Cashback em compras de jogos e hardware (Benefício financeiro relevante ao nicho)."
+            },
+            {
+              "id": "3",
+              "text": "Atendimento ao cliente via Discord e com linguagem gamer (Canal e Experiência nativos do nicho)."
+            },
+            {
+              "id": "4",
+              "text": "Taxa zero de manutenção (Igual a todos os outros, não é diferencial)."
+            },
+            {
+              "id": "5",
+              "text": "Parcerias exclusivas com campeonatos de e-sports para acesso antecipado a ingressos (Acesso/Comunidade)."
+            },
+            {
+              "id": "6",
+              "text": "App com modo escuro (Dark Mode) (Padrão de mercado)."
+            },
+            {
+              "id": "7",
+              "text": "Investir todo o orçamento em SEM (Google Ads) em palavras-chave de alta concorrência e alto custo por clique."
+            },
+            {
+              "id": "8",
+              "text": "Fazer parcerias com grandes revendedores globais (Resellers) antes mesmo de ter o produto validado."
+            },
+            {
+              "id": "9",
+              "text": "Criar uma conferência física proprietária em Las Vegas para lançar a marca."
+            },
+            {
+              "id": "10",
+              "text": "Ignorar marketing e focar apenas em desenvolvimento de código (\"Build it and they will come\")."
+            }
+          ],
+          "chat": [
+            {
+              "user": "Ana",
+              "text": "Cartão que brilha é legal, mas não resolve nenhum problema real do gamer."
+            },
+            {
+              "user": "Carlos",
+              "text": "Cashback em jogos é diferencial real e mensurável. Faz sentido financeiro."
+            },
+            {
+              "user": "Bia",
+              "text": "Atendimento via Discord é onde os gamers já estão. Experiência nativa!"
+            }
+          ]
+        }
+      },
+      "results": {
+        "success": "Excelente! Os diferenciais 2, 3 e 5 formam um posicionamento forte e defensável: benefício financeiro relevante (cashback), experiência nativa do nicho (Discord) e acesso exclusivo (e-sports). Juntos, criam uma proposta única que concorrentes genéricos não podem replicar.",
+        "feedback": "Posicionamento forte combina benefícios tangíveis com experiência única. Evite diferenciais cosméticos ou padrões de mercado que não geram valor real para o cliente."
+      }
+    }
+  },
+  {
+    "title": "Estratégias de Crescimento Product-Led Growth (PLG)",
+    "description": "Seu produto é um SaaS B2B de self-service (o usuário pode começar a usar sozinho, como um Miro ou Trello). Você precisa definir as 3 (três) ações essenciais para potencializar uma estratégia de Product-Led Growth (PLG).",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 20,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "mission": "Estratégias de Crescimento Product-Led Growth (PLG)",
+        "goal": "Seu produto é um SaaS B2B de self-service (o usuário pode começar a usar sozinho, como um Miro ou Trello). Você precisa definir as 3 (três) ações essenciais para potencializar uma estratégia de Product-Led Growth (PLG)."
+      },
+      "squad": {
+        "members": [
+          {
+            "name": "Ana",
+            "role": "Product Manager",
+            "trait": "Focada em features"
+          },
+          {
+            "name": "Carlos",
+            "role": "Tech Lead",
+            "trait": "Pragmático"
+          },
+          {
+            "name": "Bia",
+            "role": "Designer",
+            "trait": "Criativa"
+          }
+        ]
+      },
+      "challenge": {
+        "day1": {
+          "topic": "Estratégias de Crescimento Product-Led Growth (PLG)",
+          "question": "Selecione as 3 (três) táticas cruciais para o sucesso de um modelo PLG. (Selecione 3 opções)",
+          "options": [
+            {
+              "id": "1",
+              "text": "Exigir que o usuário preencha um formulário complexo com 10 campos antes de sequer ver o produto (alta fricção)."
+            },
+            {
+              "id": "2",
+              "text": "Garantir que o valor principal (Aha! Moment) do produto seja atingido pelo usuário de forma rápida e intuitiva, idealmente em menos de 5 minutos."
+            },
+            {
+              "id": "3",
+              "text": "Investir a maior parte do orçamento na contratação de um grande time de SDRs (Sales Development Reps) para ligar para todos os usuários free."
+            },
+            {
+              "id": "4",
+              "text": "Remover barreiras de entrada (Ex: \"Credit Card Required\") e oferecer um plano Freemium ou Free Trial para permitir a adoção orgânica."
+            },
+            {
+              "id": "5",
+              "text": "Implementar gatilhos dentro do produto (in-app prompts) que convidem o usuário a fazer upgrade (mudar de plano) assim que atingir limites de uso ou descobrir uma feature paga valiosa."
+            },
+            {
+              "id": "6",
+              "text": "Focar exclusivamente em campanhas de brand awareness na televisão, ignorando as métricas de uso e conversão dentro do produto."
+            },
+            {
+              "id": "7",
+              "text": "Criar um processo de venda totalmente consultivo, com 5 reuniões antes da ativação da conta."
+            },
+            {
+              "id": "8",
+              "text": "Criar um manual de usuário em PDF com 300 páginas e pedir para o usuário estudá-lo antes de usar."
+            },
+            {
+              "id": "9",
+              "text": "Desenvolver o produto apenas para grandes corporações (Enterprise), pois PLG não funciona para SMB."
+            },
+            {
+              "id": "10",
+              "text": "Focar a experiência de onboarding em explicar a missão e visão da empresa, em vez de mostrar como resolver um problema."
+            }
+          ],
+          "chat": [
+            {
+              "user": "Ana",
+              "text": "Formulário complexo mata a conversão. O usuário desiste antes de ver valor."
+            },
+            {
+              "user": "Carlos",
+              "text": "Se o momento eureka demora mais de 5 minutos, perdemos o usuário para sempre."
+            },
+            {
+              "user": "Bia",
+              "text": "Gatilhos no produto são poderosos! O usuário vê o valor e quer mais naturalmente."
+            }
+          ]
+        }
+      },
+      "results": {
+        "success": "Perfeito! As táticas 2, 4 e 5 são essenciais para Crescimento Liderado pelo Produto: momento de valor rápido (menos de 5 minutos), baixa fricção de entrada (sem exigir cartão) e gatilhos inteligentes para conversão no momento certo.",
+        "feedback": "Crescimento liderado pelo produto depende de experiência fluida. Elimine barreiras, entregue valor rapidamente e deixe o produto vender a si mesmo."
+      }
+    }
+  },
+  {
+    "title": "Táticas de Comunicação para Adoção e Engajamento",
+    "description": "Você está liderando a estratégia de comunicação pós-lançamento de uma feature nova. O objetivo é aumentar a Adoção e Retenção. Você precisa ser estratégico para garantir que o cliente use a novidade.",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 30,
+    "isPublished": true,
+    "content": {
+      "intro": {
+        "mission": "Táticas de Comunicação para Adoção e Engajamento",
+        "goal": "Você está liderando a estratégia de comunicação pós-lançamento de uma feature nova. O objetivo é aumentar a Adoção e Retenção. Você precisa ser estratégico para garantir que o cliente use a novidade."
+      },
+      "squad": {
+        "members": [
+          {
+            "name": "Ana",
+            "role": "Product Manager",
+            "trait": "Focada em features"
+          },
+          {
+            "name": "Carlos",
+            "role": "Tech Lead",
+            "trait": "Pragmático"
+          },
+          {
+            "name": "Bia",
+            "role": "Designer",
+            "trait": "Criativa"
+          }
+        ]
+      },
+      "challenge": {
+        "day1": {
+          "topic": "Táticas de Comunicação para Adoção e Engajamento",
+          "question": "Selecione as 3 (três) táticas de comunicação e canais mais eficazes para impulsionar a Adoção e Engajamento (pós-compra). (Selecione 3 opções)",
+          "options": [
+            {
+              "id": "1",
+              "text": "Realizar uma campanha de brand awareness massiva em TV aberta (foco em aquisição e topo de funil)."
+            },
+            {
+              "id": "2",
+              "text": "Utilizar In-App Messages e Tooltips (Mensagens dentro do produto) para guiar o usuário na funcionalidade, minimizando a fricção da descoberta."
+            },
+            {
+              "id": "3",
+              "text": "Criar templates (modelos de uso) e Playbooks (Guias práticos) focados em resolver o problema do cliente com a nova feature, mostrando o How-to."
+            },
+            {
+              "id": "4",
+              "text": "Desligar o suporte ao cliente para forçar o autoatendimento."
+            },
+            {
+              "id": "5",
+              "text": "Enviar E-mails de onboarding e drip campaigns (Nutrição) baseados no comportamento real de uso do usuário (se usou ou não), e não em datas genéricas."
+            },
+            {
+              "id": "6",
+              "text": "Focar apenas na criação de press releases para jornais (foco em awareness)."
+            },
+            {
+              "id": "7",
+              "text": "Enviar um SMS genérico para toda a base com a mesma mensagem, sem segmentação."
+            },
+            {
+              "id": "8",
+              "text": "Fazer um evento de lançamento de Nível 5 para uma correção de bug simples."
+            },
+            {
+              "id": "9",
+              "text": "Priorizar features de backlog não relacionadas ao onboarding ou à nova funcionalidade."
+            },
+            {
+              "id": "10",
+              "text": "Excluir a documentação de ajuda online para aumentar a interação com o suporte."
+            }
+          ],
+          "chat": [
+            {
+              "user": "Ana",
+              "text": "Mensagens dentro do produto guiam sem atrito. O usuário aprende fazendo!"
+            },
+            {
+              "user": "Carlos",
+              "text": "Modelos e guias práticos mostram valor imediato. Menos teoria, mais ação."
+            },
+            {
+              "user": "Bia",
+              "text": "E-mails baseados em comportamento real são muito mais eficazes que disparos genéricos."
+            }
+          ]
+        }
+      },
+      "results": {
+        "success": "Excelente escolha! As táticas 2, 3 e 5 maximizam adoção: mensagens no produto (menor fricção), modelos práticos (valor imediato) e nutrição baseada em comportamento (personalização real). Comunicação pós-compra deve focar em USO, não awareness.",
+        "feedback": "Adoção e engajamento dependem de comunicação contextual. Guie o usuário dentro do produto, ofereça recursos práticos e personalize baseado em comportamento real."
+      }
+    }
+  }
+]
