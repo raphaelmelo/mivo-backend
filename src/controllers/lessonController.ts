@@ -105,8 +105,8 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
         await user.save();
 
         // Check for new badges (dynamic import to avoid circular dependencies)
-        const { checkAndAwardBadges } = await import('./badgeController');
-        const newBadges = await checkAndAwardBadges(userId);
+        const { checkAndUnlockBadges } = await import('./badgeController');
+        const newBadges = await checkAndUnlockBadges(userId);
 
         res.json({
             message: 'Lesson completed successfully',

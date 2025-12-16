@@ -1,157 +1,349 @@
-import { Response } from 'express';
+import { Request, Response } from 'express';
 import { AuthRequest } from '../middlewares/auth';
-import User from '../models/User';
-import Badge from '../models/Badge';
+import Badge, { BadgeCategory } from '../models/Badge';
 import UserBadge from '../models/UserBadge';
+import User from '../models/User';
+import { Op } from 'sequelize';
 
-// Type for UserBadge with included Badge
-interface UserBadgeWithBadge extends UserBadge {
-    badge?: Badge;
+// ============================================================================
+// HELPER FUNCTIONS (Business Logic)
+// ============================================================================
+
+interface BadgeRequirement {
+    type: 'streak' | 'xp' | 'lessons' | 'level' | 'composite';
+    value?: number;
+    minStreak?: number;
+    minXp?: number;
+    minLessons?: number;
+    minLevel?: number;
 }
 
 /**
- * Get all badges with user's earned status
+ * Check if a badge requirement is met
+ */
+const isRequirementMet = (user: User, requirement: BadgeRequirement): boolean => {
+    switch (requirement.type) {
+        case 'streak':
+            return user.streak >= (requirement.value || 0);
+
+        case 'xp':
+            return user.xp >= (requirement.value || 0);
+
+        case 'lessons':
+            return user.lessonsCompleted >= (requirement.value || 0);
+
+        case 'level':
+            return user.level >= (requirement.value || 0);
+
+        case 'composite':
+            const checks = [];
+            if (requirement.minStreak !== undefined) {
+                checks.push(user.streak >= requirement.minStreak);
+            }
+            if (requirement.minXp !== undefined) {
+                checks.push(user.xp >= requirement.minXp);
+            }
+            if (requirement.minLessons !== undefined) {
+                checks.push(user.lessonsCompleted >= requirement.minLessons);
+            }
+            if (requirement.minLevel !== undefined) {
+                checks.push(user.level >= requirement.minLevel);
+            }
+            return checks.length > 0 && checks.every(c => c);
+
+        default:
+            return false;
+    }
+};
+
+export interface UnlockedBadge {
+    id: number;
+    name: string;
+    description: string;
+    category: string;
+    iconUrl: string;
+    unlockedAt: Date;
+}
+
+/**
+ * Check and unlock badges for a user
+ * Returns array of newly unlocked badges
+ */
+export const checkAndUnlockBadges = async (userId: number): Promise<UnlockedBadge[]> => {
+    const user = await User.findByPk(userId);
+    if (!user) {
+        throw new Error('User not found');
+    }
+
+    const allBadges = await Badge.findAll({
+        where: { isActive: true },
+    });
+
+    const existingUserBadges = await UserBadge.findAll({
+        where: { userId },
+        attributes: ['badgeId'],
+    });
+    const existingBadgeIds = existingUserBadges.map(ub => ub.badgeId);
+
+    const newlyUnlockedBadges: UnlockedBadge[] = [];
+
+    for (const badge of allBadges) {
+        // Skip if user already has this badge
+        if (existingBadgeIds.includes(badge.id)) {
+            continue;
+        }
+
+        // Check if requirement is met
+        const requirement = badge.requirement as BadgeRequirement;
+        if (isRequirementMet(user, requirement)) {
+            const now = new Date();
+            await UserBadge.create({
+                userId,
+                badgeId: badge.id,
+                unlockedAt: now,
+            });
+
+            newlyUnlockedBadges.push({
+                id: badge.id,
+                name: badge.name,
+                description: badge.description,
+                category: badge.category,
+                iconUrl: badge.iconUrl,
+                unlockedAt: now,
+            });
+        }
+    }
+
+    return newlyUnlockedBadges;
+};
+
+// ============================================================================
+// CONTROLLER ENDPOINTS
+// ============================================================================
+
+/**
+ * GET /api/badges
+ * Get all available badges
+ */
+export const getAllBadges = async (req: Request, res: Response) => {
+    try {
+        const badges = await Badge.findAll({
+            where: { isActive: true },
+            order: [['category', 'ASC'], ['id', 'ASC']],
+        });
+
+        res.json({
+            success: true,
+            count: badges.length,
+            badges,
+        });
+    } catch (error) {
+        console.error('Error fetching all badges:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching badges',
+        });
+    }
+};
+
+/**
+ * GET /api/badges/user
+ * Get badges for authenticated user
  */
 export const getUserBadges = async (req: AuthRequest, res: Response) => {
     try {
         const userId = req.userId;
 
         if (!userId) {
-            return res.status(401).json({ message: 'User not authenticated' });
+            return res.status(401).json({
+                success: false,
+                message: 'User not authenticated',
+            });
         }
 
-        // Get all badges with user's unlock status
         const userBadges = await UserBadge.findAll({
             where: { userId },
             include: [{
                 model: Badge,
                 as: 'badge',
-                required: true
-            }]
-        }) as UserBadgeWithBadge[];
+                where: { isActive: true },
+            }],
+            order: [['unlockedAt', 'DESC']],
+        });
+
+        const badges = userBadges.map(ub => ({
+            id: (ub as any).badge.id,
+            name: (ub as any).badge.name,
+            description: (ub as any).badge.description,
+            category: (ub as any).badge.category,
+            iconUrl: (ub as any).badge.iconUrl,
+            unlockedAt: ub.unlockedAt,
+        }));
 
         res.json({
-            badges: userBadges.map(ub => ({
-                id: ub.id,
-                userId: ub.userId,
-                badgeId: ub.badgeId,
-                earnedAt: ub.unlockedAt,
-                badge: {
-                    id: ub.badge?.id,
-                    name: ub.badge?.name,
-                    description: ub.badge?.description,
-                    category: ub.badge?.category,
-                    iconUrl: ub.badge?.iconUrl,
-                    requirement: ub.badge?.requirement,
-                    isActive: ub.badge?.isActive
-                }
-            }))
+            success: true,
+            count: badges.length,
+            badges,
         });
     } catch (error) {
         console.error('Error fetching user badges:', error);
-        res.status(500).json({ message: 'Error fetching badges' });
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching user badges',
+        });
     }
 };
 
 /**
- * Get all available badges (admin/debug)
+ * GET /api/badges/progress
+ * Get badge unlock progress for authenticated user
  */
-export const getAllBadges = async (req: AuthRequest, res: Response) => {
+export const getBadgeProgress = async (req: AuthRequest, res: Response) => {
     try {
-        const badges = await Badge.findAll({
-            where: { isActive: true }
+        const userId = req.userId;
+
+        if (!userId) {
+            return res.status(401).json({
+                success: false,
+                message: 'User not authenticated',
+            });
+        }
+
+        const user = await User.findByPk(userId);
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: 'User not found',
+            });
+        }
+
+        // Get badges the user doesn't have yet
+        const userBadgeIds = await UserBadge.findAll({
+            where: { userId },
+            attributes: ['badgeId'],
+            raw: true,
         });
 
-        res.json({ badges });
-    } catch (error) {
-        console.error('Error fetching all badges:', error);
-        res.status(500).json({ message: 'Error fetching badges' });
-    }
-};
+        const lockedBadgeIds = userBadgeIds.map(ub => ub.badgeId);
 
-/**
- * Check and award badges based on user progress
- * This should be called after completing a lesson or any action that might unlock badges
- */
-export const checkAndAwardBadges = async (userId: number): Promise<Badge[]> => {
-    try {
-        const user = await User.findByPk(userId);
-        if (!user) return [];
+        const lockedBadges = await Badge.findAll({
+            where: {
+                isActive: true,
+                id: {
+                    [Op.notIn]: lockedBadgeIds.length > 0 ? lockedBadgeIds : [0],
+                },
+            },
+        });
 
-        const newBadges: Badge[] = [];
-        const allBadges = await Badge.findAll({ where: { isActive: true } });
+        // Calculate progress for each locked badge
+        const progress = lockedBadges.map(badge => {
+            const requirement = badge.requirement as BadgeRequirement;
+            let progressPercent = 0;
+            let current = 0;
+            let target = 0;
 
-        for (const badge of allBadges) {
-            // Check if user already has this badge
-            const existingBadge = await UserBadge.findOne({
-                where: {
-                    userId,
-                    badgeId: badge.id
-                }
-            });
-
-            if (existingBadge) continue; // Already has this badge
-
-            // Check if user meets the requirements
-            let shouldAward = false;
-
-            switch (badge.category) {
+            switch (requirement.type) {
                 case 'streak':
-                    // Example: "Maintain a 7-day streak"
-                    const streakReqStr = String(badge.requirement || '');
-                    if (user.streak >= 7 && streakReqStr.includes('7')) {
-                        shouldAward = true;
-                    }
-                    if (user.streak >= 30 && streakReqStr.includes('30')) {
-                        shouldAward = true;
-                    }
+                    current = user.streak;
+                    target = requirement.value || 0;
+                    progressPercent = Math.min((current / target) * 100, 100);
                     break;
 
                 case 'xp':
-                    // Example: "Reach 1000 XP"
-                    const xpReqStr = String(badge.requirement || '');
-                    const xpRequirement = parseInt(xpReqStr.match(/\d+/)?.[0] || '0');
-                    if (user.xp >= xpRequirement) {
-                        shouldAward = true;
-                    }
+                    current = user.xp;
+                    target = requirement.value || 0;
+                    progressPercent = Math.min((current / target) * 100, 100);
                     break;
 
                 case 'lessons':
-                    // Example: "Complete 10 lessons"
-                    const lessonReqStr = String(badge.requirement || '');
-                    const lessonRequirement = parseInt(lessonReqStr.match(/\d+/)?.[0] || '0');
-                    if (user.lessonsCompleted >= lessonRequirement) {
-                        shouldAward = true;
-                    }
+                    current = user.lessonsCompleted;
+                    target = requirement.value || 0;
+                    progressPercent = Math.min((current / target) * 100, 100);
                     break;
 
-                case 'achievement':
-                    // Example: "Reach level 5"
-                    const levelReqStr = String(badge.requirement || '');
-                    const levelRequirement = parseInt(levelReqStr.match(/\d+/)?.[0] || '0');
-                    if (user.level >= levelRequirement) {
-                        shouldAward = true;
-                    }
+                case 'level':
+                    current = user.level;
+                    target = requirement.value || 0;
+                    progressPercent = Math.min((current / target) * 100, 100);
                     break;
 
-                default:
-                    // Special badges handled separately
+                case 'composite':
+                    const progressValues = [];
+                    if (requirement.minStreak !== undefined) {
+                        progressValues.push(Math.min((user.streak / requirement.minStreak) * 100, 100));
+                    }
+                    if (requirement.minXp !== undefined) {
+                        progressValues.push(Math.min((user.xp / requirement.minXp) * 100, 100));
+                    }
+                    if (requirement.minLessons !== undefined) {
+                        progressValues.push(Math.min((user.lessonsCompleted / requirement.minLessons) * 100, 100));
+                    }
+                    if (requirement.minLevel !== undefined) {
+                        progressValues.push(Math.min((user.level / requirement.minLevel) * 100, 100));
+                    }
+                    progressPercent = progressValues.length > 0
+                        ? progressValues.reduce((a, b) => a + b, 0) / progressValues.length
+                        : 0;
                     break;
             }
 
-            if (shouldAward) {
-                await UserBadge.create({
-                    userId,
-                    badgeId: badge.id,
-                    unlockedAt: new Date()
-                });
-                newBadges.push(badge);
-            }
+            return {
+                id: badge.id,
+                name: badge.name,
+                description: badge.description,
+                category: badge.category,
+                iconUrl: badge.iconUrl,
+                requirement: badge.requirement,
+                progress: Math.round(progressPercent),
+                current,
+                target,
+            };
+        });
+
+        res.json({
+            success: true,
+            count: progress.length,
+            progress,
+        });
+    } catch (error) {
+        console.error('Error fetching badge progress:', error);
+        res.status(500).json({
+            success: false,
+            message: 'Error fetching badge progress',
+        });
+    }
+};
+
+/**
+ * POST /api/badges/check
+ * Manually trigger badge check for authenticated user
+ */
+export const checkBadges = async (req: AuthRequest, res: Response) => {
+    try {
+        const userId = req.userId;
+
+        if (!userId) {
+            return res.status(401).json({
+                success: false,
+                message: 'User not authenticated',
+            });
         }
 
-        return newBadges;
+        const newBadges = await checkAndUnlockBadges(userId);
+
+        res.json({
+            success: true,
+            message: newBadges.length > 0
+                ? `Congratulations! You unlocked ${newBadges.length} new badge(s)!`
+                : 'No new badges unlocked',
+            count: newBadges.length,
+            newBadges,
+        });
     } catch (error) {
         console.error('Error checking badges:', error);
-        return [];
+        res.status(500).json({
+            success: false,
+            message: 'Error checking badges',
+        });
     }
 };
