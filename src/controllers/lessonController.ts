@@ -47,13 +47,53 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // Update user XP and stats
-        // Note: In a real app, we should verify if the lesson was actually completed validly
-        // and if it wasn't already completed to avoid duplicate XP.
-        // For now, we just add the XP as per the MVP requirements.
+        const lessonId = parseInt(id);
 
-        user.xp += xpEarned || 0;
-        user.lessonsCompleted += 1;
+        // Check if lesson is already completed
+        const { default: UserProgress } = await import('../models/UserProgress');
+
+        const [progress, created] = await UserProgress.findOrCreate({
+            where: { userId, lessonId },
+            defaults: {
+                userId,
+                lessonId,
+                isCompleted: true,
+                completedAt: new Date(),
+                attempts: 1,
+                timeSpentMinutes: 0 // TODO: Track time
+            }
+        });
+
+        let xpToAdd = 0;
+        let lessonsCompletedIncrement = 0;
+
+        if (created) {
+            // First time completion
+            xpToAdd = xpEarned || 0;
+            lessonsCompletedIncrement = 1;
+        } else if (!progress.isCompleted) {
+            // Was started but not completed (shouldn't happen with current logic but safe to handle)
+            progress.isCompleted = true;
+            progress.completedAt = new Date();
+            progress.attempts += 1;
+            await progress.save();
+
+            xpToAdd = xpEarned || 0;
+            lessonsCompletedIncrement = 1;
+        } else {
+            // Already completed, just increment attempts
+            progress.attempts += 1;
+            await progress.save();
+            // No XP or lesson count increment for repeats
+        }
+
+        if (lessonsCompletedIncrement > 0) {
+            user.lessonsCompleted += lessonsCompletedIncrement;
+        }
+
+        if (xpToAdd > 0) {
+            user.xp += xpToAdd;
+        }
 
         // Simple level up logic (every 1000 XP)
         const newLevel = Math.floor(user.xp / 1000) + 1;

@@ -1,0 +1,48 @@
+{
+    "title": "Níveis de Competição",
+    "description": "Você está analisando o cenário competitivo para o seu produto de gestão de tarefas. O time de vendas diz que o único concorrente é o Trello. Você sabe que isso é uma visão míope.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 6,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Níveis de Competição",
+            "explanation": "Você está analisando o cenário competitivo para o seu produto de gestão de tarefas. O time de vendas diz que o único concorrente é o Trello. Você sabe que isso é uma visão míope.",
+            "example": "Para o Slack, o maior concorrente não foi o Teams - foi o email. A maioria das empresas preferia 'não mudar nada' a adotar uma nova ferramenta."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual das opções abaixo representa um exemplo de \"Concorrente Substituto\" (ou Alternativa) para um software de gestão de tarefas, que muitas vezes é o maior vilão do crescimento?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O uso de Post-its na parede, planilhas de Excel ou até mesmo a memória humana (o \"não fazer nada\").",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "O Asana ou Monday.com (outros softwares de gestão).",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Uma empresa que vende cadeiras de escritório.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "O Google Ads.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é correta. Concorrentes diretos (Opção B) são óbvios. O PMM estratégico olha para os substitutos (o status quo), pois muitas vezes o cliente deixa de comprar seu software não para ir para o concorrente, mas para continuar usando o Excel de graça."
+            }
+        ]
+    }
+}

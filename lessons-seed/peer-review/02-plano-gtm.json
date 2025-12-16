@@ -1,0 +1,61 @@
+{
+    "title": "Plano de GTM (Canais)",
+    "description": "Um PMM júnior montou o plano de canais para lançar um app de delivery de comida em uma nova cidade. Ele sugeriu gastar 100% do budget em anúncios de rádio local.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 14,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um PMM júnior montou o plano de canais para lançar um app de delivery de comida em uma nova cidade. Ele sugeriu gastar 100% do budget em anúncios de rádio local."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Plano de GTM (Canais)",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Você precisa corrigir a estratégia de canais. Qual é o feedback mais construtivo?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "Sugerir diversificação e foco no digital (onde o usuário baixa o app). Rádio pode ser branding, mas para conversão de app, canais digitais (Social Ads, Search, Influenciadores locais) permitem mensuração direta e download imediato (menor fricção).",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "Aprovar o plano, pois rádio atinge muita gente.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "Sugerir mudar para TV, que é mais caro ainda.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Sugerir panfletagem na rua como única estratégia.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Bruno Tavares",
+            "role": "Senior PMM",
+            "feedback": "A opção A é a correta. O canal deve facilitar a ação desejada (download).",
+            "tips": [
+                "Fazer o usuário ouvir no rádio, pegar o celular, digitar o nome e baixar é muita fricção.",
+                "No digital, é um clique."
+            ]
+        }
+    }
+}

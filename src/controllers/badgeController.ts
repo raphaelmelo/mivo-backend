@@ -98,17 +98,19 @@ export const checkAndAwardBadges = async (userId: number): Promise<Badge[]> => {
             switch (badge.category) {
                 case 'streak':
                     // Example: "Maintain a 7-day streak"
-                    if (user.streak >= 7 && badge.requirement?.includes('7')) {
+                    const streakReqStr = String(badge.requirement || '');
+                    if (user.streak >= 7 && streakReqStr.includes('7')) {
                         shouldAward = true;
                     }
-                    if (user.streak >= 30 && badge.requirement?.includes('30')) {
+                    if (user.streak >= 30 && streakReqStr.includes('30')) {
                         shouldAward = true;
                     }
                     break;
 
                 case 'xp':
                     // Example: "Reach 1000 XP"
-                    const xpRequirement = parseInt(badge.requirement?.match(/\d+/)?.[0] || '0');
+                    const xpReqStr = String(badge.requirement || '');
+                    const xpRequirement = parseInt(xpReqStr.match(/\d+/)?.[0] || '0');
                     if (user.xp >= xpRequirement) {
                         shouldAward = true;
                     }
@@ -116,7 +118,8 @@ export const checkAndAwardBadges = async (userId: number): Promise<Badge[]> => {
 
                 case 'lessons':
                     // Example: "Complete 10 lessons"
-                    const lessonRequirement = parseInt(badge.requirement?.match(/\d+/)?.[0] || '0');
+                    const lessonReqStr = String(badge.requirement || '');
+                    const lessonRequirement = parseInt(lessonReqStr.match(/\d+/)?.[0] || '0');
                     if (user.lessonsCompleted >= lessonRequirement) {
                         shouldAward = true;
                     }
@@ -124,7 +127,8 @@ export const checkAndAwardBadges = async (userId: number): Promise<Badge[]> => {
 
                 case 'achievement':
                     // Example: "Reach level 5"
-                    const levelRequirement = parseInt(badge.requirement?.match(/\d+/)?.[0] || '0');
+                    const levelReqStr = String(badge.requirement || '');
+                    const levelRequirement = parseInt(levelReqStr.match(/\d+/)?.[0] || '0');
                     if (user.level >= levelRequirement) {
                         shouldAward = true;
                     }

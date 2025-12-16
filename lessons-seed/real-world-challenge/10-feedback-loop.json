@@ -1,0 +1,62 @@
+{
+    "title": "Estruturando o Feedback Loop para o Produto (Pós-Lançamento)",
+    "description": "Após o lançamento de uma nova feature (Nível 3), os dados de Retenção e Expansion Revenue (Receita de Expansão) não se moveram conforme o esperado, indicando que a Hipótese de Valor não se validou.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 38,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Após o lançamento de uma nova feature (Nível 3), os dados de Retenção e Expansion Revenue (Receita de Expansão) não se moveram conforme o esperado, indicando que a Hipótese de Valor não se validou."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Na reunião de Retrospective (pós-lançamento), qual a atitude mais estratégica do PMM ao interagir com os times de Produto e Engenharia?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Apresentar o fracasso como uma Hipótese de Posicionamento Não Validada, compartilhando dados quantitativos de Adoção/Engajamento e qualitativos (ex: feedback de Vendas/CS) para propor uma Iteração no Posicionamento ou no Aha! Moment da feature no próximo ciclo de desenvolvimento.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Culpabilizar o time de Vendas por não ter feito Sales Enablement adequado.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Sugerir que a solução é fazer uma campanha de marketing maior e com mais investimento.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Pedir para que a feature seja removida imediatamente do produto.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Patrícia Lima",
+            "title": "CPO - Gympass",
+            "feedback": {
+                "intro": "A opção A é a correta. O PMM é a ponte.",
+                "steps": [
+                    "O Posicionamento é um conjunto de hipóteses a ser testadas.",
+                    "O papel do PMM é trazer a voz e os dados do mercado para o time de Produto, transformando o 'fracasso' em uma descoberta acionável."
+                ],
+                "warning": "Ignorar o retorno do mercado é repetir o erro."
+            }
+        }
+    }
+}

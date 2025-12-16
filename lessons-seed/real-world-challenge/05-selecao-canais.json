@@ -1,0 +1,62 @@
+{
+    "title": "Seleção de Canais e Adaptação de Mensagem",
+    "description": "Você é PMM de um software de gestão jurídica (B2B, alta complexidade e ticket). O time de Marketing copiou a mensagem do Instagram para rodar no LinkedIn, focando em fotos do escritório e memes. Os resultados de MQL estão baixos.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 18,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Você é PMM de um software de gestão jurídica (B2B, alta complexidade e ticket). O time de Marketing copiou a mensagem do Instagram para rodar no LinkedIn, focando em fotos do escritório e memes. Os resultados de MQL estão baixos."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "O que deve ser corrigido na estratégia de canais para este perfil de produto?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Adaptar a mensagem para o contexto do canal e público. Mudar o foco do LinkedIn para conteúdo profissional, relevante para decisores jurídicos (artigos sobre compliance/produtividade) e reduzir drasticamente a exposição em canais focados em entretenimento, como Instagram.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Apenas trocar o copy dos anúncios do LinkedIn para um tom mais sério, mantendo a mesma estratégia visual e de canal.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Continuar investindo pesado no Instagram com memes, pois o público-alvo (advogados) também está lá e precisa se divertir.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Abandonar o LinkedIn, pois ele é caro, e focar apenas em SEO (Busca Orgânica), já que a decisão de compra é complexa e precisa ser estudada.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Lucas Oliveira",
+            "title": "Diretor de Marketing - Pipefy",
+            "feedback": {
+                "intro": "A opção A é a ideal. O contexto do canal importa tanto quanto a mensagem.",
+                "steps": [
+                    "O material de Estratégia de Campanha ressalta a importância de adaptar-se aos diferentes públicos e setores.",
+                    "Um produto de alta complexidade (jurídico) exige canais e mensagens profissionais no LinkedIn e conteúdo educativo/sério."
+                ],
+                "warning": "Usar a mensagem errada no canal certo é desperdício de oportunidade."
+            }
+        }
+    }
+}

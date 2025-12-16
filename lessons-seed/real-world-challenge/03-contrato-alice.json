@@ -1,0 +1,62 @@
+{
+    "title": "Contrato Alice vs. Concorrente Tradicional",
+    "description": "Você é PMM da Alice (Healthtech). O mercado de planos de saúde é conhecido por contratos cheios de \"letras miúdas\" e burocracia. Você precisa definir como comunicar o contrato da Alice para reforçar o posicionamento de transparência e foco no membro.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 8,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Você é PMM da Alice (Healthtech). O mercado de planos de saúde é conhecido por contratos cheios de \"letras miúdas\" e burocracia. Você precisa definir como comunicar o contrato da Alice para reforçar o posicionamento de transparência e foco no membro."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual a melhor estratégia de comunicação para transformar um documento legal (contrato) em um ativo de marketing?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Reescrever a comunicação do contrato eliminando o \"juridiquês\", usando linguagem humana, direta e transparente, e destacar isso na campanha de lançamento como uma prova do valor \"Sem Pegadinhas\".",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Manter o contrato padrão de mercado para garantir segurança jurídica total, e focar o marketing apenas nas fotos bonitas do app.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Esconder o contrato até o último momento da assinatura para não assustar o cliente.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Criar um contrato fictício de marketing que não tem validade legal.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Guilherme Lopes",
+            "title": "VP de Produto - Alice Saúde",
+            "feedback": {
+                "intro": "A opção A é a correta e reflete o caso real da Alice.",
+                "steps": [
+                    "O posicionamento não é apenas o que se diz, mas onde se toca o cliente.",
+                    "Transformar pontos de fricção (contrato chato) em pontos de encantamento (transparência) é a essência de um PMM que entende a experiência completa."
+                ],
+                "warning": "Ignorar a experiência legal pode minar a confiança da marca."
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "title": "Táticas de Comunicação para Adoção e Engajamento",
+    "description": "Você está liderando a estratégia de comunicação pós-lançamento de uma feature nova. O objetivo é aumentar a Adoção e Retenção. Você precisa ser estratégico para garantir que o cliente use a novidade.",
+    "type": "community_quest",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 30,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "mission": "Táticas de Comunicação para Adoção e Engajamento",
+            "goal": "Você está liderando a estratégia de comunicação pós-lançamento de uma feature nova. O objetivo é aumentar a Adoção e Retenção. Você precisa ser estratégico para garantir que o cliente use a novidade."
+        },
+        "squad": {
+            "members": [
+                {
+                    "name": "Ana",
+                    "role": "Product Manager",
+                    "trait": "Focada em features"
+                },
+                {
+                    "name": "Carlos",
+                    "role": "Tech Lead",
+                    "trait": "Pragmático"
+                },
+                {
+                    "name": "Bia",
+                    "role": "Designer",
+                    "trait": "Criativa"
+                }
+            ]
+        },
+        "challenge": {
+            "day1": {
+                "topic": "Táticas de Comunicação para Adoção e Engajamento",
+                "question": "Selecione as 3 (três) táticas de comunicação e canais mais eficazes para impulsionar a Adoção e Engajamento (pós-compra). (Selecione 3 opções)",
+                "options": [
+                    {
+                        "id": "1",
+                        "text": "Realizar uma campanha de brand awareness massiva em TV aberta (foco em aquisição e topo de funil)."
+                    },
+                    {
+                        "id": "2",
+                        "text": "Utilizar In-App Messages e Tooltips (Mensagens dentro do produto) para guiar o usuário na funcionalidade, minimizando a fricção da descoberta."
+                    },
+                    {
+                        "id": "3",
+                        "text": "Criar templates (modelos de uso) e Playbooks (Guias práticos) focados em resolver o problema do cliente com a nova feature, mostrando o How-to."
+                    },
+                    {
+                        "id": "4",
+                        "text": "Desligar o suporte ao cliente para forçar o autoatendimento."
+                    },
+                    {
+                        "id": "5",
+                        "text": "Enviar E-mails de onboarding e drip campaigns (Nutrição) baseados no comportamento real de uso do usuário (se usou ou não), e não em datas genéricas."
+                    },
+                    {
+                        "id": "6",
+                        "text": "Focar apenas na criação de press releases para jornais (foco em awareness)."
+                    },
+                    {
+                        "id": "7",
+                        "text": "Enviar um SMS genérico para toda a base com a mesma mensagem, sem segmentação."
+                    },
+                    {
+                        "id": "8",
+                        "text": "Fazer um evento de lançamento de Nível 5 para uma correção de bug simples."
+                    },
+                    {
+                        "id": "9",
+                        "text": "Priorizar features de backlog não relacionadas ao onboarding ou à nova funcionalidade."
+                    },
+                    {
+                        "id": "10",
+                        "text": "Excluir a documentação de ajuda online para aumentar a interação com o suporte."
+                    }
+                ],
+                "chat": [
+                    {
+                        "user": "Ana",
+                        "text": "Mensagens dentro do produto guiam sem atrito. O usuário aprende fazendo!"
+                    },
+                    {
+                        "user": "Carlos",
+                        "text": "Modelos e guias práticos mostram valor imediato. Menos teoria, mais ação."
+                    },
+                    {
+                        "user": "Bia",
+                        "text": "E-mails baseados em comportamento real são muito mais eficazes que disparos genéricos."
+                    }
+                ]
+            }
+        },
+        "results": {
+            "success": "Excelente escolha! As táticas 2, 3 e 5 maximizam adoção: mensagens no produto (menor fricção), modelos práticos (valor imediato) e nutrição baseada em comportamento (personalização real). Comunicação pós-compra deve focar em USO, não awareness.",
+            "feedback": "Adoção e engajamento dependem de comunicação contextual. Guie o usuário dentro do produto, ofereça recursos práticos e personalize baseado em comportamento real."
+        }
+    }
+}

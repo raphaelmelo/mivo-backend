@@ -1,0 +1,69 @@
+{
+    "title": "Estratégia de Pricing e Modelo de Entrada",
+    "description": "Você é Head de Produto de uma ferramenta B2B Enterprise de alta complexidade e segurança (ex: gestão de riscos bancários). O time de Growth sugere adotar um modelo \"Freemium\" para viralizar, igual ao Slack ou Notion. Você precisa decidir a estratégia de entrada (pricing model).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 5,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "PMM",
+            "team": "Growth",
+            "sprint": "Q3 - Expansão",
+            "context": "Você é Head de Produto de uma ferramenta B2B Enterprise de alta complexidade e segurança (ex: gestão de riscos bancários). O time de Growth sugere adotar um modelo \"Freemium\" para viralizar, igual ao Slack ou Notion. Você precisa decidir a estratégia de entrada (pricing model)."
+        },
+        "rounds": [
+            {
+                "name": "Round 1",
+                "number": 1,
+                "question": "Considerando a complexidade do produto e o perfil do cliente, qual é a decisão estratégica mais adequada?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Rejeitar o Freemium e adotar um modelo de \"Demo\" (Sales-led). Produtos complexos e Enterprise exigem controle da narrativa, onboarding assistido e justificativa de valor através de vendas consultivas, o que o Freemium não entrega.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Implementar um \"Free Trial\" limitado (ex: 14 dias), mas com forte qualificação na entrada, permitindo que o cliente veja a ferramenta, mas forçando o contato com vendas para implementação real.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Adotar o Freemium total. Se funcionou para o Slack (produto de colaboração viral), funcionará para gestão de riscos bancários, pois reduz a barreira de entrada.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Cobrar uma taxa de setup altíssima sem oferecer nem Demo nem Trial, confiando apenas na reputação da marca (brand awareness) para fechar vendas no escuro.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "perfect": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos.",
+            "good": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos.",
+            "bad": "A opção A é a ideal. Segundo o material, o modelo \"Demo\" compõe 66% do mercado e é útil para Enterprise e produtos que exigem onboarding e explicação detalhada de valor. Freemium (opção C) é indicado para produtos onde o usuário final tem autonomia e há viralidade, o que não se aplica a softwares bancários complexos."
+        }
+    }
+}

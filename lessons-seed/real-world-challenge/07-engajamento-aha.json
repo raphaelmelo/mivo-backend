@@ -1,0 +1,62 @@
+{
+    "title": "Desafio de Engajamento e Aha! Moment",
+    "description": "Você acabou de lançar um novo plano Trial (teste grátis) e 60% dos usuários não retornam ao produto após o primeiro dia. O time de Produto acredita que a solução é construir mais features.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 28,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "Você acabou de lançar um novo plano Trial (teste grátis) e 60% dos usuários não retornam ao produto após o primeiro dia. O time de Produto acredita que a solução é construir mais features."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual é a ação mais estratégica do PMM para diagnosticar e resolver esse problema de abandono inicial na experiência Product-Led?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Mapear a Jornada de Uso do cliente para identificar o \"Aha! Moment\" (o momento de valor principal) e redesenhar o onboarding (com o time de Produto) para garantir que o usuário atinja esse momento nos primeiros minutos de uso, reduzindo o tempo para a percepção de valor.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Enviar pop-ups com notificações genéricas e agressivas no desktop para forçar o retorno do usuário.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Reduzir o preço do produto imediatamente para incentivar o cliente a ficar.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Construir uma feature não relacionada ao onboarding e Aha! Moment, apenas para mostrar que o produto está evoluindo.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Bruno Ferreira",
+            "title": "VP de Produto - Resultados Digitais",
+            "feedback": {
+                "intro": "A opção A é a correta. O Momento Eureka é a chave da retenção.",
+                "steps": [
+                    "O PMM deve trabalhar com o Produto para mapear a jornada.",
+                    "Garantir que o valor prometido pelo marketing seja entregue o mais rápido possível na integração inicial."
+                ],
+                "warning": "Construir funcionalidades sem resolver a integração inicial é como encher um balde furado."
+            }
+        }
+    }
+}

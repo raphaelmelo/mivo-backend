@@ -1,0 +1,48 @@
+{
+    "title": "Inteligência de Mercado Pós-Compra (Análise Competitiva Estratégica)",
+    "description": "O PMM deve usar ferramentas públicas para buscar insights de mercado que vão além das features dos concorrentes. O documento de Análise de Mercado menciona ferramentas como Google Play e Reclame AQUI.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 36,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Inteligência de Mercado Pós-Compra (Análise Competitiva Estratégica)",
+            "explanation": "O PMM deve usar ferramentas públicas para buscar insights de mercado que vão além das features dos concorrentes. O documento de Análise de Mercado menciona ferramentas como Google Play e Reclame AQUI.",
+            "example": "Ao analisar o Reclame Aqui de concorrentes, você descobre que 70% das reclamações são sobre atendimento lento. Isso pode virar seu diferencial: 'Suporte em até 2 horas'."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Além de listar features e preço, qual o principal insight não óbvio que o PMM deve buscar em plataformas de avaliação e reclamação (Ex: Reclame AQUI) para refinar o Posicionamento e a Proposta de Valor?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "A Qualidade da Experiência Pós-Venda (CS) e os Pontos de Fricção/Insatisfação não atendidos dos concorrentes, que podem ser transformados em Atributos Únicos e Diferenciais Inegociáveis do seu produto no Posicionamento.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "O volume total de reclamações, focando apenas em ter menos que a concorrência.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "A linguagem de marca mais usada pelos clientes satisfeitos.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "A nota média do aplicativo na loja, que é uma métrica muito superficial.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A demonstra um uso estratégico da inteligência competitiva. O PMM não apenas mapeia o que o concorrente tem, mas principalmente onde ele falha na entrega de valor e experiência (o gap de mercado). Transformar essas falhas em Atributos Únicos no seu GTM é uma estratégia de posicionamento de alto impacto."
+            }
+        ]
+    }
+}

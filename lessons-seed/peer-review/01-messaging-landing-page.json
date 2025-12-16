@@ -1,0 +1,61 @@
+{
+    "title": "Análise de Messaging (Landing Page)",
+    "description": "Um colega PMM criou a copy da Landing Page do novo produto. O título (H1) diz: \"A melhor plataforma de gestão com IA e Machine Learning do mercado\".",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 9,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um colega PMM criou a copy da Landing Page do novo produto. O título (H1) diz: \"A melhor plataforma de gestão com IA e Machine Learning do mercado\"."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Análise de Messaging (Landing Page)",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Você precisa dar um feedback para melhorar a conversão. Qual é o principal problema dessa mensagem?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "A mensagem foca na Feature (IA/Machine Learning) e não no Benefício/Valor para o cliente. O cliente não quer IA, ele quer \"ganhar tempo\" ou \"reduzir erros\". O feedback deve ser: \"Vamos reescrever focando no resultado que o cliente alcança, não na tecnologia que usamos.\"",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "A mensagem está ótima, pois IA é a buzzword do momento e vende sozinha.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "O problema é que falta dizer que é \"em nuvem\".",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Deveria ser mais agressivo e dizer \"A ÚNICA plataforma...\" mesmo que não seja verdade.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Ana Clara Moreira",
+            "role": "Senior PMM",
+            "feedback": "A opção A é a correta. Messaging eficaz traduz features em benefícios claros.",
+            "tips": [
+                "A regra de ouro é o \"So What?\" (E daí?).",
+                "Se sua headline não responde como a vida do cliente melhora, ela é apenas ruído técnico."
+            ]
+        }
+    }
+}

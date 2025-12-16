@@ -1,0 +1,62 @@
+{
+    "title": "Lançamento sem Sales Enablement",
+    "description": "O time de Produto lançou uma feature incrível ontem. Hoje, um cliente ligou para o suporte perguntando como usar, e o atendente respondeu: \"Não sei do que você está falando, não fui avisado\". O time de Vendas também não sabe vender a novidade.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 13,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "O time de Produto lançou uma feature incrível ontem. Hoje, um cliente ligou para o suporte perguntando como usar, e o atendente respondeu: \"Não sei do que você está falando, não fui avisado\". O time de Vendas também não sabe vender a novidade."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "O que falhou no processo de GTM e qual a correção imediata?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "Falha de Enablement Interno. A correção é criar um processo de \"Internal Launch\" (Lançamento Interno) que aconteça ANTES do lançamento externo, treinando Suporte, Vendas e CS com FAQs, Scripts e Demos.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "A culpa é do suporte que não lê os e-mails da empresa.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Desligar a feature até que todos aprendam sozinhos.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "Enviar um PDF de 50 páginas para todos lerem hoje à noite.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Carla Santos",
+            "title": "Gerente de Produto - TOTVS",
+            "feedback": {
+                "intro": "A opção A é a correta. O lançamento começa dentro de casa.",
+                "steps": [
+                    "Se seu time não comprou e não entendeu o produto, o mercado também não vai.",
+                    "Habilitação interna é garantir que todos na empresa saibam contar a mesma história."
+                ],
+                "warning": "Lançar para fora sem lançar para dentro é receita para o caos no atendimento."
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "title": "Conexão Branding e Conteúdo/Pipeline",
+    "description": "Você está liderando a estratégia de Content Marketing e precisa que o conteúdo gere leads qualificados (MQLs) e reforce a marca. Você decidiu que o conteúdo será tratado como um Produto em si (Content as a Product).",
+    "type": "decision_maker",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 35,
+    "isPublished": true,
+    "content": {
+        "setup": {
+            "role": "PMM liderando Marketing de Conteúdo",
+            "team": "2 Redatores, 1 Designer, 1 Especialista SEO",
+            "sprint": "Estratégia Trimestral de Conteúdo",
+            "context": "Você está liderando a estratégia de Marketing de Conteúdo e precisa que o conteúdo gere leads qualificados e reforce a marca. Você decidiu tratar o conteúdo como um Produto em si."
+        },
+        "rounds": [
+            {
+                "name": "Round 1",
+                "number": 1,
+                "scenario": "O time de Vendas quer mais leads (quantidade). O time de Marca quer fortalecer posicionamento (qualidade). O CEO quer resultados rápidos. Como você equilibra?",
+                "question": "Qual a decisão mais alinhada com a mentalidade de 'Conteúdo como Produto'?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Priorizar a qualidade e recorrência do conteúdo (como newsletters, podcasts ou cases) para construir confiança e autoridade (Branding), e usar o PMM para garantir que o messaging esteja focado no Valor e na Proposta do produto, e não apenas em features genéricas.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "b",
+                        "text": "Criar 50 artigos de blog genéricos por mês, focando apenas em SEO e volume de tráfego.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "c",
+                        "text": "Usar o conteúdo apenas para falar sobre a visão e missão da empresa.",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    },
+                    {
+                        "id": "d",
+                        "text": "Focar 100% em mídias pagas (Ads).",
+                        "impact": {
+                            "stakeholders": 0,
+                            "users": 0,
+                            "revenue": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "results": {
+            "perfect": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados.",
+            "good": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados.",
+            "bad": "A mentalidade de \"Conteúdo como Produto\" significa focar em qualidade, recorrência e valor para o cliente, construindo uma audiência fiel (Branding). O PMM é o responsável por traduzir o Valor da Proposta para esse conteúdo, garantindo que ele atraia leads qualificados."
+        }
+    }
+}

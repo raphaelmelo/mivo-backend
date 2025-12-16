@@ -1,0 +1,48 @@
+{
+    "title": "O PMM como Storyteller",
+    "description": "Seu CEO pediu para você criar o deck de vendas do novo produto. Ele quer começar a apresentação falando sobre o ano de fundação da empresa, o número de escritórios e os prêmios ganhos.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 7,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "O PMM como Storyteller",
+            "explanation": "Seu CEO pediu para você criar o deck de vendas do novo produto. Ele quer começar a apresentação falando sobre o ano de fundação da empresa, o número de escritórios e os prêmios ganhos.",
+            "example": "A Nike não vende tênis, vende a sensação de vitória. O slogan 'Apenas Faça' coloca o atleta como herói, não a marca."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Qual é o erro fundamental dessa abordagem de storytelling e qual a correção baseada na Jornada do Herói aplicada a vendas?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "O erro é colocar a empresa como o Herói. A correção é colocar o Cliente como o Herói (Luke Skywalker), que tem um problema, e a Empresa/Produto como o Guia (Yoda) que fornece o plano e a ferramenta para o sucesso.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "O erro é não falar o suficiente sobre as features técnicas logo no primeiro slide.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "O erro é usar slides; deveria ser um vídeo institucional.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Não há erro. Clientes compram credibilidade institucional antes de qualquer coisa.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A resume a essência do Storytelling moderno de vendas. Ninguém se importa com a sua empresa até entenderem como você pode ajudá-los a vencer seus próprios desafios. O cliente é o protagonista."
+            }
+        ]
+    }
+}

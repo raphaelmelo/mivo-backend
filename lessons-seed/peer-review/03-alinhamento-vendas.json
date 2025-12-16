@@ -1,0 +1,61 @@
+{
+    "title": "Alinhamento de Vendas (Sales Enablement)",
+    "description": "Um colega PMM criou um Sales Enablement Kit para o novo produto, que consiste apenas em um PDF de 50 páginas com todas as features técnicas. O time de Vendas reclama que o material é inoperável.",
+    "type": "peer_review",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 19,
+    "isPublished": true,
+    "content": {
+        "intro": {
+            "persona": "Colleague",
+            "role": "PMM",
+            "scenario": "Um colega PMM criou um Sales Enablement Kit para o novo produto, que consiste apenas em um PDF de 50 páginas com todas as features técnicas. O time de Vendas reclama que o material é inoperável."
+        },
+        "analyze": {
+            "artifact": {
+                "type": "document",
+                "title": "Alinhamento de Vendas (Sales Enablement)",
+                "sections": [
+                    {
+                        "title": "Content",
+                        "content": "Qual é a crítica mais construtiva que você pode dar ao seu colega, segundo as melhores práticas de Product Marketing?"
+                    }
+                ]
+            }
+        },
+        "problems": [
+            {
+                "id": "a",
+                "text": "Explicar que Sales Enablement deve ser prático e focado em cenários de vendas e objeções do cliente, não em features. Sugerir transformar o material em battlecards (comparativos), scripts de demonstração focados em Valor e ROI, e respostas a objeções comuns.",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "text": "Sugerir que ele apenas reduza o PDF para 5 páginas para que os vendedores leiam mais rápido.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "text": "Dizer que Sales Enablement é responsabilidade do RH/Treinamento, e não do Product Marketing.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "text": "Aconselhar o colega a forçar os vendedores a lerem, pois o material técnico é fundamental e eles precisam se dedicar.",
+                "correct": false
+            }
+        ],
+        "expertFeedback": {
+            "name": "Mariana Costa",
+            "role": "Senior PMM",
+            "feedback": "A opção A é a correção ideal. O PMM é o arquiteto do Sales Enablement.",
+            "tips": [
+                "O objetivo é garantir que a equipe de vendas tenha o que precisa saber e o que precisa dizer para fechar negócios.",
+                "Foque em como posicionar o produto contra a concorrência e responder a objeções, e não apenas em listar features."
+            ]
+        }
+    }
+}

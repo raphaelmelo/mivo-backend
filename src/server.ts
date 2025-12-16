@@ -54,12 +54,14 @@ app.use(express.urlencoded({ extended: true }));
 import lessonRoutes from './routes/lessons';
 import badgeRoutes from './routes/badges';
 import leagueRoutes from './routes/leagues';
+import journeyRoutes from './routes/journeys';
 
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/lessons', lessonRoutes);
 app.use('/api/badges', badgeRoutes);
 app.use('/api/leagues', leagueRoutes);
+app.use('/api/journeys', journeyRoutes);
 
 // Health check route
 app.get('/health', (_req: Request, res: Response) => {

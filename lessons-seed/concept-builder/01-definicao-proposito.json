@@ -1,0 +1,48 @@
+{
+    "title": "Definição e Propósito do Product Marketing",
+    "description": "Você acabou de assumir uma posição de liderança em produto e precisa explicar ao time a diferença entre o papel de um PM (Product Manager) e um PMM (Product Marketing Manager) para justificar uma nova contratação.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 1,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Definição e Propósito do Product Marketing",
+            "explanation": "Você acabou de assumir uma posição de liderança em produto e precisa explicar ao time a diferença entre o papel de um PM (Product Manager) e um PMM (Product Marketing Manager) para justificar uma nova contratação.",
+            "example": "Na Apple, o PMM define como o iPhone é posicionado ('o celular mais seguro') enquanto o PM define quais recursos de segurança serão construídos."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "Com base nos fundamentos da disciplina, qual das opções abaixo define corretamente a responsabilidade primária de Product Marketing em relação à estratégia do negócio?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Product Marketing conecta os insights de clientes e mercado com o produto e as vendas, definindo o posicionamento, o messaging e a estratégia de Go-to-Market para garantir que o produto alcance os objetivos de negócio.",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Product Marketing é focado exclusivamente na priorização de features e na definição da arquitetura de sistemas junto com a engenharia, garantindo a entrega técnica.",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Product Marketing é responsável apenas pela gestão de canais de mídia paga e branding institucional, sem conexão direta com as definições do produto.",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Product Marketing substitui o time de Vendas, sendo o principal responsável pelo fechamento de contratos e negociação direta com todos os clientes.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A está correta pois PMM atua na interseção, conectando produto e vendas através de insights de mercado, posicionamento e estratégia de GTM. A opção B descreve funções de PM, a C limita a função a \"comunicação\" (o que é um erro comum ), e a D confunde o papel de enablement com a execução de vendas."
+            }
+        ]
+    }
+}

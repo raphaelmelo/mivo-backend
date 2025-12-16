@@ -1,0 +1,48 @@
+{
+    "title": "Matriz Ansoff e Estratégia de Crescimento",
+    "description": "Sua empresa possui um produto de software já consolidado no mercado de RH. A diretoria quer crescer rápido e decidiu lançar esse mesmo produto para um novo segmento de clientes (indústria farmacêutica), que nunca atenderam antes.",
+    "type": "concept_builder",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 2,
+    "isPublished": true,
+    "content": {
+        "concept": {
+            "emoji": "💡",
+            "title": "Matriz Ansoff e Estratégia de Crescimento",
+            "explanation": "Sua empresa possui um produto de software já consolidado no mercado de RH. A diretoria quer crescer rápido e decidiu lançar esse mesmo produto para um novo segmento de clientes (indústria farmacêutica), que nunca atenderam antes.",
+            "example": "O Nubank começou com cartão de crédito (Penetração), expandiu para conta corrente (Extensão), e entrou no México (Desenvolvimento de Mercado)."
+        },
+        "questions": [
+            {
+                "id": "q1",
+                "question": "De acordo com a Matriz Ansoff, qual é a estratégia de crescimento que a empresa está adotando?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "Desenvolvimento de Mercado (Expandir).",
+                        "correct": true
+                    },
+                    {
+                        "id": "b",
+                        "text": "Penetração de Mercado (Ganhar).",
+                        "correct": false
+                    },
+                    {
+                        "id": "c",
+                        "text": "Desenvolvimento de Produto (Estender).",
+                        "correct": false
+                    },
+                    {
+                        "id": "d",
+                        "text": "Diversificação (Reinventar).",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A opção A é a correta. Quando levamos um produto existente para um mercado novo, estamos executando uma estratégia de Desenvolvimento de Mercado (Expandir). Penetração seria vender mais do mesmo para os mesmos; Desenvolvimento de Produto seria criar algo novo para clientes atuais; e Diversificação seria tudo novo."
+            }
+        ]
+    }
+}

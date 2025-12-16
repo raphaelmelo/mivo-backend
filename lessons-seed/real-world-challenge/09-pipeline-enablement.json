@@ -1,0 +1,62 @@
+{
+    "title": "Geração de Pipeline através de Habilitação de Vendas (Sales Enablement)",
+    "description": "O time de Vendas reclama que os leads (MQLs) gerados pelo Marketing de Conteúdo não estão qualificados (não se tornam SQLs) porque não têm o conhecimento necessário para a próxima etapa da jornada.",
+    "type": "real_world_challenge",
+    "difficulty": "intermediate",
+    "xpReward": 50,
+    "estimatedMinutes": 5,
+    "isPremium": false,
+    "order": 33,
+    "isPublished": true,
+    "content": {
+        "context": {
+            "role": "Product Marketing Manager",
+            "team": "Marketing Team",
+            "sprint": "Go-to-Market",
+            "currentWork": "O time de Vendas reclama que os leads (MQLs) gerados pelo Marketing de Conteúdo não estão qualificados (não se tornam SQLs) porque não têm o conhecimento necessário para a próxima etapa da jornada."
+        },
+        "trigger": {
+            "from": "Stakeholder",
+            "message": "Qual recurso de Sales Enablement, de responsabilidade primária do PMM, deve ser priorizado para resolver esse problema de baixa qualificação e impulsionar o pipeline?",
+            "urgency": "high"
+        },
+        "options": [
+            {
+                "id": "a",
+                "text": "A criação de Battlecards focados nos Pontos de Dor e Objeções dos MQLs, ensinando o vendedor a qualificar o lead convertendo o valor da Proposta em ROI (Retorno sobre Investimento) para a dor específica do ICP.",
+                "risk": "Low risk",
+                "benefit": "High benefit"
+            },
+            {
+                "id": "b",
+                "text": "Uma planilha mensal de metas, focando apenas no número de ligações que o vendedor deve fazer.",
+                "risk": "Low risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "c",
+                "text": "Um webinar focado apenas nas features técnicas do produto.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            },
+            {
+                "id": "d",
+                "text": "A contratação de um novo time de Marketing de Conteúdo.",
+                "risk": "High risk",
+                "benefit": "Low benefit"
+            }
+        ],
+        "expertFeedback": {
+            "name": "Marcos Almeida",
+            "title": "Diretor Comercial - Movile",
+            "feedback": {
+                "intro": "A opção A é a correta. Habilitação de Vendas é capacitação.",
+                "steps": [
+                    "Entregar Fichas Comparativas foca em Objeções e Retorno sobre Investimento.",
+                    "Isso dá ao vendedor ferramentas práticas para direcionar a conversa e qualificar o cliente potencial."
+                ],
+                "warning": "Leads sem qualificação são apenas números de vaidade."
+            }
+        }
+    }
+}
