@@ -1,0 +1,1654 @@
+[
+    {
+        "journeyOrder": 1,
+        "title": "Fundamentos da Estratégia",
+        "description": "Conceitos fundamentais, elementos de sustentação e ferramentas de avaliação.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 1,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "♟️",
+                "title": "Conceitos de Estratégia",
+                "explanation": "Definição de Estratégia: A estratégia é o planejamento detalhado do caminho que uma organização precisa percorrer para alcançar seus objetivos. Ela é distinta de metas, que são os destinos específicos que se deseja atingir. A estratégia envolve a definição de indicadores de sucesso e a segmentação em etapas táticas para execução e priorização das tarefas. É um plano que guia as ações da empresa para atingir seus objetivos de longo prazo.\n\nElementos de Sustentação: O ciclo de vida do produto e o modelo de negócio são pilares fundamentais que sustentam a empresa. Eles direcionam as ações possíveis com o produto dentro da organização, influenciando decisões estratégicas e operacionais.\n\nFerramentas de Avaliação:\nBusiness Assessment: Focada na estratégia do negócio, ajuda a avaliar a posição da empresa no mercado e a identificar oportunidades de crescimento.\nProduct Assessment: Focada na estratégia do produto, auxilia na análise do desempenho do produto e na identificação de melhorias necessárias.\nMatriz BSG: Uma ferramenta administrativa que ajuda a comunicar a estratégia dentro da empresa. Ela é dividida em camadas:\nGrande Objetivo: Foco financeiro, como cumprir o orçamento.\nMercado: Identificação de alavancas para entregar resultados.\nMelhorias e Acompanhamento: Foco em processos operacionais.\nPessoas: O principal motor da organização, garantindo que os processos funcionem com as pessoas certas.",
+                "example": "Matriz BSG ajuda a comunicar a estratégia dividindo-a em camadas: Grande Objetivo, Mercado, Melhorias e Pessoas."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Na Matriz BSG, qual é o papel da camada de mercado?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Identificar quais são as alavancas que precisamos mexer para entregar o resultado da camada financeira.",
+                            "correct": true
+                        },
+                        {
+                            "id": "b",
+                            "text": "Focar no principal motor da organização: as pessoas.",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "Melhorar a comunicação da estratégia para a empresa.",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Garantir que os processos estejam operando de forma positiva.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "A camada de mercado foca em identificar as alavancas externas necessárias para atingir os objetivos financeiros."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 1,
+        "title": "Expansão Internacional",
+        "description": "Decisão estratégica sobre expansão internacional de uma startup.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 2,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "CEO",
+                "team": "Startup de Tecnologia",
+                "sprint": "Expansão",
+                "currentWork": "Plataforma de colaboração online com base sólida local."
+            },
+            "trigger": {
+                "from": "Mercado",
+                "message": "Considerando expandir para novos mercados internacionais. Qual estratégia adotar?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Realizar uma análise detalhada do mercado internacional usando a Matriz Ansoff para identificar oportunidades de crescimento. Em seguida, desenvolver uma estratégia de entrada baseada em uma combinação de tecnologia proprietária e branding forte, garantindo que a plataforma seja adaptada às necessidades locais.",
+                    "risk": "Baixo risco (decisão embasada)",
+                    "benefit": "Alto benefício (maior chance de sucesso)"
+                },
+                {
+                    "id": "b",
+                    "text": "Expandir para o mercado internacional com uma estratégia de padrão, utilizando um método de tentativa e erro. Lançar a plataforma em um mercado piloto, coletar feedback dos usuários e ajustar a estratégia com base nos aprendizados.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício (aprendizado rápido)"
+                },
+                {
+                    "id": "c",
+                    "text": "Entrar no mercado internacional pautado na tecnologia proprietária para garantir o sucesso.",
+                    "risk": "Alto risco (ignora mercado)",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Focar em reduzir custos e aumentar a economia de escala, mantendo conceitos de branding e do efeito de rede para outra fase do projeto.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Estrategista",
+                "role": "Mentor",
+                "feedback": "Opção A é a ideal. Análise detalhada e adaptação local são cruciais. A Opção B é aceitável como MVP."
+            }
+        }
+    },
+    {
+        "journeyOrder": 2,
+        "title": "Tipos e Técnicas de Estratégia",
+        "description": "Tipos de estratégia, características de sucesso e ferramentas.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 3,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🛠️",
+                "title": "Tipos e Ferramentas",
+                "explanation": "Tipos de Estratégia:\nEstratégia como Objetivo: Usada por empresas consolidadas que conhecem o caminho a seguir e têm clareza sobre seus objetivos.\nEstratégia como Padrão: Aplicada por startups, baseada em tentativa e erro, onde aprendizados são usados para ajustar o caminho.\nEstratégia como Posição: Foco no local e mercado desejado, definindo claramente onde a empresa quer estar.\nEstratégia como Visão: Abordagem visionária e arriscada, baseada na visão de um líder ou fundador.\n\nEstratégia Pretendida e Realizada:\nEstratégia Pretendida: Parte planejada da estratégia, com uma noção clara do objetivo final e do trajeto a ser seguido.\nEstratégia Realizada: Resultado final, composta por estratégia deliberada e emergente.\nEstratégia Deliberada: Parte da estratégia pretendida que foi realizada com sucesso.\nEstratégia Não Realizada: Pontos do planejamento que não foram executados.\nEstratégia Emergente: Elementos não planejados que surgem durante a execução e contribuem para o sucesso da estratégia.\n\nCaracterísticas de Empresas de Sucesso:\nTecnologia Proprietária: Dificulta a cópia por concorrentes, criando uma vantagem competitiva.\nEfeito de Rede: Aumenta o valor do produto à medida que mais pessoas o utilizam.\nEconomia de Escala: Reduz o custo unitário com maior produção, aumentando a eficiência.\nBranding: Valor da marca, que pode influenciar a percepção do consumidor e a lealdade à marca.\n\nFerramentas de Construção de Estratégia:\nCurva de Valor: Identifica o posicionamento desejado no mercado, diferenciando-se da concorrência.\nAnálise SWOT: Avalia forças, fraquezas, oportunidades e ameaças, fornecendo uma visão abrangente da situação da empresa.\nMatriz Ansoff: Classifica o momento do produto no mercado, ajudando a definir estratégias de crescimento.\nMatriz BCG: Posiciona produtos dentro do mercado de crescimento, auxiliando na gestão do portfólio de produtos.\n\nImportância da Velocidade e Adaptação: A velocidade de execução e a capacidade de adaptação são cruciais para o sucesso estratégico. Estratégias não devem ser engessadas, mas sim adaptáveis com base em aprendizados e ajustes ao longo do tempo.",
+                "example": "Startups usam Estratégia como Padrão (tentativa e erro)."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Como você diferenciaria entre uma estratégia deliberada e uma estratégia emergente, e quais são os benefícios e desafios de integrar ambos os tipos de estratégia em um plano de negócios?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Estratégia deliberada é um plano fixo e imutável, enquanto estratégia emergente é um plano que se adapta constantemente às mudanças do mercado. Integrar ambos permite flexibilidade, mas pode causar confusão na execução.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Estratégia deliberada é um plano que se adapta às mudanças do mercado, enquanto estratégia emergente é um plano fixo e imutável. Integrar ambos garante estabilidade, mas pode limitar a inovação.",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "Estratégia deliberada é um plano que surge espontaneamente durante a execução, enquanto estratégia emergente é um plano cuidadosamente planejado. Integrar ambos pode aumentar a eficiência, mas pode reduzir a criatividade.",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Estratégia deliberada é a parte planejada realizada com sucesso; Emergente surge de elementos não planejados durante a execução. Integrar ambas traz direção e flexibilidade.",
+                            "correct": true
+                        }
+                    ],
+                    "explanation": "A estratégia realizada é a soma da deliberada (planejada) com a emergente (aprendizados do caminho)."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 2,
+        "title": "Lançamento de Produto",
+        "description": "Decisão de lançamento em empresa consolidada.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 4,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Gerente de Produto",
+                "team": "Empresa Consolidada de Eletrônicos",
+                "sprint": "Lançamento",
+                "currentWork": "Lançamento de novo dispositivo inteligente."
+            },
+            "trigger": {
+                "from": "Diretoria",
+                "message": "Qual opção escolher para garantir um lançamento bem-sucedido?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Desenvolver uma estratégia de lançamento baseada na análise SWOT para identificar forças, fraquezas, oportunidades e ameaças. Utilizar a Matriz BCG para posicionar o novo produto no portfólio da empresa e alavancar o branding forte da empresa para criar uma campanha de marketing impactante.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Lançar o produto com uma estratégia de visão, confiando na intuição e experiência dos líderes da empresa para guiar o lançamento.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Focar exclusivamente na tecnologia proprietária do novo dispositivo, sem considerar o feedback dos consumidores ou a necessidade de uma estratégia de marketing robusta.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Lançar o produto rapidamente para ganhar vantagem de mercado.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Senior PM",
+                "role": "Advisor",
+                "feedback": "Opção A é a ideal. Utilizar ferramentas estratégicas (SWOT, BCG) e ativos da empresa (branding) maximiza as chances de sucesso."
+            }
+        }
+    },
+    {
+        "journeyOrder": 2,
+        "title": "Reestruturação Estratégica",
+        "description": "Reestruturação de empresa de software.",
+        "type": "real_world_challenge",
+        "difficulty": "advanced",
+        "xpReward": 100,
+        "estimatedMinutes": 6,
+        "isPremium": false,
+        "order": 5,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Diretor de Estratégia",
+                "team": "Empresa de Software",
+                "sprint": "Reestruturação",
+                "currentWork": "Enfrentando desafios tecnológicos e concorrência."
+            },
+            "trigger": {
+                "from": "CEO",
+                "message": "Como reestruturar para manter a competitividade?",
+                "urgency": "critical"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Convocar uma reunião com todos os stakeholders para realizar uma análise SWOT colaborativa, identificando forças, fraquezas, oportunidades e ameaças. Desenvolver uma estratégia integrada que alavanque a tecnologia proprietária da empresa e o efeito de rede, enquanto adapta o produto às necessidades dos clientes.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Trabalhar com o CEO e a equipe de desenvolvimento para criar uma estratégia de inovação focada em tecnologia proprietária, enquanto consulta o departamento de marketing para ajustar a comunicação com os clientes.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Decidir a nova estratégia exclusivamente com o CEO, sem envolver outros stakeholders.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Focar em cortar custos e aumentar a economia de escala. Essa abordagem pode comprometer a qualidade do produto e a percepção da marca, levando a uma perda de competitividade no mercado.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Consultor",
+                "role": "Estrategista",
+                "feedback": "Opção A é a ideal. Envolver todos os stakeholders e usar SWOT garante alinhamento e uma estratégia robusta focada no cliente."
+            }
+        }
+    },
+    {
+        "journeyOrder": 3,
+        "title": "OKRs: Definição e Priorização",
+        "description": "Definição, processo, importância e diferença para KPIs.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 6,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🎯",
+                "title": "OKRs (Objectives and Key Results)",
+                "explanation": "Definição: OKRs são uma metodologia de definição de metas que ajuda as organizações a estabelecer objetivos claros e mensuráveis. Eles são compostos por um objetivo (O) inspirador e desafiador, e resultados chave (KRs) que são específicos, mensuráveis e com prazos definidos.\n\nProcesso de Definição: A definição de OKRs começa com a missão de longo prazo da empresa, que é então dividida em objetivos de curto prazo. Cada objetivo é acompanhado por resultados chave que ajudam a medir o progresso em direção ao objetivo.\n\nImportância: OKRs são usados para alinhar equipes e indivíduos em torno de metas comuns, promovendo foco e colaboração.\n\nDiferença entre OKRs e KPIs:\nOKRs: Focados em atingir metas específicas e desafiadoras. Eles são temporários e revisados regularmente (geralmente trimestralmente).\nKPIs: Indicadores de desempenho contínuo que monitoram a saúde geral do negócio. Eles são usados para medir o desempenho ao longo do tempo e não necessariamente estão ligados a metas específicas.\nRelação: Enquanto os OKRs são sobre 'onde queremos chegar', os KPIs são sobre 'como estamos indo'.\n\nAplicação de OKRs na Jornada do Cliente:\nJornada do Cliente: Refere-se ao caminho que um cliente percorre ao interagir com um produto ou serviço, desde a descoberta até a compra e além.\nUso de OKRs: Os OKRs podem ser aplicados para melhorar a experiência do cliente, identificando pontos de influência em cada etapa da jornada e definindo KRs para melhorar a conversão ou satisfação.\nExemplo Prático: A aula usa a jornada de compra de seguro como exemplo, mostrando como cada etapa pode ter KRs específicos para melhorar a experiência do cliente.",
+                "example": "Objetivo: Aumentar retenção. KR: Reduzir churn em 5%."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é o foco principal das métricas na fase de introdução do ciclo de vida de um produto?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Compreender vazamentos em todo o funil para simplificar o produto.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Entender a causa do declínio de uso e mitigar riscos em novas apostas.",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "Focar na retenção, garantindo que poucas pessoas usem o produto intensamente.",
+                            "correct": true
+                        },
+                        {
+                            "id": "d",
+                            "text": "Identificar as principais iniciativas para alavancar o uso do produto através do topo do funil.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Na introdução, o foco é garantir que o produto resolve a dor do usuário (retenção) antes de escalar."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 3,
+        "title": "Revisão de OKRs: App de Fitness",
+        "description": "Revisão de OKRs mal alinhados.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 7,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Líder de Produto",
+                "team": "App de Fitness",
+                "sprint": "Planejamento",
+                "currentWork": "Objetivo da empresa: Aumentar usuários ativos em 25% e melhorar satisfação."
+            },
+            "trigger": {
+                "from": "Time",
+                "message": "Colega propôs OKR focado apenas em 'Lançar 3 features'. Como corrigir?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Reformular o objetivo para focar na experiência do usuário e retenção, e ajustar os KRs para refletir isso. Novo Objetivo (O): Melhorar a experiência do usuário para aumentar a retenção e a satisfação. Novos KRs: Aumentar a taxa de retenção de usuários em 15%. Melhorar a avaliação média do aplicativo na loja de aplicativos para 4,5 estrelas. Reduzir o tempo de carregamento do aplicativo em 20%.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Manter o foco no lançamento de funcionalidades, mas incluir KRs que medem o impacto na retenção e satisfação. Ajustado KRs: Completar o desenvolvimento de três novas funcionalidades até o final do trimestre. Aumentar a taxa de retenção de usuários em 10% após o lançamento das novas funcionalidades. Melhorar a avaliação média do aplicativo na loja de aplicativos para 4,3 estrelas.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Adicionar mais KRs relacionados a métricas de desempenho técnico, como tempo de resposta do servidor.",
+                    "risk": "Médio risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Focar exclusivamente em aumentar o número de downloads do aplicativo.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Agile Coach",
+                "role": "Mentor",
+                "feedback": "Opção A é a ideal. OKRs devem focar em resultados (outcomes) como retenção e satisfação, não apenas em entregas (outputs)."
+            }
+        }
+    },
+    {
+        "journeyOrder": 3,
+        "title": "OKRs: App de Educação",
+        "description": "Definição de OKRs para novo app de educação.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 8,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Gerente de Produto",
+                "team": "App de Educação Online",
+                "sprint": "Planejamento",
+                "currentWork": "Objetivo: Expandir base de usuários e aumentar engajamento em 30%."
+            },
+            "trigger": {
+                "from": "Estratégia",
+                "message": "Definir e priorizar OKRs alinhados com a estratégia.",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Definir um objetivo claro e inspirador, identificar resultados chave mensuráveis, priorizar funcionalidades que impactem diretamente o engajamento dos alunos, realizar pesquisas de satisfação com os usuários atuais, desenvolver um sistema de recompensas para alunos que completam cursos, e focar em melhorar a interface do usuário.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Concentrar-se exclusivamente em aumentar o número de cursos disponíveis.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Implementar uma campanha de marketing agressiva para atrair novos usuários.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Focar em reduzir custos de desenvolvimento para maximizar o orçamento.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Head of Product",
+                "role": "Líder",
+                "feedback": "Opção A é a ideal. Ações alinhadas com o objetivo estratégico de aumentar o engajamento."
+            }
+        }
+    },
+    {
+        "journeyOrder": 4,
+        "title": "KPIs",
+        "description": "User Story Mapping, Pirâmide de Usabilidade e Priorização.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 9,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "📊",
+                "title": "KPIs e Priorização",
+                "explanation": "User Story Mapping: Uma técnica para mapear as principais tarefas ao longo da jornada do cliente, ajudando a entender a usabilidade do produto.\nPirâmide de Usabilidade: Ferramenta que ajuda a priorizar tarefas com base em sua importância e impacto na experiência do usuário. Tarefas na base da pirâmide são de alta prioridade para melhorias.\nProcesso de Priorização: Envolve identificar quais KRs são mais críticos para influenciar os KPIs e, portanto, devem ser priorizados.\nCálculo de Retorno de Investimento (ROI): Importante para justificar priorizações.",
+                "example": "Priorizar o que move os ponteiros dos KPIs."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é a principal diferença entre OKRs e KPIs?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "OKRs são usados para monitorar o desempenho contínuo, enquanto KPIs são usados para definir objetivos específicos a serem alcançados.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "OKRs são sobre atingir objetivos específicos, enquanto KPIs são sobre monitoramento de desempenho.",
+                            "correct": true
+                        },
+                        {
+                            "id": "c",
+                            "text": "OKRs são indicadores financeiros, enquanto KPIs são indicadores de satisfação do cliente.",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "OKRs são usados apenas em startups, enquanto KPIs são usados em empresas estabelecidas.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "OKRs = Objetivos (Mudança). KPIs = Indicadores (Saúde/Manutenção)."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 4,
+        "title": "Priorização: App de Streaming",
+        "description": "Priorização de features para retenção.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 10,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Gerente de Produto",
+                "team": "App de Streaming",
+                "sprint": "Priorização",
+                "currentWork": "Objetivo: Aumentar retenção em 15%."
+            },
+            "trigger": {
+                "from": "Dev Team",
+                "message": "Qual iniciativa priorizar?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Implementar uma nova funcionalidade de recomendação personalizada baseada em IA. Justificativa: Esta iniciativa tem um alto potencial de impacto, pois personalizar recomendações pode aumentar significativamente o tempo de visualização e a satisfação do usuário. O ROI projetado é alto, com um impacto positivo esperado na retenção e conversão de usuários.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Melhorar a interface do usuário do processo de inscrição para torná-lo mais intuitivo. Justificativa: Embora o impacto possa ser menor em comparação com a personalização, simplificar o processo de inscrição pode reduzir o abandono e melhorar a experiência inicial do usuário, contribuindo para a retenção.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Adicionar uma nova seção de notícias e atualizações sobre filmes e séries. Justificativa: Embora possa parecer uma adição interessante, esta iniciativa não está diretamente alinhada com os KRs definidos e tem um ROI incerto em termos de retenção de usuários.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Lançar uma campanha de marketing para atrair novos usuários. Justificativa: Esta iniciativa foca na aquisição de novos usuários, enquanto o objetivo principal é aumentar a retenção.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Head of Product",
+                "role": "Líder",
+                "feedback": "Opção A é a ideal. Recomendação personalizada ataca diretamente o KR de 'Aumentar tempo de visualização' e retenção."
+            }
+        }
+    },
+    {
+        "journeyOrder": 5,
+        "title": "Conceitos de Product Market Fit",
+        "description": "Definição, Framework, Suposições e Métricas.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 11,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🧩",
+                "title": "Product-Market Fit",
+                "explanation": "Definição e Importância:\nProduct-Market Fit é o estágio em que um produto atende às necessidades de um mercado específico de forma tão eficaz que os clientes estão dispostos a pagar por ele, e o produto começa a ganhar tração no mercado. É um conceito central no desenvolvimento de startups e produtos, pois indica que há uma demanda real e sustentável para o produto.\n\nFramework de Customer Development:\nO PMF é parte do framework de Customer Development, criado por Steve Blank, que é composto por quatro etapas: discovery (descoberta), validation (validação), creation (criação) e building (construção). A busca pelo PMF ocorre na segunda fase, a de customer validation, onde se valida se existe um mercado grande o suficiente para sustentar um negócio viável.\n\nPrincipais Suposições:\nCustomer Discovery: Validar se a solução resolve um problema conhecido para um grupo identificável de pessoas ou empresas (problem-solution fit).\nCustomer Validation: Após a descoberta, busca-se o PMF, validando se há um mercado grande o suficiente.\n\nPerspectivas de Especialistas:\nMark Andreessen: Foco no mercado. Um bom mercado pode compensar um produto não tão bom.\nAndy Rachleff: Foco no produto e na hipótese de valor. Clientes ansiosos pelo produto podem compensar falhas na execução.\nAlexander Osterwalder: O PMF ocorre quando o mercado demanda o produto e se encaixa na hipótese de valor.\nDan Olsen: O PMF é validado quando os clientes reconhecem o verdadeiro valor do produto.\n\nPirâmide do Product-Market:\nBase: Mercado com usuários e necessidades não atendidas.\nTopo: Produto com proposta de valor, funcionalidades e design.\nO PMF ocorre quando o topo se junta à base.\n\nMétricas e Sinais de Product-Market Fit:\nMétricas Essenciais:\nAquisição: Capacidade de adquirir novos clientes.\nRetenção: Capacidade de reter clientes.\nNegócio: Clientes estão dispostos a pagar pelo produto.\nMedição do PMF: Não é uma medida binária; deve ser avaliado com uma combinação de métricas e sinais.\n\nConclusão:\nO Product-Market Fit é um processo iterativo e estruturado, não um resultado do acaso. Envolve a validação contínua de hipóteses de valor e a adaptação às necessidades do mercado.",
+                "example": "Pirâmide PMF: Topo (Produto) se encaixa na Base (Mercado)."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual das seguintes afirmações melhor descreve o conceito de Product-Market Fit (PMF) conforme discutido na aula?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Product-Market Fit é alcançado quando um produto é lançado no mercado, independentemente da demanda dos clientes.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Product-Market Fit ocorre quando um produto atende às necessidades de um mercado específico de forma eficaz, resultando em clientes dispostos a pagar por ele e em tração no mercado.",
+                            "correct": true
+                        },
+                        {
+                            "id": "c",
+                            "text": "Product-Market Fit é a fase em que uma empresa começa a desenvolver seu produto sem considerar o feedback dos clientes.",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Product-Market Fit é atingido quando um produto tem o maior número de funcionalidades possíveis, independentemente do mercado.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "PMF é sobre encaixe e tração real no mercado."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 5,
+        "title": "Buscando o PMF: App de Gestão",
+        "description": "Ajuste de estratégia para encontrar PMF.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 12,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Fundador",
+                "team": "Startup App Gestão",
+                "sprint": "Growth",
+                "currentWork": "Adoção abaixo do esperado após lançamento."
+            },
+            "trigger": {
+                "from": "Métricas",
+                "message": "Como ajustar a estratégia para encontrar PMF?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Realizar entrevistas detalhadas com um grupo de early adopters para entender suas necessidades e ajustar o produto com base no feedback obtido, focando em resolver problemas específicos que eles enfrentam.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Analisar as métricas de uso atuais do aplicativo para identificar quais funcionalidades são mais utilizadas e concentrar os esforços de desenvolvimento nessas áreas, enquanto busca feedback adicional dos usuários.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Aumentar o número de funcionalidades do aplicativo sem consultar os usuários, na esperança de que mais opções atraiam um público maior.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Investir pesadamente em campanhas de marketing para aumentar a visibilidade do aplicativo, sem realizar ajustes no produto ou entender melhor as necessidades do mercado.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Lean Startup Coach",
+                "role": "Mentor",
+                "feedback": "Opção A é a ideal. Feedback qualitativo de early adopters é ouro para ajustar o 'Problem-Solution Fit' antes de escalar."
+            }
+        }
+    },
+    {
+        "journeyOrder": 5,
+        "title": "PMF: Software de Colaboração",
+        "description": "Ajustes para encontrar PMF em software de colaboração.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 13,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Gerente de Produto",
+                "team": "Startup Software Colaboração",
+                "sprint": "Ajuste",
+                "currentWork": "Adoção abaixo do esperado, feedback misto."
+            },
+            "trigger": {
+                "from": "Usuários",
+                "message": "Feedback misto. O que fazer?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Realizar entrevistas com usuários atuais para entender suas necessidades e desafios específicos, ajustando o produto com base no feedback. Implementar um sistema de feedback contínuo. Focar em melhorar a experiência do usuário e a interface do produto.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Expandir imediatamente o produto para novos mercados internacionais, sem realizar ajustes no produto atual.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Adicionar o máximo de funcionalidades possíveis ao produto, na esperança de que mais opções atraiam mais usuários.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Investir pesadamente em campanhas de marketing para aumentar a visibilidade do produto, sem realizar ajustes no produto.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Product Lead",
+                "role": "Mentor",
+                "feedback": "Opção A é a ideal. Ações focadas em entender e atender melhor as necessidades dos usuários são cruciais para encontrar o PMF."
+            }
+        }
+    },
+    {
+        "journeyOrder": 6,
+        "title": "NPS e MVP no PMF",
+        "description": "NPS (Definição, Importância) e MVP (Definição, Importância).",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 14,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "❤️",
+                "title": "NPS & MVP",
+                "explanation": "NPS (Net Promoter Score)\nDefinição: O NPS é uma métrica utilizada para medir o grau de lealdade dos clientes em relação a um produto ou serviço. Ele é calculado com base na resposta dos clientes à pergunta: 'Em uma escala de 0 a 10, qual a probabilidade de você recomendar nosso produto/serviço a um amigo ou colega?'\nImportância: Um NPS alto está fortemente correlacionado com a retenção de clientes. Isso significa que clientes que estão dispostos a recomendar seu produto provavelmente continuarão a usá-lo.\nAplicação: O NPS é usado para entender o amor do cliente pelo produto e pode ser um indicador de sucesso no mercado.\n\nMVP (Minimum Viable Product)\nDefinição: O MVP é a versão mais simples e funcional de um produto que pode ser lançada para validar uma hipótese de valor com o menor desperdício possível.\nImportância: O MVP é mais do que uma ferramenta; é uma mentalidade de aprendizado. Ele permite que as empresas testem suas ideias no mercado real com o mínimo de recursos, ajudando a validar suposições antes de investir em um desenvolvimento completo.\nAplicação: O MVP é usado para iterar rapidamente e aprender com o feedback dos usuários, ajustando o produto conforme necessário para alcançar o product-market fit.",
+                "example": "NPS pergunta: 'Qual a probabilidade de recomendar a um amigo?'"
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é o principal objetivo do NPS (Net Promoter Score) no contexto de Product-Market Fit?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "O NPS é usado para medir a quantidade de novos clientes adquiridos em um determinado período.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "O NPS é uma métrica que avalia a eficiência operacional de uma empresa em relação aos seus concorrentes.",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "O NPS mede o amor e a lealdade dos clientes em relação a um produto, correlacionando-se fortemente com a retenção de clientes.",
+                            "correct": true
+                        },
+                        {
+                            "id": "d",
+                            "text": "O NPS é utilizado para determinar o preço ideal de um produto no mercado.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "NPS alto indica que clientes amam o produto, essencial para crescimento sustentável."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 6,
+        "title": "Melhorando NPS",
+        "description": "Ações para melhorar NPS de 30.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 15,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "App Gestão de Tempo",
+                "sprint": "Qualidade",
+                "currentWork": "NPS de 30 indica necessidade de melhoria."
+            },
+            "trigger": {
+                "from": "Pesquisa NPS",
+                "message": "O que fazer com os resultados?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Analisar os comentários qualitativos dos detratores (aqueles que deram notas baixas) para identificar áreas específicas de insatisfação e implementar melhorias direcionadas nessas áreas, enquanto também reforça os pontos positivos mencionados pelos promotores.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Focar em melhorar a experiência do usuário com base nas sugestões gerais de todos os participantes da pesquisa, priorizando as mudanças que podem ser implementadas rapidamente.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Ignorar os resultados da pesquisa NPS e continuar com o plano de desenvolvimento original, assumindo que o NPS irá melhorar naturalmente com o tempo.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Oferecer descontos ou incentivos financeiros para todos os usuários que participaram da pesquisa, sem abordar as questões subjacentes levantadas pelos detratores.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Customer Success",
+                "role": "Lead",
+                "feedback": "Opção A é a ideal. Detratores apontam onde o produto falha em entregar valor. Corrigir isso move o ponteiro do NPS."
+            }
+        }
+    },
+    {
+        "journeyOrder": 7,
+        "title": "Ciclo de Vida do Produto",
+        "description": "Etapas do ciclo de vida e papel do PM.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 16,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🔄",
+                "title": "Ciclo de Vida",
+                "explanation": "Ciclo de Vida do Produto\nO ciclo de vida do produto é um conceito que descreve as etapas que um produto atravessa desde sua concepção até seu declínio no mercado. É importante diferenciar o ciclo de vida do produto do ciclo de desenvolvimento de um produto. Enquanto o ciclo de desenvolvimento envolve etapas como definição do problema, definição da solução, desenvolvimento e lançamento, o ciclo de vida do produto abrange um período mais longo e inclui várias iterações do ciclo de desenvolvimento.\n\nEtapas do Ciclo de Vida do Produto:\nIntrodução: Nesta fase, o produto é lançado no mercado. O foco principal é a retenção, ou seja, garantir que as poucas pessoas que usam o produto o façam intensamente. O desafio é resolver as dores dos usuários da melhor maneira possível.\nCrescimento: O produto começa a ganhar tração e o foco muda para a aquisição de novos usuários. As principais iniciativas visam alavancar o uso do produto através do topo do funil, ou seja, aumentar a base de usuários.\nMaturidade: O produto já está estabelecido no mercado. O foco aqui é compreender vazamentos em todo o funil de vendas e simplificar o produto para que a proposta de valor continue relevante. É crucial manter o Product Market Fit, ou seja, garantir que o produto continue atendendo às necessidades do mercado.\nDeclínio: Nesta fase, o uso do produto começa a diminuir. O foco é entender as causas do declínio e mitigar riscos em novas apostas ou inovações.\n\nO ciclo de vida do produto e as métricas associadas são fundamentais para o trabalho de gerentes de produto (PMs). A atuação dos PMs varia de acordo com o momento no ciclo de vida do produto, e é crucial que eles adaptem suas estratégias e ferramentas para cada fase.",
+                "example": "Fases: Introdução (Retenção) -> Crescimento (Aquisição) -> Maturidade (Otimização) -> Declínio (Reinvenção)."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é a principal diferença entre o ciclo de vida de um produto e o ciclo de desenvolvimento de um produto?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "O ciclo de vida de um produto refere-se apenas à fase de lançamento, enquanto o ciclo de desenvolvimento abrange todas as fases do produto.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "O ciclo de vida de um produto é um processo contínuo que ocorre várias vezes, enquanto o ciclo de desenvolvimento acontece apenas uma vez.",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "O ciclo de vida de um produto abrange todas as fases desde a introdução até o declínio, enquanto o ciclo de desenvolvimento foca na criação e lançamento do produto.",
+                            "correct": true
+                        },
+                        {
+                            "id": "d",
+                            "text": "O ciclo de vida de um produto é focado em métricas de retenção, enquanto o ciclo de desenvolvimento é focado em métricas de crescimento.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Ciclo de vida é a vida inteira do produto no mercado. Ciclo de desenvolvimento é o processo de construir e lançar features."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 7,
+        "title": "Retenção na Introdução",
+        "description": "Melhorando retenção na fase de introdução.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 17,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "Startup FitLife",
+                "sprint": "Introdução",
+                "currentWork": "App recém-lançado, retenção baixa."
+            },
+            "trigger": {
+                "from": "Dados",
+                "message": "Retenção menor que o esperado. O que fazer?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Realizar Pesquisas de Usuário e Melhorar a Experiência do Usuário (UX). Conduza entrevistas e pesquisas com os usuários atuais para entender suas necessidades e frustrações. Use esse feedback para melhorar a interface do usuário e adicionar funcionalidades que resolvam as principais dores dos usuários.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Oferecer Promoções e Incentivos para Uso Contínuo. Introduza um sistema de recompensas que oferece descontos ou funcionalidades premium gratuitas para usuários que mantêm um uso contínuo do aplicativo por um determinado período.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Focar Exclusivamente em Aquisição de Novos Usuários. Investir pesadamente em marketing para atrair novos usuários sem abordar os problemas de retenção existentes.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Adicionar Funcionalidades Complexas sem Pesquisa Prévia. Implementar novas funcionalidades complexas baseadas em suposições internas sobre o que os usuários podem querer, sem realizar pesquisas de usuário.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Growth PM",
+                "role": "Mentor",
+                "feedback": "Opção A é a ideal. Na fase de introdução, você precisa garantir que o produto resolve o problema (Product-Solution Fit) antes de tentar crescer."
+            }
+        }
+    },
+    {
+        "journeyOrder": 7,
+        "title": "Expansão Internacional",
+        "description": "Decisão de expansão na fase de maturidade.",
+        "type": "real_world_challenge",
+        "difficulty": "advanced",
+        "xpReward": 100,
+        "estimatedMinutes": 6,
+        "isPremium": false,
+        "order": 18,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "FitLife (Maturidade)",
+                "sprint": "Expansão",
+                "currentWork": "CEO quer receita rápida, Marketing quer adaptação, Tech quer estabilidade."
+            },
+            "trigger": {
+                "from": "Stakeholders",
+                "message": "Como expandir internacionalmente?",
+                "urgency": "critical"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Lançamento Piloto em um Mercado Estratégico com Adaptação Cultural. Proponha um lançamento piloto em um mercado internacional estratégico, onde o produto seja adaptado às preferências culturais locais. Trabalhe em estreita colaboração com Marketing e Tech.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Expansão Gradual com Foco em Infraestrutura. Inicie a expansão em um ou dois mercados menores para testar a capacidade da infraestrutura e fazer ajustes conforme necessário.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Expansão Agressiva em Múltiplos Mercados sem Adaptação. Seguir a pressão do CEO e lançar o produto simultaneamente em vários mercados internacionais sem adaptação cultural.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Focar Exclusivamente na Adaptação Cultural sem Considerar Infraestrutura. Concentrar todos os esforços na adaptação cultural do produto, ignorando as preocupações do Diretor de Tecnologia sobre a escalabilidade.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "VP of Product",
+                "role": "Líder",
+                "feedback": "Opção A equilibra as necessidades de todos os stakeholders e mitiga riscos de mercado e técnicos."
+            }
+        }
+    },
+    {
+        "journeyOrder": 8,
+        "title": "Métricas do Ciclo de Vida",
+        "description": "Importância e tipos de métricas por fase.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 19,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "📈",
+                "title": "Métricas e Fases",
+                "explanation": "Importância das Métricas no ciclo de vida do produto:\nAs métricas são fundamentais para entender em qual fase do ciclo de vida o produto se encontra. Elas ajudam a orientar decisões estratégicas e operacionais, permitindo que os gerentes de produto ajustem suas abordagens conforme necessário.\n\nTipos de Métricas:\nMétricas Orientadas ao Negócio: Estas métricas ajudam a entender o impacto do produto nos objetivos gerais da empresa, como receita, lucro e participação de mercado.\nMétricas Orientadas ao Cliente: Focam na experiência e satisfação do cliente, medindo aspectos como retenção, engajamento e feedback dos usuários.\nMétricas Orientadas ao Produto: Avaliam o desempenho do produto em si, incluindo usabilidade, funcionalidade e eficiência.\n\nMétricas por Fase do Ciclo de Vida:\nFase de Introdução: O foco é na retenção. A principal questão é como resolver as dores dos usuários da melhor maneira possível.\nFase de Crescimento: O objetivo é entender o que traz mais usuários para o produto (aquisição).\nFase de Maturidade: O foco é compreender vazamentos em todo o funil de vendas e simplificar o produto.\nFase de Declínio: O foco é entender a causa do declínio de uso. As métricas ajudam a mitigar riscos em novas apostas.",
+                "example": "Métrica de Introdução: Retenção. Métrica de Crescimento: Aquisição."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual das opções abaixo é um exemplo de métrica de vaidade que deve ser evitada ao buscar o Product-Market Fit?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Número de downloads do aplicativo",
+                            "correct": true
+                        },
+                        {
+                            "id": "b",
+                            "text": "Taxa de retenção de clientes",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "Receita média por cliente",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Net Promoter Score (NPS)",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Downloads não indicam uso real. Retenção e receita mostram valor real."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 8,
+        "title": "Expansão Internacional (Métricas)",
+        "description": "Decisão de expansão focada em métricas e stakeholders.",
+        "type": "real_world_challenge",
+        "difficulty": "advanced",
+        "xpReward": 100,
+        "estimatedMinutes": 6,
+        "isPremium": false,
+        "order": 20,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "FitLife",
+                "sprint": "Expansão",
+                "currentWork": "Mesmo cenário de expansão, foco em métricas de sucesso."
+            },
+            "trigger": {
+                "from": "CEO/Marketing/Tech",
+                "message": "Qual estratégia maximiza as métricas corretas?",
+                "urgency": "critical"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Lançamento Piloto em um Mercado Estratégico com Adaptação Cultural. Permite medir métricas de aceitação (Product-Market Fit local) antes de escalar.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Expansão Gradual com Foco em Infraestrutura. Foca em métricas de estabilidade técnica.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Expansão Agressiva em Múltiplos Mercados sem Adaptação. Foca em métricas de vaidade (número de mercados) e ignora retenção.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Focar Exclusivamente na Adaptação Cultural sem Considerar Infraestrutura.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Data Analyst",
+                "role": "Advisor",
+                "feedback": "Opção A permite validar métricas de engajamento e retenção em um ambiente controlado."
+            }
+        }
+    },
+    {
+        "journeyOrder": 9,
+        "title": "Visão de Produto",
+        "description": "Definição, componentes e criação da visão.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 21,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🔭",
+                "title": "Visão de Produto",
+                "explanation": "Definição e Importância:\nA visão de produto é descrita como uma bússola que orienta as decisões do time, inspira a criação de produtos inovadores e conecta o trabalho a um significado maior. Ela é essencial para guiar o uso de novas tecnologias e tendências, além de ser a base para a estratégia de negócios.\n\nComponentes da Visão de Produto:\nGrupo Alvo: Identificação dos usuários e mercados.\nNecessidades: Compreensão das necessidades dos usuários.\nObjetivo de Negócio: Como o produto gera valor para a empresa.\nProduto: A tecnologia e funcionalidades.\nVisão: O propósito maior do produto e a mudança positiva que ele trará ao mundo.\n\nCriação e Aplicação:\nA visão de produto deve ser abrangente e de longo prazo (5-10 anos). O quadro de visão do produto (product vision board) é uma ferramenta prática para descrever e visualizar a visão.\n\nROI e Visão:\nO produto deve contribuir positivamente para o ROI, justificando o investimento feito em seu desenvolvimento e alinhando-se com os objetivos de negócio.",
+                "example": "Visão: 'Organizar a informação do mundo e torná-la mundialmente acessível e útil' (Google)."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é o papel dos stakeholders na criação de uma visão de produto?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Os stakeholders são responsáveis por desenvolver o código do produto final.",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Os stakeholders devem se sentir guardiões da visão de produto, contribuindo para seu sucesso e alinhando com os objetivos de negócio.",
+                            "correct": true
+                        },
+                        {
+                            "id": "c",
+                            "text": "Os stakeholders são apenas os clientes finais que utilizam o produto.",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Os stakeholders não têm influência na visão de produto, pois ela é definida exclusivamente pela equipe de desenvolvimento.",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Stakeholders engajados garantem que a visão seja viável e apoiada pela organização."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 9,
+        "title": "Revisão de Visão: EcoTech",
+        "description": "Atualizando a visão de produto.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 22,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "EcoTech Solutions",
+                "sprint": "Estratégia",
+                "currentWork": "Visão criada há 5 anos precisa de revisão."
+            },
+            "trigger": {
+                "from": "Mercado",
+                "message": "Como atualizar a visão para novas tendências?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Realizar Pesquisas de Mercado Atualizadas, Consultar Stakeholders Internos e Externos, e Incorporar Feedback de Clientes. Essencial para entender as novas necessidades e garantir alinhamento.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Incorreta: Focar em Funcionalidades de Personalização. Pode desviar o foco da sustentabilidade.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Expandir para Novos Mercados sem Pesquisa. Investimento de alto risco.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Desenvolver uma Campanha de Marketing Agressiva sem revisar a visão.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Chief Strategy Officer",
+                "role": "Líder",
+                "feedback": "Opção A garante que a nova visão seja relevante, baseada em dados e apoiada por todos."
+            }
+        }
+    },
+    {
+        "journeyOrder": 10,
+        "title": "ROI (Retorno sobre Investimento)",
+        "description": "Definição, cálculo e importância na priorização.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 23,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "💰",
+                "title": "ROI",
+                "explanation": "Cálculo de Retorno de Investimento (ROI):\nDefinição: ROI é uma métrica financeira que mede o retorno esperado de uma iniciativa em relação ao custo de sua implementação.\nCálculo: O ROI é calculado subtraindo o custo do desenvolvimento do impacto financeiro esperado e dividindo pelo custo do desenvolvimento. Isso fornece uma proporção entre impacto e esforço.\nImportância na Priorização: O ROI ajuda a priorizar iniciativas com base em seu potencial de retorno financeiro, garantindo que os recursos sejam alocados de forma eficaz.\nStakeholders de Negócio: É importante envolver stakeholders de negócio para entender como o produto pode maximizar o ROI e justificar o investimento.\nAvaliação Contínua: O ROI deve ser monitorado ao longo do tempo.",
+                "example": "ROI = (Ganho - Custo) / Custo."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é a fórmula básica para calcular o Retorno sobre Investimento (ROI) em um projeto de produto digital?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "ROI = (Custo Total do Projeto - Receita Total Gerada) / Receita Total Gerada",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "ROI = (Receita Total Gerada - Custo Total do Projeto) / Custo Total do Projeto",
+                            "correct": true
+                        },
+                        {
+                            "id": "c",
+                            "text": "ROI = (Receita Total Gerada + Custo Total do Projeto) / Custo Total do Projeto",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "ROI = (Custo Total do Projeto + Receita Total Gerada) / Receita Total Gerada",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "ROI mede o lucro líquido (Receita - Custo) em relação ao investimento (Custo)."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 10,
+        "title": "Investimento em Features",
+        "description": "Decisão de investimento para maximizar ROI.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 24,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "ProdTech",
+                "sprint": "Roadmap",
+                "currentWork": "App de produtividade para PMEs."
+            },
+            "trigger": {
+                "from": "Negócios",
+                "message": "Onde investir para maximizar ROI?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Investir em Funcionalidades de Automação Inteligente. Automatizar tarefas repetitivas atende diretamente à necessidade de economia de tempo e aumenta a proposta de valor, com alto potencial de ROI.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Melhorar a Interface do Usuário (UI). Aumenta satisfação, mas impacto no ROI é mais moderado.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Adicionar Funcionalidades de Rede Social. Desvio da visão de produtividade, baixo ROI.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Expandir para um Novo Mercado sem Pesquisa Adequada. Alto risco de ROI negativo.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "CFO",
+                "role": "Financeiro",
+                "feedback": "Opção A gera valor tangível (tempo economizado) pelo qual clientes pagam, maximizando o ROI."
+            }
+        }
+    },
+    {
+        "journeyOrder": 10,
+        "title": "Revisão de Estratégia ROI",
+        "description": "Corrigindo proposta de baixo ROI.",
+        "type": "real_world_challenge",
+        "difficulty": "advanced",
+        "xpReward": 100,
+        "estimatedMinutes": 6,
+        "isPremium": false,
+        "order": 25,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "TechSolutions",
+                "sprint": "Revisão",
+                "currentWork": "Colega propôs personalização, corte de suporte e expansão sem pesquisa."
+            },
+            "trigger": {
+                "from": "Colega",
+                "message": "Proposta para aumentar ROI (mas problemática).",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Reorientar o Foco para Funcionalidades de Automação de Processos. Alinhado com eficiência e alto ROI.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Melhorar o Suporte ao Cliente e Coletar Feedback. Melhora retenção e ROI a longo prazo.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Manter o Foco em Personalização Avançada. Baixo ROI se não for a dor principal.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Apoiar a Expansão Rápida sem Pesquisa. Risco de prejuízo.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Senior PM",
+                "role": "Mentor",
+                "feedback": "Opção A foca no valor central. Cortar suporte (proposta original) prejudicaria o ROI a longo prazo (churn)."
+            }
+        }
+    },
+    {
+        "journeyOrder": 11,
+        "title": "Customer Development",
+        "description": "Introdução, 4 etapas e Matriz CSD.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 26,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🗣️",
+                "title": "Customer Development",
+                "explanation": "Introdução ao Customer Development:\nCustomer Development é um processo que busca encontrar o alinhamento entre produto e mercado (product/market fit). A ideia central é entender profundamente o problema antes de lançar um produto. Envolve transformar suposições em hipóteses testáveis.\n\nAs Quatro Etapas:\nCustomer Discovery: Entender quem são os clientes e seus problemas.\nCustomer Validation: Validar se a solução resolve o problema e se há mercado.\nCustomer Creation: Criar demanda e escalar.\nCompany Building: Estruturar a empresa para crescimento.\n\nImportância de Basear-se em Fatos:\nDecisões devem ser baseadas em fatos e evidências, não suposições. A Matriz CSD (Certezas, Suposições e Dúvidas) ajuda a organizar o conhecimento e planejar a validação.",
+                "example": "Matriz CSD: O que sabemos? O que achamos? O que não sabemos?"
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Qual é a primeira etapa do processo de Customer Development, que foca em entender quem são os clientes e quais problemas eles enfrentam?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Customer Validation",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Customer Creation",
+                            "correct": false
+                        },
+                        {
+                            "id": "c",
+                            "text": "Customer Discovery",
+                            "correct": true
+                        },
+                        {
+                            "id": "d",
+                            "text": "Company Building",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Discovery vem primeiro: descobrir o problema antes da solução."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 11,
+        "title": "Validando Suposições",
+        "description": "Corrigindo um relatório baseado em suposições.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 27,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "Líder de Produto",
+                "team": "Empresa de Tecnologia",
+                "sprint": "Discovery",
+                "currentWork": "Membro do time apresentou relatório suspeito."
+            },
+            "trigger": {
+                "from": "Relatório",
+                "message": "Problema principal é falta de integração (parece suposição).",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Revisar o relatório e conduzir entrevistas adicionais com os clientes para validar as suposições feitas. Focar em entender profundamente os problemas enfrentados pelos clientes e documentar evidências concretas.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Analisar os feedbacks e dados de uso existentes para identificar padrões que possam confirmar ou refutar as suposições.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Aceitar o relatório como está e prosseguir com o desenvolvimento.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Descartar completamente o relatório e começar do zero.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Researcher",
+                "role": "UX",
+                "feedback": "Opção A é a única que garante integridade dos dados. Construir sobre suposições falsas é a causa #1 de falhas."
+            }
+        }
+    },
+    {
+        "journeyOrder": 11,
+        "title": "Alinhando Stakeholders",
+        "description": "Resolvendo divergências entre stakeholders e clientes.",
+        "type": "real_world_challenge",
+        "difficulty": "advanced",
+        "xpReward": 100,
+        "estimatedMinutes": 6,
+        "isPremium": false,
+        "order": 28,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "E-commerce Platform",
+                "sprint": "Definição",
+                "currentWork": "Marketing quer personalização, Vendas quer pagamentos, Dev quer escala. Clientes querem UX simples."
+            },
+            "trigger": {
+                "from": "Conflito",
+                "message": "Prioridades conflitantes. Quem ouvir?",
+                "urgency": "high"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Organizar uma reunião com todos os stakeholders para apresentar os insights coletados dos clientes e discutir as prioridades com base em dados concretos. Facilitar um workshop colaborativo para alinhar as expectativas e definir um roadmap que priorize a melhoria da interface de usuário (necessidade do cliente).",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Priorizar a melhoria da interface de usuário com base no feedback dos clientes e comunicar essa decisão aos stakeholders.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Decidir focar apenas nas funcionalidades de personalização sugeridas pela equipe de marketing.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Tentar atender a todas as demandas dos stakeholders simultaneamente.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "CPO",
+                "role": "Líder",
+                "feedback": "Opção A usa dados do cliente para arbitrar conflitos internos, o que é a essência do gerenciamento de produto."
+            }
+        }
+    },
+    {
+        "journeyOrder": 12,
+        "title": "Jobs to be Done & Answer First/Last",
+        "description": "Metodologia JTBD e abordagens de validação.",
+        "type": "concept_builder",
+        "difficulty": "beginner",
+        "xpReward": 50,
+        "estimatedMinutes": 10,
+        "isPremium": false,
+        "order": 29,
+        "isPublished": true,
+        "content": {
+            "concept": {
+                "emoji": "🔨",
+                "title": "JTBD & Answer First/Last",
+                "explanation": "Answer First vs Answer Last:\nAnswer First: Partir para a validação de uma solução (quando se tem alto conhecimento).\nAnswer Last: Aprender mais sobre o problema antes de propor solução (quando se tem baixo conhecimento).\n\nJobs to Be Done (JTBD):\nA ideia central é que os clientes não compram produtos, eles os 'contratam' para realizar uma tarefa ('job').\nFoco na Tarefa: Entender qual tarefa o cliente quer completar.\nDeclaração do Job: Verbo de ação + Objeto de ação + Contexto (ex: 'Melhorar a eficiência do trabalho remoto em casa').\nAplicação: Guia o desenvolvimento para atender necessidades reais, não superficiais.",
+                "example": "Job: 'Ouvir música enquanto corro' (iPod/Spotify)."
+            },
+            "questions": [
+                {
+                    "id": "q1",
+                    "question": "Na metodologia Jobs To Be Done, como deve ser estruturada a declaração do 'Job' que um produto deve realizar para o cliente?",
+                    "options": [
+                        {
+                            "id": "a",
+                            "text": "Substantivo + Verbo + Adjetivo",
+                            "correct": false
+                        },
+                        {
+                            "id": "b",
+                            "text": "Verbo de Ação + Objeto de Ação + Contexto",
+                            "correct": true
+                        },
+                        {
+                            "id": "c",
+                            "text": "Adjetivo + Substantivo + Verbo",
+                            "correct": false
+                        },
+                        {
+                            "id": "d",
+                            "text": "Objeto de Ação + Verbo de Ação + Contexto",
+                            "correct": false
+                        }
+                    ],
+                    "explanation": "Exemplo: 'Cortar (verbo) a grama (objeto) no fim de semana (contexto)'."
+                }
+            ]
+        }
+    },
+    {
+        "journeyOrder": 12,
+        "title": "Identificando o Job",
+        "description": "Aplicando JTBD para entender abandono de app.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 30,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "App Gestão de Tempo",
+                "sprint": "Retenção",
+                "currentWork": "Usuários abandonando após semanas."
+            },
+            "trigger": {
+                "from": "Churn",
+                "message": "Por que estão saindo? Qual o Job real?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Ideal: Realizar entrevistas com usuários para entender o contexto e identificar o 'Job' principal (ex: 'Organizar tarefas diárias para aumentar produtividade'). Ajustar funcionalidades para facilitar esse job.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Aceitável: Analisar dados de uso para inferir o Job (ex: 'Acompanhar tempo').",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Incorreta: Assumir que o Job é 'Criar listas' e focar nisso.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Incorreta: Investir em marketing.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "JTBD Expert",
+                "role": "Consultor",
+                "feedback": "Opção A vai à fonte (usuário) para entender a motivação real (o 'porquê')."
+            }
+        }
+    },
+    {
+        "journeyOrder": 12,
+        "title": "Lançamento App Saúde",
+        "description": "Escolhendo entre Answer First e Answer Last.",
+        "type": "real_world_challenge",
+        "difficulty": "intermediate",
+        "xpReward": 75,
+        "estimatedMinutes": 5,
+        "isPremium": false,
+        "order": 31,
+        "isPublished": true,
+        "content": {
+            "context": {
+                "role": "PM",
+                "team": "Startup App Saúde Mental",
+                "sprint": "Lançamento",
+                "currentWork": "Time dividido sobre como lançar."
+            },
+            "trigger": {
+                "from": "Time",
+                "message": "Validar primeiro ou lançar logo?",
+                "urgency": "medium"
+            },
+            "options": [
+                {
+                    "id": "a",
+                    "text": "Opção Ideal: Realizar Customer Discovery (Answer Last). Antes de lançar, conduza discovery para entender profundamente as necessidades e validar hipóteses.",
+                    "risk": "Baixo risco",
+                    "benefit": "Alto benefício"
+                },
+                {
+                    "id": "b",
+                    "text": "Opção Aceitável: Lançar um MVP e Coletar Feedback (Answer First). Desenvolva versão mínima e itere.",
+                    "risk": "Médio risco",
+                    "benefit": "Médio benefício"
+                },
+                {
+                    "id": "c",
+                    "text": "Opção Incorreta: Lançar o Produto Completo sem Validação Prévia.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                },
+                {
+                    "id": "d",
+                    "text": "Opção Incorreta: Focar em Funcionalidades Internas.",
+                    "risk": "Alto risco",
+                    "benefit": "Baixo benefício"
+                }
+            ],
+            "expertFeedback": {
+                "name": "Innovation Manager",
+                "role": "Mentor",
+                "feedback": "Opção A (Answer Last) é melhor quando há incerteza sobre o problema. Opção B (Answer First) serve se você já tem alta convicção do problema."
+            }
+        }
+    }
+]

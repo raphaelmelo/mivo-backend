@@ -17,6 +17,8 @@ const allowedOrigins: string[] = process.env.ALLOWED_ORIGINS
   : [
     'http://localhost:5173',
     'http://localhost:3000',
+    'https://mivolabs.com',
+    'https://www.mivolabs.com',
     process.env.FRONTEND_URL
   ].filter((origin): origin is string => Boolean(origin));
 
