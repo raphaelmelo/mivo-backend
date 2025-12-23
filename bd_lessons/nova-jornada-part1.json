@@ -97,6 +97,12 @@
                     "benefit": "Baixo benefício"
                 }
             ],
+            "stats": {
+                "a": 45,
+                "b": 35,
+                "c": 12,
+                "d": 8
+            },
             "expertFeedback": {
                 "name": "Estrategista",
                 "role": "Mentor",
@@ -202,6 +208,12 @@
                     "benefit": "Baixo benefício"
                 }
             ],
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
+            },
             "expertFeedback": {
                 "name": "Senior PM",
                 "role": "Advisor",
@@ -262,6 +274,12 @@
                 "name": "Consultor",
                 "role": "Estrategista",
                 "feedback": "Opção A é a ideal. Envolver todos os stakeholders e usar SWOT garante alinhamento e uma estratégia robusta focada no cliente."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -367,6 +385,12 @@
                 "name": "Agile Coach",
                 "role": "Mentor",
                 "feedback": "Opção A é a ideal. OKRs devem focar em resultados (outcomes) como retenção e satisfação, não apenas em entregas (outputs)."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -423,6 +447,12 @@
                 "name": "Head of Product",
                 "role": "Líder",
                 "feedback": "Opção A é a ideal. Ações alinhadas com o objetivo estratégico de aumentar o engajamento."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -528,6 +558,12 @@
                 "name": "Head of Product",
                 "role": "Líder",
                 "feedback": "Opção A é a ideal. Recomendação personalizada ataca diretamente o KR de 'Aumentar tempo de visualização' e retenção."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -633,6 +669,12 @@
                 "name": "Lean Startup Coach",
                 "role": "Mentor",
                 "feedback": "Opção A é a ideal. Feedback qualitativo de early adopters é ouro para ajustar o 'Problem-Solution Fit' antes de escalar."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -689,6 +731,12 @@
                 "name": "Product Lead",
                 "role": "Mentor",
                 "feedback": "Opção A é a ideal. Ações focadas em entender e atender melhor as necessidades dos usuários são cruciais para encontrar o PMF."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -794,6 +842,12 @@
                 "name": "Customer Success",
                 "role": "Lead",
                 "feedback": "Opção A é a ideal. Detratores apontam onde o produto falha em entregar valor. Corrigir isso move o ponteiro do NPS."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -899,6 +953,12 @@
                 "name": "Growth PM",
                 "role": "Mentor",
                 "feedback": "Opção A é a ideal. Na fase de introdução, você precisa garantir que o produto resolve o problema (Product-Solution Fit) antes de tentar crescer."
+            },
+            "stats": {
+                "a": 52,
+                "b": 28,
+                "c": 12,
+                "d": 8
             }
         }
     },
@@ -955,6 +1015,12 @@
                 "name": "VP of Product",
                 "role": "Líder",
                 "feedback": "Opção A equilibra as necessidades de todos os stakeholders e mitiga riscos de mercado e técnicos."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1060,6 +1126,12 @@
                 "name": "Data Analyst",
                 "role": "Advisor",
                 "feedback": "Opção A permite validar métricas de engajamento e retenção em um ambiente controlado."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1165,6 +1237,12 @@
                 "name": "Chief Strategy Officer",
                 "role": "Líder",
                 "feedback": "Opção A garante que a nova visão seja relevante, baseada em dados e apoiada por todos."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1270,6 +1348,12 @@
                 "name": "CFO",
                 "role": "Financeiro",
                 "feedback": "Opção A gera valor tangível (tempo economizado) pelo qual clientes pagam, maximizando o ROI."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1326,6 +1410,12 @@
                 "name": "Senior PM",
                 "role": "Mentor",
                 "feedback": "Opção A foca no valor central. Cortar suporte (proposta original) prejudicaria o ROI a longo prazo (churn)."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1431,6 +1521,12 @@
                 "name": "Researcher",
                 "role": "UX",
                 "feedback": "Opção A é a única que garante integridade dos dados. Construir sobre suposições falsas é a causa #1 de falhas."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1487,6 +1583,12 @@
                 "name": "CPO",
                 "role": "Líder",
                 "feedback": "Opção A usa dados do cliente para arbitrar conflitos internos, o que é a essência do gerenciamento de produto."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1592,6 +1694,12 @@
                 "name": "JTBD Expert",
                 "role": "Consultor",
                 "feedback": "Opção A vai à fonte (usuário) para entender a motivação real (o 'porquê')."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     },
@@ -1648,6 +1756,12 @@
                 "name": "Innovation Manager",
                 "role": "Mentor",
                 "feedback": "Opção A (Answer Last) é melhor quando há incerteza sobre o problema. Opção B (Answer First) serve se você já tem alta convicção do problema."
+            },
+            "stats": {
+                "a": 48,
+                "b": 30,
+                "c": 15,
+                "d": 7
             }
         }
     }
