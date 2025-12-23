@@ -95,6 +95,26 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
             user.xp += xpToAdd;
         }
 
+        // Streak logic
+        const now = new Date();
+        const lastActive = new Date(user.lastActiveDate);
+        const diffInMs = now.getTime() - lastActive.getTime();
+        const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+
+        if (diffInDays === 1) {
+            // Consecutive day
+            user.streak += 1;
+        } else if (diffInDays > 1) {
+            // Streak broken
+            user.streak = 1;
+        } else if (user.streak === 0) {
+            // First time
+            user.streak = 1;
+        }
+        // If diffInDays === 0, streak stays the same (already active today)
+
+        user.lastActiveDate = now;
+
         // Simple level up logic (every 1000 XP)
         const newLevel = Math.floor(user.xp / 1000) + 1;
         const leveledUp = newLevel > user.level;
@@ -113,7 +133,8 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
             user: {
                 xp: user.xp,
                 level: user.level,
-                lessonsCompleted: user.lessonsCompleted
+                lessonsCompleted: user.lessonsCompleted,
+                streak: user.streak
             },
             leveledUp,
             newBadges: newBadges.map(badge => ({
