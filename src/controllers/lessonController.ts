@@ -3,12 +3,38 @@ import Lesson from '../models/Lesson';
 import User from '../models/User';
 import { AuthRequest } from '../middlewares/auth';
 
-export const getAllLessons = async (req: Request, res: Response) => {
+export const getAllLessons = async (req: AuthRequest, res: Response) => {
     try {
+        const userId = req.userId;
+
         const lessons = await Lesson.findAll({
             order: [['order', 'ASC']],
             where: { isPublished: true }
         });
+
+        // If user is authenticated, include their progress
+        if (userId) {
+            const { default: UserProgress } = await import('../models/UserProgress');
+            const progressRecords = await UserProgress.findAll({
+                where: { userId }
+            });
+
+            const progressMap = new Map(
+                progressRecords.map(p => [p.lessonId, p])
+            );
+
+            const lessonsWithProgress = lessons.map(lesson => {
+                const progress = progressMap.get(lesson.id);
+                return {
+                    ...lesson.toJSON(),
+                    isCompleted: progress?.isCompleted || false,
+                    completedAt: progress?.completedAt || null
+                };
+            });
+
+            return res.json(lessonsWithProgress);
+        }
+
         res.json(lessons);
     } catch (error) {
         console.error('Error fetching lessons:', error);
