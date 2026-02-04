@@ -20,26 +20,31 @@ export const getLeagueRanking = async (req: AuthRequest, res: Response) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        // If user doesn't have a league, assign Bronze (league ID 1)
+        // Import service
+        const { LeagueService } = await import('../services/leagueService');
+
+        // Ensure user has a league
         if (!user.leagueId) {
-            const bronzeLeague = await League.findOne({ where: { tier: 'bronze' } });
-            if (bronzeLeague) {
-                user.leagueId = bronzeLeague.id;
-                await user.save();
-            }
+            await LeagueService.updateUserLeague(user);
+            await user.save();
         }
 
+        // If still no league (shouldn't happen if initialized correctly), fallback
+        if (!user.leagueId) {
+             const bronzeLeague = await League.findOne({ where: { tier: 'bronze' } });
+             if (bronzeLeague) {
+                 user.leagueId = bronzeLeague.id;
+                 await user.save();
+             }
+        }
+        
         const league = await League.findByPk(user.leagueId || 1);
         if (!league) {
             return res.status(404).json({ message: 'League not found' });
         }
 
-        // Get all users in the same league, ordered by XP
-        const usersInLeague = await User.findAll({
-            where: { leagueId: league.id },
-            order: [['xp', 'DESC']],
-            limit: 50 // Top 50 users in league
-        });
+        // Use service to get ranking
+        const usersInLeague = await LeagueService.getLeagueRanking(league.id);
 
         // Find user's rank
         const currentUserRank = usersInLeague.findIndex(u => u.id === userId) + 1;

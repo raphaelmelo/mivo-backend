@@ -172,3 +172,63 @@ export const updateProfile = async (req: Request, res: Response): Promise<void> 
     res.status(500).json({ error: 'Failed to update profile' });
   }
 };
+
+export const getMe = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const userId = (req as any).userId;
+
+    const user = await User.findByPk(userId, {
+      attributes: { exclude: ['password'] },
+    });
+
+    if (!user) {
+      res.status(404).json({ error: 'User not found' });
+      return;
+    }
+
+    // Fetch League Info
+    let leagueName = 'Bronze';
+    let leagueTier = 'bronze';
+    
+    if (user.leagueId) {
+       const { default: League } = await import('../models/League');
+       const league = await League.findByPk(user.leagueId);
+       if (league) {
+         leagueName = league.name;
+         leagueTier = league.tier;
+       }
+    } else {
+        // Correct if User doesn't have league assigned yet
+        const { LeagueService } = await import('../services/leagueService');
+        await LeagueService.updateUserLeague(user);
+        await user.save();
+        
+        if (user.leagueId) {
+            const { default: League } = await import('../models/League');
+            const league = await League.findByPk(user.leagueId);
+            if (league) {
+                leagueName = league.name;
+                leagueTier = league.tier;
+            }
+        }
+    }
+
+    // Fetch Badges
+    const { BadgeService } = await import('../services/badgeService');
+    const badges = await BadgeService.getUserBadges(userId);
+
+    res.status(200).json({
+      user: {
+        ...user.toJSON(),
+        league: {
+            name: leagueName,
+            tier: leagueTier
+        },
+        badges: badges.map(b => b.name) // Returning names for frontend compatibility (string[])
+      }
+    });
+  } catch (error) {
+    console.error('Get me error:', error);
+    res.status(500).json({ error: 'Failed to get full profile' });
+  }
+};

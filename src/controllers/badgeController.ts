@@ -3,118 +3,18 @@ import { AuthRequest } from '../middlewares/auth';
 import Badge, { BadgeCategory } from '../models/Badge';
 import UserBadge from '../models/UserBadge';
 import User from '../models/User';
+import { BadgeService, UnlockedBadge, BadgeRequirement } from '../services/badgeService';
 import { Op } from 'sequelize';
 
 // ============================================================================
 // HELPER FUNCTIONS (Business Logic)
 // ============================================================================
 
-interface BadgeRequirement {
-    type: 'streak' | 'xp' | 'lessons' | 'level' | 'composite';
-    value?: number;
-    minStreak?: number;
-    minXp?: number;
-    minLessons?: number;
-    minLevel?: number;
-}
-
-/**
- * Check if a badge requirement is met
- */
-const isRequirementMet = (user: User, requirement: BadgeRequirement): boolean => {
-    switch (requirement.type) {
-        case 'streak':
-            return user.streak >= (requirement.value || 0);
-
-        case 'xp':
-            return user.xp >= (requirement.value || 0);
-
-        case 'lessons':
-            return user.lessonsCompleted >= (requirement.value || 0);
-
-        case 'level':
-            return user.level >= (requirement.value || 0);
-
-        case 'composite':
-            const checks = [];
-            if (requirement.minStreak !== undefined) {
-                checks.push(user.streak >= requirement.minStreak);
-            }
-            if (requirement.minXp !== undefined) {
-                checks.push(user.xp >= requirement.minXp);
-            }
-            if (requirement.minLessons !== undefined) {
-                checks.push(user.lessonsCompleted >= requirement.minLessons);
-            }
-            if (requirement.minLevel !== undefined) {
-                checks.push(user.level >= requirement.minLevel);
-            }
-            return checks.length > 0 && checks.every(c => c);
-
-        default:
-            return false;
-    }
-};
-
-export interface UnlockedBadge {
-    id: number;
-    name: string;
-    description: string;
-    category: string;
-    iconUrl: string;
-    unlockedAt: Date;
-}
-
-/**
- * Check and unlock badges for a user
- * Returns array of newly unlocked badges
- */
+// Logic moved to BadgeService
+// This function is kept for backward compatibility if imported elsewhere, but delegates to service
 export const checkAndUnlockBadges = async (userId: number): Promise<UnlockedBadge[]> => {
-    const user = await User.findByPk(userId);
-    if (!user) {
-        throw new Error('User not found');
-    }
-
-    const allBadges = await Badge.findAll({
-        where: { isActive: true },
-    });
-
-    const existingUserBadges = await UserBadge.findAll({
-        where: { userId },
-        attributes: ['badgeId'],
-    });
-    const existingBadgeIds = existingUserBadges.map(ub => ub.badgeId);
-
-    const newlyUnlockedBadges: UnlockedBadge[] = [];
-
-    for (const badge of allBadges) {
-        // Skip if user already has this badge
-        if (existingBadgeIds.includes(badge.id)) {
-            continue;
-        }
-
-        // Check if requirement is met
-        const requirement = badge.requirement as BadgeRequirement;
-        if (isRequirementMet(user, requirement)) {
-            const now = new Date();
-            await UserBadge.create({
-                userId,
-                badgeId: badge.id,
-                unlockedAt: now,
-            });
-
-            newlyUnlockedBadges.push({
-                id: badge.id,
-                name: badge.name,
-                description: badge.description,
-                category: badge.category,
-                iconUrl: badge.iconUrl,
-                unlockedAt: now,
-            });
-        }
-    }
-
-    return newlyUnlockedBadges;
+    const { BadgeService } = await import('../services/badgeService');
+    return BadgeService.checkAndUnlockBadges(userId);
 };
 
 // ============================================================================

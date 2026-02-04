@@ -61,7 +61,7 @@ export const getLessonById = async (req: Request, res: Response) => {
 export const completeLesson = async (req: AuthRequest, res: Response) => {
     try {
         const { id } = req.params;
-        const { xpEarned } = req.body;
+        // SECURITY: xpEarned from body is IGNORED.
         const userId = req.userId;
 
         if (!userId) {
@@ -74,6 +74,11 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
         }
 
         const lessonId = parseInt(id);
+        const lesson = await Lesson.findByPk(lessonId);
+        
+        if (!lesson) {
+            return res.status(404).json({ message: 'Lesson not found' });
+        }
 
         // Check if lesson is already completed
         const { default: UserProgress } = await import('../models/UserProgress');
@@ -86,26 +91,40 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
                 isCompleted: true,
                 completedAt: new Date(),
                 attempts: 1,
-                timeSpentMinutes: 0 // TODO: Track time
+                timeSpentMinutes: 0 // TODO: Track time appropriately
             }
         });
 
-        let xpToAdd = 0;
+        // Import Services dynamically to avoid potential circular dep issues if any (though structured well now)
+        const { XPService } = await import('../services/xpService');
+        const { StreakService } = await import('../services/streakService');
+        const { LeagueService } = await import('../services/leagueService');
+        const { BadgeService } = await import('../services/badgeService');
+
+        let xpBreakdown = { base: 0, multiplier: 1, total: 0 };
         let lessonsCompletedIncrement = 0;
+        let streakBonus = 0;
 
-        if (created) {
-            // First time completion
-            xpToAdd = xpEarned || 0;
+        if (created || !progress.isCompleted) {
+            // First time completion logic
+            
+            // 1. Update Streak
+            const streakResult = await StreakService.updateStreak(user);
+            streakBonus = streakResult.streakBonus;
+            
+            // 2. Calculate XP based on Lesson Type and Streak
+            xpBreakdown = XPService.calculateLessonXP(lesson.type, user.streak);
+            
+            // 3. Mark progress
+            if (!created) {
+                progress.isCompleted = true;
+                progress.completedAt = new Date();
+                progress.attempts += 1;
+                await progress.save();
+            }
+            
             lessonsCompletedIncrement = 1;
-        } else if (!progress.isCompleted) {
-            // Was started but not completed (shouldn't happen with current logic but safe to handle)
-            progress.isCompleted = true;
-            progress.completedAt = new Date();
-            progress.attempts += 1;
-            await progress.save();
 
-            xpToAdd = xpEarned || 0;
-            lessonsCompletedIncrement = 1;
         } else {
             // Already completed, just increment attempts
             progress.attempts += 1;
@@ -117,42 +136,26 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
             user.lessonsCompleted += lessonsCompletedIncrement;
         }
 
+        // Apply XP updates
+        const xpToAdd = xpBreakdown.total + streakBonus;
         if (xpToAdd > 0) {
+            const oldXP = user.xp;
             user.xp += xpToAdd;
-        }
+            
+            // Check Level Up
+            const { leveledUp, newLevel } = XPService.checkLevelUp(oldXP, user.xp);
+            if (leveledUp) {
+                user.level = newLevel;
+            }
 
-        // Streak logic
-        const now = new Date();
-        const lastActive = new Date(user.lastActiveDate);
-        const diffInMs = now.getTime() - lastActive.getTime();
-        const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
-
-        if (diffInDays === 1) {
-            // Consecutive day
-            user.streak += 1;
-        } else if (diffInDays > 1) {
-            // Streak broken
-            user.streak = 1;
-        } else if (user.streak === 0) {
-            // First time
-            user.streak = 1;
-        }
-        // If diffInDays === 0, streak stays the same (already active today)
-
-        user.lastActiveDate = now;
-
-        // Simple level up logic (every 1000 XP)
-        const newLevel = Math.floor(user.xp / 1000) + 1;
-        const leveledUp = newLevel > user.level;
-        if (leveledUp) {
-            user.level = newLevel;
+            // Update League
+            await LeagueService.updateUserLeague(user);
         }
 
         await user.save();
 
-        // Check for new badges (dynamic import to avoid circular dependencies)
-        const { checkAndUnlockBadges } = await import('./badgeController');
-        const newBadges = await checkAndUnlockBadges(userId);
+        // Check for new badges
+        const newBadges = await BadgeService.checkAndUnlockBadges(userId);
 
         res.json({
             message: 'Lesson completed successfully',
@@ -162,7 +165,14 @@ export const completeLesson = async (req: AuthRequest, res: Response) => {
                 lessonsCompleted: user.lessonsCompleted,
                 streak: user.streak
             },
-            leveledUp,
+            xpGained: xpToAdd, // Total gained this session
+            xpBreakdown: {
+                base: xpBreakdown.base,
+                streakMultiplier: xpBreakdown.multiplier,
+                streakBonus: streakBonus,
+                total: xpToAdd
+            },
+            leveledUp: XPService.checkLevelUp(user.xp - xpToAdd, user.xp).leveledUp, // Recalc purely for response flag if needed or reuse
             newBadges: newBadges.map(badge => ({
                 id: badge.id,
                 name: badge.name,
