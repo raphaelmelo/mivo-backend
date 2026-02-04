@@ -10,7 +10,7 @@ const sequelize = new Sequelize(DATABASE_URL, {
   dialect: 'postgres',
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   dialectOptions: {
-    ssl: (process.env.NODE_ENV === 'production' || isRenderDB) ? {
+    ssl: (process.env.DB_SSL === 'true' || isRenderDB) ? {
       require: true,
       rejectUnauthorized: false
     } : false
