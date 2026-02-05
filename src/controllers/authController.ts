@@ -53,8 +53,15 @@ export const register = async (req: Request, res: Response): Promise<void> => {
         isPremium: user.isPremium,
       },
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Registration error:', error);
+
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      const messages = error.errors.map((e: any) => e.message);
+      res.status(400).json({ error: messages.join(', ') });
+      return;
+    }
+
     res.status(500).json({ error: 'Failed to create user' });
   }
 };
