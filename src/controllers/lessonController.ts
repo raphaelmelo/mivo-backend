@@ -36,9 +36,12 @@ export const getAllLessons = async (req: AuthRequest, res: Response) => {
         }
 
         res.json(lessons);
-    } catch (error) {
-        console.error('Error fetching lessons:', error);
-        res.status(500).json({ message: 'Error fetching lessons' });
+    } catch (error: any) {
+        console.error('‼️ ERROR FETCHING LESSONS ‼️');
+        console.error('Error message:', error?.message);
+        console.error('Error stack:', error?.stack);
+        console.error('Full error:', JSON.stringify(error, null, 2));
+        res.status(500).json({ message: 'Error fetching lessons', error: error?.message });
     }
 };
 
