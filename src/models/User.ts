@@ -20,11 +20,12 @@ interface UserAttributes {
   company: string | null;
   productArea: 'b2c' | 'b2b' | 'marketplace' | 'fintech' | 'saas' | null;
   lessonsCompleted: number;
+  linkedinId: string | null;
   createdAt?: Date;
   updatedAt?: Date;
 }
 
-interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea' | 'lessonsCompleted'> { }
+interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea' | 'lessonsCompleted' | 'linkedinId'> { }
 
 class User extends Model<UserAttributes, UserCreationAttributes> implements UserAttributes {
   public id!: number;
@@ -44,6 +45,7 @@ class User extends Model<UserAttributes, UserCreationAttributes> implements User
   public company!: string | null;
   public productArea!: 'b2c' | 'b2b' | 'marketplace' | 'fintech' | 'saas' | null;
   public lessonsCompleted!: number;
+  public linkedinId!: string | null;
 
   public readonly createdAt!: Date;
   public readonly updatedAt!: Date;
@@ -133,6 +135,11 @@ User.init(
       type: DataTypes.INTEGER,
       defaultValue: 0,
       allowNull: false,
+    },
+    linkedinId: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: true,
     },
   },
   {
