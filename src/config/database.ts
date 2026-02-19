@@ -18,12 +18,20 @@ if (!DATABASE_URL) {
 
 const dbUrl = DATABASE_URL || '';
 const isRenderDB = dbUrl.includes('render.com');
+const useSSL = process.env.DB_SSL === 'true' || isRenderDB;
+
+console.log('🔌 Database Configuration Debug:', {
+  useSSL,
+  env_DB_SSL: process.env.DB_SSL,
+  isRenderDB,
+  node_env: process.env.NODE_ENV
+});
 
 const sequelize = new Sequelize(dbUrl, {
   dialect: 'postgres',
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   dialectOptions: {
-    ssl: (process.env.DB_SSL === 'true' || isRenderDB) ? {
+    ssl: useSSL ? {
       require: true,
       rejectUnauthorized: false
     } : false
