@@ -3,14 +3,35 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const DATABASE_URL = process.env.DATABASE_URL || '';
-const isRenderDB = DATABASE_URL.includes('render.com');
 
-const sequelize = new Sequelize(DATABASE_URL, {
+const DATABASE_URL = process.env.DATABASE_URL;
+
+if (!DATABASE_URL) {
+  console.error("❌ FATAL ERROR: DATABASE_URL environment variable is not defined.");
+  if (process.env.NODE_ENV === 'production') {
+    console.error("Please configure the DATABASE_URL in your deployment environment (e.g. Coolify/Render variables).");
+    process.exit(1); 
+  } else {
+    console.warn("⚠️  Running without DATABASE_URL. Database connection will likely fail.");
+  }
+}
+
+const dbUrl = DATABASE_URL || '';
+const isRenderDB = dbUrl.includes('render.com');
+const useSSL = process.env.DB_SSL === 'true' || isRenderDB;
+
+console.log('🔌 Database Configuration Debug:', {
+  useSSL,
+  env_DB_SSL: process.env.DB_SSL,
+  isRenderDB,
+  node_env: process.env.NODE_ENV
+});
+
+const sequelize = new Sequelize(dbUrl, {
   dialect: 'postgres',
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   dialectOptions: {
-    ssl: (process.env.NODE_ENV === 'production' || isRenderDB) ? {
+    ssl: useSSL ? {
       require: true,
       rejectUnauthorized: false
     } : false

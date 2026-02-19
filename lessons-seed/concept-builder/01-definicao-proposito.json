@@ -12,7 +12,7 @@
         "concept": {
             "emoji": "💡",
             "title": "Definição e Propósito do Product Marketing",
-            "explanation": "Você acabou de assumir uma posição de liderança em produto e precisa explicar ao time a diferença entre o papel de um PM (Product Manager) e um PMM (Product Marketing Manager) para justificar uma nova contratação.",
+            "explanation": "**Product Marketing** é a função estratégica responsável por conectar o **Produto**, o **Mercado** e as **Vendas**.\n\nEnquanto o **Product Manager (PM)** foca em *construir o produto certo* (resolvendo problemas técnicos e de usuário), o **Product Marketing Manager (PMM)** foca em *vender o produto da maneira certa*.\n\n### As 3 principais responsabilidades:\n\n1.  **Posicionamento & Mensagem:** Definir como o produto é comunicado e percebido.\n2.  **Go-to-Market (GTM):** Planejar como lançar e distribuir o produto no mercado.\n3.  **Sales Enablement:** Capacitar o time de vendas com argumentos e materiais para fechar negócios.\n\nResumindo: O PMM traduz as _features_ técnicas em _valor_ para o cliente.",
             "example": "Na Apple, o PMM define como o iPhone é posicionado ('o celular mais seguro') enquanto o PM define quais recursos de segurança serão construídos."
         },
         "questions": [
