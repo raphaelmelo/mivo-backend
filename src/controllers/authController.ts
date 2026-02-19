@@ -51,6 +51,11 @@ export const register = async (req: Request, res: Response): Promise<void> => {
         level: user.level,
         streak: user.streak,
         isPremium: user.isPremium,
+        goal: user.goal,
+        currentLevel: user.currentLevel,
+        dailyTimeCommitment: user.dailyTimeCommitment,
+        company: user.company,
+        productArea: user.productArea,
       },
     });
   } catch (error: any) {
@@ -108,6 +113,11 @@ export const login = async (req: Request, res: Response): Promise<void> => {
         streak: user.streak,
         isPremium: user.isPremium,
         lastActiveDate: user.lastActiveDate,
+        goal: user.goal,
+        currentLevel: user.currentLevel,
+        dailyTimeCommitment: user.dailyTimeCommitment,
+        company: user.company,
+        productArea: user.productArea,
       },
     });
   } catch (error) {
