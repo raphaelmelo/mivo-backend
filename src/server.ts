@@ -8,7 +8,7 @@ import authRoutes from './routes/auth';
 dotenv.config();
 
 const app: Express = express();
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Configuração de CORS para deployment separado
