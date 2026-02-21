@@ -24,6 +24,11 @@ export const getPosts = async (req: AuthRequest, res: Response) => {
           as: 'author',
           attributes: ['id', 'name', 'level'],
         },
+        {
+          model: Comment,
+          as: 'comments',
+          attributes: ['id'],
+        },
       ],
     });
     
