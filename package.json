@@ -10,7 +10,11 @@
     "start": "node dist/server.js",
     "db:sync": "ts-node src/sync-db.ts",
     "db:sync:force": "ts-node src/sync-db.ts --force",
-    "db:seed:posts": "ts-node seed-community-posts.ts",
+    "db:seed:columns": "ts-node src/tasks/db/seedColumns.ts",
+    "db:seed:posts": "ts-node src/seeds/community-posts.ts",
+    "db:seed:posts:prod": "node dist/seeds/community-posts.js",
+    "db:seed:lessons": "ts-node src/seeds/lessons.ts",
+    "db:seed:lessons:prod": "node dist/seeds/lessons.js",
     "kpi:report": "ts-node scripts/kpi-report.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

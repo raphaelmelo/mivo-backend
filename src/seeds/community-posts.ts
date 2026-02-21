@@ -1,4 +1,4 @@
-import { User, Post, Comment, sequelize } from './src/models';
+import { User, Post, Comment, sequelize } from '../models';
 import bcrypt from 'bcryptjs';
 
 async function seedPosts() {
@@ -12,15 +12,8 @@ async function seedPosts() {
 
         if (!admin) {
             console.log('👥 Criando usuário oficial Mivo...');
-            const adminPassword = process.env.ADMIN_SEED_PASSWORD;
-            if (!adminPassword) {
-                console.error('❌ Erro: ADMIN_SEED_PASSWORD não definida no ambiente.');
-                process.exit(1);
-            }
-            const hashedPassword = await bcrypt.hash(adminPassword, 10);
             admin = await User.create({
                 email: adminEmail,
-                password: hashedPassword,
                 name: 'Mivo Oficial 🚀',
                 xp: 10000,
                 level: 10,

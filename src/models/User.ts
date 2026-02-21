@@ -25,7 +25,7 @@ interface UserAttributes {
   updatedAt?: Date;
 }
 
-interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea' | 'lessonsCompleted' | 'linkedinId'> { }
+interface UserCreationAttributes extends Optional<UserAttributes, 'id' | 'password' | 'xp' | 'level' | 'streak' | 'lastActiveDate' | 'isPremium' | 'premiumExpiresAt' | 'leagueId' | 'goal' | 'currentLevel' | 'dailyTimeCommitment' | 'company' | 'productArea' | 'lessonsCompleted' | 'linkedinId'> { }
 
 class User extends Model<UserAttributes, UserCreationAttributes> implements UserAttributes {
   public id!: number;
@@ -68,7 +68,7 @@ User.init(
     },
     password: {
       type: DataTypes.STRING(255),
-      allowNull: false,
+      allowNull: true,
     },
     name: {
       type: DataTypes.STRING(100),
