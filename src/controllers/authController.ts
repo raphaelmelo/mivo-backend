@@ -244,11 +244,25 @@ export const linkedinCallback = async (req: Request, res: Response): Promise<voi
     const token = jwt.sign({ userId: user.id }, JWT_SECRET);
 
     // 6. Redirecionar para o frontend com token
-    res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/auth/linkedin/callback?token=${token}`);
+    const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+    const finalRedirectUrl = `${frontendUrl.replace(/\/$/, '')}/auth/linkedin/callback?token=${token}`;
+    
+    console.log('LinkedIn Login Successful. Redirecting to:', finalRedirectUrl);
+    res.redirect(finalRedirectUrl);
 
   } catch (error: any) {
-    console.error('LinkedIn Callback Error:', error.response?.data || error.message);
-    res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/login?error=linkedin_callback_error`);
+    console.error('LinkedIn Callback Error Detail:', {
+      message: error.message,
+      response: error.response?.data,
+      status: error.response?.status,
+      config: {
+        url: error.config?.url,
+        method: error.config?.method
+      }
+    });
+    
+    const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+    res.redirect(`${frontendUrl.replace(/\/$/, '')}/login?error=linkedin_callback_error`);
   }
 };
 
