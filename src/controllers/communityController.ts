@@ -22,7 +22,7 @@ export const getPosts = async (req: AuthRequest, res: Response) => {
         {
           model: User,
           as: 'author',
-          attributes: ['id', 'name', 'level', 'avatar'], // Assuming avatar exists or we construct it
+          attributes: ['id', 'name', 'level'],
         },
       ],
     });
@@ -111,6 +111,70 @@ export const createPost = async (req: AuthRequest, res: Response) => {
   }
 };
 
+// Update a post (author only)
+export const updatePost = async (req: AuthRequest, res: Response) => {
+  try {
+    const userId = req.userId;
+    const { id } = req.params;
+    const { title, content, tags } = req.body;
+
+    if (!userId) {
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    const post = await Post.findByPk(id);
+    if (!post) {
+      return res.status(404).json({ message: 'Post not found' });
+    }
+    if (post.userId !== userId) {
+      return res.status(403).json({ message: 'Not authorized to edit this post' });
+    }
+
+    await post.update({
+      ...(title?.trim() && { title: title.trim() }),
+      ...(content?.trim() && { content: content.trim() }),
+      ...(Array.isArray(tags) && { tags }),
+    });
+
+    const updated = await Post.findByPk(id, {
+      include: [{ model: User, as: 'author', attributes: ['id', 'name', 'level'] }]
+    });
+    res.json(updated);
+  } catch (error) {
+    console.error('Error updating post:', error);
+    res.status(500).json({ message: 'Error updating post' });
+  }
+};
+
+// Delete a post (author only)
+export const deletePost = async (req: AuthRequest, res: Response) => {
+  try {
+    const userId = req.userId;
+    const { id } = req.params;
+
+    if (!userId) {
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    const post = await Post.findByPk(id);
+    if (!post) {
+      return res.status(404).json({ message: 'Post not found' });
+    }
+    if (post.userId !== userId) {
+      return res.status(403).json({ message: 'Not authorized to delete this post' });
+    }
+
+    // Delete all comments first, then the post
+    await Comment.destroy({ where: { postId: id } });
+    await post.destroy();
+
+    res.status(204).send();
+  } catch (error) {
+    console.error('Error deleting post:', error);
+    res.status(500).json({ message: 'Error deleting post' });
+  }
+};
+
 // Create a comment
 export const createComment = async (req: AuthRequest, res: Response) => {
   try {
@@ -145,7 +209,35 @@ export const createComment = async (req: AuthRequest, res: Response) => {
   }
 };
 
-// Vote on post (MVP: Simple increment/decrement without tracking user votes per post in DB)
+// Delete a comment (author only)
+export const deleteComment = async (req: AuthRequest, res: Response) => {
+  try {
+    const userId = req.userId;
+    const { postId, commentId } = req.params;
+
+    if (!userId) {
+      return res.status(401).json({ message: 'Unauthorized' });
+    }
+
+    const comment = await Comment.findOne({
+      where: { id: commentId, postId: Number(postId) }
+    });
+    if (!comment) {
+      return res.status(404).json({ message: 'Comment not found' });
+    }
+    if (comment.userId !== userId) {
+      return res.status(403).json({ message: 'Not authorized to delete this comment' });
+    }
+
+    await comment.destroy();
+    res.status(204).send();
+  } catch (error) {
+    console.error('Error deleting comment:', error);
+    res.status(500).json({ message: 'Error deleting comment' });
+  }
+};
+
+// Vote on post
 export const votePost = async (req: AuthRequest, res: Response) => {
     try {
         const { id } = req.params;

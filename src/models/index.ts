@@ -6,6 +6,8 @@ import Badge from './Badge';
 import UserBadge from './UserBadge';
 import League from './League';
 import Journey from './Journey';
+import Post from './Post';
+import Comment from './Comment';
 
 // Define relationships
 
@@ -59,5 +61,7 @@ export {
   UserBadge,
   League,
   Journey,
+  Post,
+  Comment,
 };
 

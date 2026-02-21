@@ -10,6 +10,7 @@
     "start": "node dist/server.js",
     "db:sync": "ts-node src/sync-db.ts",
     "db:sync:force": "ts-node src/sync-db.ts --force",
+    "db:seed:posts": "ts-node seed-community-posts.ts",
     "kpi:report": "ts-node scripts/kpi-report.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
