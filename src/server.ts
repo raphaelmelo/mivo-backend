@@ -77,19 +77,25 @@ app.get('/health', (_req: Request, res: Response) => {
   });
 });
 
-// Em produção, serve arquivos estáticos do frontend
+// Em produção, serve arquivos estáticos do frontend se a pasta existir
 if (isProduction) {
+  const fs = require('fs');
   const frontendPath = path.join(__dirname, '../../build');
-  app.use(express.static(frontendPath));
+  
+  if (fs.existsSync(frontendPath)) {
+    app.use(express.static(frontendPath));
 
-  // Todas as rotas que não sejam /api ou /health servem o index.html (SPA routing)
-  app.use((req: Request, res: Response, next) => {
-    if (!req.path.startsWith('/api') && req.path !== '/health' && !req.path.includes('.')) {
-      res.sendFile(path.join(frontendPath, 'index.html'));
-    } else {
-      next();
-    }
-  });
+    // Todas as rotas que não sejam /api ou /health servem o index.html (SPA routing)
+    app.use((req: Request, res: Response, next) => {
+      if (!req.path.startsWith('/api') && req.path !== '/health' && !req.path.includes('.')) {
+        res.sendFile(path.join(frontendPath, 'index.html'));
+      } else {
+        next();
+      }
+    });
+  } else {
+    console.log('ℹ️ Frontend build folder not found, skipping static file serving');
+  }
 } else {
   // Em desenvolvimento, apenas mostra info da API
   app.get('/', (_req: Request, res: Response) => {
