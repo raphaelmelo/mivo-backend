@@ -8,6 +8,7 @@ import League from './League';
 import Journey from './Journey';
 import Post from './Post';
 import Comment from './Comment';
+import NPSResponse from './NPSResponse';
 
 // Define relationships
 
@@ -36,6 +37,10 @@ UserBadge.belongsTo(User, { foreignKey: 'userId', as: 'user' });
 Badge.hasMany(UserBadge, { foreignKey: 'badgeId', as: 'userBadges' });
 UserBadge.belongsTo(Badge, { foreignKey: 'badgeId', as: 'badge' });
 
+// User <-> NPSResponse (One-to-Many)
+User.hasMany(NPSResponse, { foreignKey: 'userId', as: 'npsResponses' });
+NPSResponse.belongsTo(User, { foreignKey: 'userId', as: 'user' });
+
 // Sync database function
 export const syncDatabase = async (force: boolean = false) => {
   try {
@@ -63,5 +68,6 @@ export {
   Journey,
   Post,
   Comment,
+  NPSResponse,
 };
 

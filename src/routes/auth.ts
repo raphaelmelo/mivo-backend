@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { register, login, getProfile, updateProfile, getMe, linkedinLogin, linkedinCallback } from '../controllers/authController';
+import { register, login, getProfile, updateProfile, getMe, linkedinLogin, linkedinCallback, submitNPS } from '../controllers/authController';
 import { authMiddleware } from '../middlewares/auth';
 
 const router = Router();
@@ -14,5 +14,6 @@ router.get('/linkedin/callback', linkedinCallback);
 router.get('/profile', authMiddleware, getProfile);
 router.get('/me', authMiddleware, getMe);
 router.put('/profile', authMiddleware, updateProfile);
+router.post('/nps', authMiddleware, submitNPS);
 
 export default router;

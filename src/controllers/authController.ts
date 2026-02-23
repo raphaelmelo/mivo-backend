@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { User } from '../models';
+import { User, NPSResponse } from '../models';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'default_secret';
+const JWT_SECRET = process.env.JWT_SECRET!;
 
 export const register = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -389,5 +389,28 @@ export const getMe = async (req: Request, res: Response): Promise<void> => {
   } catch (error) {
     console.error('Get me error:', error);
     res.status(500).json({ error: 'Failed to get full profile' });
+  }
+};
+
+export const submitNPS = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const userId = (req as any).userId;
+    const { score, feedback } = req.body;
+
+    if (score === undefined || score < 0 || score > 10) {
+      res.status(400).json({ error: 'Valid score (0-10) is required' });
+      return;
+    }
+
+    await NPSResponse.create({
+      userId,
+      score,
+      feedback: feedback || null,
+    });
+
+    res.status(201).json({ message: 'NPS response saved successfully' });
+  } catch (error) {
+    console.error('NPS submission error:', error);
+    res.status(500).json({ error: 'Failed to save NPS response' });
   }
 };
