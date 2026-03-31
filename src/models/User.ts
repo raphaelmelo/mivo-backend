@@ -128,7 +128,7 @@ User.init(
       allowNull: true,
     },
     productArea: {
-      type: DataTypes.ENUM('b2c', 'b2b', 'marketplace', 'fintech', 'saas'),
+      type: DataTypes.ENUM('b2c', 'b2b', 'marketplace', 'fintech', 'saas', 'outros'),
       allowNull: true,
     },
     lessonsCompleted: {
