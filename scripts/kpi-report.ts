@@ -22,9 +22,17 @@ program
     .name('kpi-report')
     .description('Generate KPI report for MIVO product health')
     .option('-f, --format <type>', 'Output format (json, table)', 'table')
+    .option('-s, --since <date>', 'Only consider data created after this date (YYYY-MM-DD)')
     .action(async (options) => {
         try {
             await connectDB();
+
+            const sinceDate = options.since ? new Date(options.since + 'T00:00:00Z') : null;
+            const sinceFilter = sinceDate ? { createdAt: { [Op.gte]: sinceDate } } : {};
+
+            if (sinceDate) {
+                console.log(`\n📅 Filtrando dados a partir de: ${sinceDate.toISOString().split('T')[0]}\n`);
+            }
 
             const now = new Date();
             const oneDayAgo = new Date(now.getTime() - 24 * 60 * 60 * 1000);
@@ -34,38 +42,40 @@ program
 
             // Helper for historical counts (cumulative based on createdAt)
             const getCountAtDate = async (Model: any, date: Date, additionalWhere = {}) => {
-                return await Model.count({
-                    where: {
-                        createdAt: { [Op.lte]: date },
-                        ...additionalWhere
-                    }
-                });
+                const where: any = {
+                    createdAt: { [Op.lte]: date },
+                    ...additionalWhere
+                };
+                if (sinceDate) {
+                    where.createdAt = { [Op.gte]: sinceDate, [Op.lte]: date };
+                }
+                return await Model.count({ where });
             };
 
             // --- 1. Current Snapshot ---
 
             // Basic
-            const activeUsers7d = await User.count({ where: { lastActiveDate: { [Op.gte]: sevenDaysAgo } } });
-            const totalUsers = await User.count();
-            const newUsers = await User.count({ where: { createdAt: { [Op.gte]: sevenDaysAgo } } });
-            const totalLessonsCompleted = await UserProgress.count({ where: { isCompleted: true } });
-            const badgesAwarded = await UserBadge.count();
+            const activeUsers7d = await User.count({ where: { lastActiveDate: { [Op.gte]: sevenDaysAgo }, ...sinceFilter } });
+            const totalUsers = await User.count({ where: { ...sinceFilter } });
+            const newUsers = await User.count({ where: { createdAt: { [Op.gte]: sevenDaysAgo }, ...sinceFilter } });
+            const totalLessonsCompleted = await UserProgress.count({ where: { isCompleted: true, ...sinceFilter } });
+            const badgesAwarded = await UserBadge.count({ where: { ...sinceFilter } });
 
             // Retention
-            const dau = await User.count({ where: { lastActiveDate: { [Op.gte]: oneDayAgo } } });
-            const mau = await User.count({ where: { lastActiveDate: { [Op.gte]: thirtyDaysAgo } } });
+            const dau = await User.count({ where: { lastActiveDate: { [Op.gte]: oneDayAgo }, ...sinceFilter } });
+            const mau = await User.count({ where: { lastActiveDate: { [Op.gte]: thirtyDaysAgo }, ...sinceFilter } });
             const stickinessVal = mau > 0 ? (dau / mau) * 100 : 0;
             const stickiness = stickinessVal.toFixed(1) + '%';
             const dormantUsers = totalUsers - mau;
 
             // Financial
-            const premiumUsers = await User.count({ where: { isPremium: true } });
+            const premiumUsers = await User.count({ where: { isPremium: true, ...sinceFilter } });
             const conversionVal = totalUsers > 0 ? (premiumUsers / totalUsers) * 100 : 0;
             const conversionRate = conversionVal.toFixed(1) + '%';
 
             // Pedagogical
             const pedagogicalMetrics = await UserProgress.findOne({
-                where: { isCompleted: true },
+                where: { isCompleted: true, ...sinceFilter },
                 attributes: [
                     [fn('AVG', col('timeSpentMinutes')), 'avgTime'],
                     [fn('AVG', col('attempts')), 'avgAttempts']
